@@ -63,4 +63,5 @@ h6 {
 
 ul {
 	list-style: none;
+	padding-inline-start: 0;
 }
