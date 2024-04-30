@@ -15,3 +15,24 @@ body {
 
 	color: var(--foreground);
 }
+
+#hero {
+	--hero-padding: 8rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	padding: var(--hero-padding);
+	height: calc(100vh - calc(var(--hero-padding) * 2));
+
+	color: white;
+
+	background-color: blue;
+	background: url(./assets/images/hero-background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+}
