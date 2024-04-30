@@ -2,7 +2,7 @@
 	--background: white;
 	--foreground: black;
 
-	--site-padding-x: 8rem;
+	--site-padding-x: max(12vw, 4rem);
 }
 
 @media (prefers-color-scheme: dark) {
