@@ -18,14 +18,20 @@ body {
 	color: var(--foreground);
 }
 
-nav {
+header {
 	--nav-padding-y: 2rem;
 
+	position: fixed;
 	padding: var(--nav-padding-y) var(--site-padding-x);
+	width: calc(100vw - calc(var(--site-padding-x) * 2));
+
+	background-color: hsl(0, 0%, 100%, 0.5);
+	backdrop-filter: blur(4px);
 }
 
 nav ul {
 	display: flex;
+	gap: 2rem;
 }
 
 #hero {
@@ -41,7 +47,7 @@ nav ul {
 
 	color: white;
 
-	background-color: blue;
+	background-color: #565e38;
 	background: url(./assets/images/hero-background.jpg);
 	background-position: center;
 	background-size: cover;
