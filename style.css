@@ -113,5 +113,6 @@ nav ul {
 	color: var(--foreground);
 
 	background-color: var(--background);
+	mix-blend-mode: screen;
 	/* background: linear-gradient(60deg, hsl(180, 50%, 35%), hsl(160, 50%, 35%)); */
 }
