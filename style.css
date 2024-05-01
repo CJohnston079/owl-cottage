@@ -30,19 +30,40 @@ p {
 }
 
 header {
-	--nav-padding-y: 2rem;
+	--nav-padding-y: 1rem;
 
 	position: fixed;
 	padding: var(--nav-padding-y) var(--site-padding-x);
 	width: calc(100vw - calc(var(--site-padding-x) * 2));
 
-	background-color: hsl(0, 0%, 100%, 0.5);
-	backdrop-filter: blur(4px);
+	background-color: hsl(0, 0%, 100%, 0);
+	background: linear-gradient(hsl(0, 0%, 0%, 0.4), hsl(0, 0%, 0%, 0));
 }
 
 nav ul {
 	display: flex;
 	gap: 2rem;
+}
+
+.nav-link {
+	border-bottom: 2px transparent solid;
+	padding: 0.5rem 0;
+
+	font-size: 0.8rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: white;
+
+	transition: border-bottom 800ms;
+
+	cursor: pointer;
+}
+
+.nav-link.active,
+.nav-link:hover {
+	border-bottom: 2px white solid;
+	transition: border-bottom 200ms;
 }
 
 #hero {
