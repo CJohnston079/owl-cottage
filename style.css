@@ -66,3 +66,15 @@ nav ul {
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
 }
+
+#hero h1 {
+	font-size: 4rem;
+	font-weight: 800;
+	line-height: 1;
+}
+
+#hero p {
+	max-width: max(50%, 24rem);
+	font-size: 1.5rem;
+	font-weight: 400;
+}
