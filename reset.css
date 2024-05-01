@@ -14,9 +14,13 @@
 }
 /*
   Typographic tweaks!
+  3. Override default font-family on all browsers
   3. Add accessible line-height
   4. Improve text rendering
 */
+html {
+	font-family: sans-serif;
+}
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
