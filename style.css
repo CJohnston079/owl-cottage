@@ -3,6 +3,9 @@
 	--foreground: black;
 
 	--site-padding-x: max(12vw, 4rem);
+
+	--heading-font: "Montserrat", sans-serif;
+	--body-font: "Lora", serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +18,15 @@
 body {
 	background-color: var(--background);
 
+	font-family: var(--heading-font);
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 	color: var(--foreground);
+}
+
+p {
+	font-family: var(--body-font);
 }
 
 header {
