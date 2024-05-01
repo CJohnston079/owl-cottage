@@ -61,7 +61,7 @@ nav ul {
 
 	background-color: #565e38;
 	background: url(./assets/images/hero-background.jpg),
-		linear-gradient(90deg, hsla(0, 0%, 0%, 0.3), hsla(0, 0%, 0%, 0.1) 100%);
+		linear-gradient(60deg, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.1) 100%);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -69,13 +69,13 @@ nav ul {
 }
 
 #hero h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 800;
 	line-height: 1;
 }
 
 #hero p {
 	max-width: max(50%, 24rem);
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 400;
 }
