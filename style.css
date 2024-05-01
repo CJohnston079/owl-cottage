@@ -52,6 +52,7 @@ nav ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	gap: 1rem;
 
 	padding: var(--hero-padding-y) var(--site-padding-x);
 	height: calc(100vh - calc(var(--hero-padding-y) * 2));
