@@ -79,3 +79,18 @@ nav ul {
 	font-size: 1.2rem;
 	font-weight: 400;
 }
+
+.hero-action {
+	border: none;
+	border-radius: 8px;
+	padding: 1rem 1.5rem;
+
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: var(--foreground);
+
+	background-color: var(--background);
+	/* background: linear-gradient(60deg, hsl(180, 50%, 35%), hsl(160, 50%, 35%)); */
+}
