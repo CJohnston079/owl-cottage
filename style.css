@@ -39,6 +39,7 @@ h1 {
 
 p {
 	font-family: var(--body-font);
+	line-height: 1.5;
 }
 
 header {
@@ -125,6 +126,14 @@ nav ul {
 	background-color: var(--background);
 	mix-blend-mode: screen;
 	/* background: linear-gradient(60deg, hsl(180, 50%, 35%), hsl(160, 50%, 35%)); */
+}
+
+.p-container {
+	margin-bottom: 2rem;
+}
+
+.p-container * {
+	margin-bottom: 1rem;
 }
 
 .img-grid {
