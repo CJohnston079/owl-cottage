@@ -116,3 +116,14 @@ nav ul {
 	mix-blend-mode: screen;
 	/* background: linear-gradient(60deg, hsl(180, 50%, 35%), hsl(160, 50%, 35%)); */
 }
+
+.img-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.icon-with-caption {
+	width: 4rem;
+
+	text-align: center;
+}
