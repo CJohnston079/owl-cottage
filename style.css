@@ -25,6 +25,12 @@ body {
 	color: var(--foreground);
 }
 
+section {
+	--section-padding-y: 4rem;
+
+	padding: var(--section-padding-y) var(--site-padding-x);
+}
+
 p {
 	font-family: var(--body-font);
 }
@@ -67,7 +73,7 @@ nav ul {
 }
 
 #hero {
-	--hero-padding-y: 8rem;
+	/* --hero-padding-y: 8rem; */
 
 	display: flex;
 	flex-direction: column;
@@ -75,8 +81,8 @@ nav ul {
 	align-items: flex-start;
 	gap: 1rem;
 
-	padding: var(--hero-padding-y) var(--site-padding-x);
-	height: calc(100vh - calc(var(--hero-padding-y) * 2));
+	padding: 0 var(--site-padding-x);
+	height: 100vh;
 
 	color: white;
 
