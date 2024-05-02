@@ -80,14 +80,6 @@ nav ul {
 }
 
 #hero {
-	/* --hero-padding-y: 8rem; */
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 1rem;
-
 	padding: 0 var(--site-padding-x);
 	height: 100vh;
 
@@ -102,12 +94,22 @@ nav ul {
 	background-blend-mode: overlay;
 }
 
-#hero h1 {
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1rem;
+
+	max-width: max(50%, 24rem);
+	height: 100%;
+}
+
+.hero-container h1 {
 	margin-bottom: 0;
 }
 
-#hero p {
-	max-width: max(50%, 24rem);
+.hero-container p {
 	font-size: 1.2rem;
 	font-weight: 400;
 }
