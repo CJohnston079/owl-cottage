@@ -7,3 +7,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		});
 	});
 });
+
+window.addEventListener("scroll", function () {
+	const hiddenElement = document.querySelector("#floating-nav");
+	const distanceFromTop = hiddenElement.getBoundingClientRect().top;
+
+	if (distanceFromTop <= 0) {
+		hiddenElement.classList.remove("hidden");
+	} else {
+		hiddenElement.classList.add("hidden");
+	}
+});
