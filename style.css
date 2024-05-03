@@ -169,3 +169,14 @@ nav ul {
 	font-weight: 500;
 	text-transform: uppercase;
 }
+
+.img-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.img-with-caption {
+	flex: 1 0 30%;
+	min-width: 20rem;
+}
