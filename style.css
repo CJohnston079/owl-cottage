@@ -105,6 +105,7 @@ nav ul {
 	color: black;
 }
 
+.floating-nav .nav-link.active,
 .floating-nav .nav-link:hover {
 	border-color: black;
 }
