@@ -131,7 +131,6 @@ nav ul {
 
 	background-color: var(--background);
 	mix-blend-mode: screen;
-	/* background: linear-gradient(60deg, hsl(180, 50%, 35%), hsl(160, 50%, 35%)); */
 }
 
 .p-container {
@@ -145,7 +144,6 @@ nav ul {
 .img-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	/* justify-items: center; */
 	gap: 1rem;
 }
 
