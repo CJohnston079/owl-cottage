@@ -92,6 +92,7 @@ nav ul {
 	background: none;
 	background-color: white;
 
+	animation: fly-down 400ms;
 	transition: opacity 400ms;
 }
 
@@ -240,4 +241,10 @@ nav ul {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	color: hsl(0, 0%, 20%);
+}
+
+@keyframes fly-down {
+	from {
+		transform: translateY(-100%);
+	}
 }
