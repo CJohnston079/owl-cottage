@@ -195,14 +195,10 @@ nav ul {
 	display: flex;
 	flex-direction: column;
 
-	/* border: solid 2px hsl(0, 0%, 95%); */
 	border-radius: 4px;
 
 	overflow: hidden;
 }
-
-/* .img-with-caption img {
-} */
 
 .img-with-caption figcaption {
 	flex-grow: 1;
