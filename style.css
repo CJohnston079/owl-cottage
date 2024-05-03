@@ -155,7 +155,7 @@ nav ul {
 	border-radius: 4px;
 	padding: 1rem;
 
-	background-color: hsl(0, 0%, 90%);
+	background-color: hsl(0, 0%, 95%);
 
 	opacity: 0.7;
 }
@@ -179,4 +179,23 @@ nav ul {
 .img-with-caption {
 	flex: 1 0 30%;
 	min-width: 20rem;
+
+	display: flex;
+	flex-direction: column;
+
+	/* border: solid 2px hsl(0, 0%, 95%); */
+	border-radius: 4px;
+
+	overflow: hidden;
+}
+
+/* .img-with-caption img {
+} */
+
+.img-with-caption figcaption {
+	flex-grow: 1;
+
+	padding: 1rem;
+
+	background-color: hsl(0, 0%, 95%);
 }
