@@ -86,7 +86,7 @@ nav ul {
 }
 
 #floating-nav {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	z-index: 1;
 
@@ -94,6 +94,10 @@ nav ul {
 	background-color: white;
 
 	transition: opacity 400ms;
+}
+
+#floating-nav.hidden {
+	opacity: 0;
 }
 
 #floating-nav .nav-link {
@@ -237,12 +241,4 @@ nav ul {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	color: hsl(0, 0%, 20%);
-}
-
-.hidden {
-	opacity: 0;
-}
-
-.visible {
-	opacity: 1;
 }
