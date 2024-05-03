@@ -69,3 +69,10 @@ ul {
 	list-style: none;
 	padding-inline-start: 0;
 }
+/*
+  10. Reset nav link styling
+*/
+nav a {
+	color: inherit;
+	text-decoration: none;
+}
