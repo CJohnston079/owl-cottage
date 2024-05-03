@@ -50,8 +50,7 @@ p {
 	line-height: 1.5;
 }
 
-header,
-#floating-nav {
+header {
 	--nav-padding-y: 1rem;
 
 	position: absolute;
@@ -85,26 +84,26 @@ nav ul {
 	cursor: pointer;
 }
 
-#floating-nav {
+.floating-nav {
 	position: fixed;
-	top: 0;
 	z-index: 1;
 
 	color: black;
+	background: none;
 	background-color: white;
 
 	transition: opacity 400ms;
 }
 
-#floating-nav.hidden {
+.floating-nav.hidden {
 	opacity: 0;
 }
 
-#floating-nav .nav-link {
+.floating-nav .nav-link {
 	color: black;
 }
 
-#floating-nav .nav-link:hover {
+.floating-nav .nav-link:hover {
 	border-color: black;
 }
 

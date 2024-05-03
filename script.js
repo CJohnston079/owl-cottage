@@ -9,13 +9,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 window.addEventListener("scroll", function () {
-	const hiddenElement = document.querySelector("#floating-nav");
-	const boundingElement = this.document.querySelector("#about");
+	const navElement = document.querySelector("#nav");
+	const boundingElement = document.querySelector("#about");
 	const distanceFromTop = boundingElement.getBoundingClientRect().top;
 
 	if (distanceFromTop <= 0) {
-		hiddenElement.classList.remove("hidden");
+		navElement.classList.add("floating-nav");
 	} else {
-		hiddenElement.classList.add("hidden");
+		navElement.classList.remove("floating-nav");
 	}
 });
