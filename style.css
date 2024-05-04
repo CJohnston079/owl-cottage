@@ -216,7 +216,7 @@ nav ul {
 	text-transform: uppercase;
 }
 
-#location {
+.section-contrast-background {
 	background-color: hsl(0, 0%, 95%);
 }
 
