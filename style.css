@@ -165,7 +165,7 @@ nav ul {
 }
 
 .hero-action {
-	border: none;
+	border: solid 2px transparent;
 	border-radius: 8px;
 	padding: 1rem 1.5rem;
 
@@ -177,6 +177,15 @@ nav ul {
 
 	background-color: var(--background);
 	mix-blend-mode: screen;
+
+	transition: border 400ms, filter 400ms;
+
+	cursor: pointer;
+}
+
+.hero-action:hover {
+	border: solid 2px black;
+	filter: invert(1);
 }
 
 .p-container {
