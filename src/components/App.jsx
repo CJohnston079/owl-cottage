@@ -1,6 +1,5 @@
 import "../../script.js";
-import "../styles/style.css";
-// import "../styles/App.css";
+import "../styles/App.css";
 
 function App() {
 	return (
@@ -63,27 +62,27 @@ function App() {
 				<h2>Amenities</h2>
 				<div className="img-grid">
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/bed.svg" alt="" />
+						<img src="../assets/icons/bed.svg" alt="" />
 						<figcaption>2 bedrooms</figcaption>
 					</figure>
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/pets.svg" alt="" />
+						<img src="../assets/icons/pets.svg" alt="" />
 						<figcaption>Pet friendly</figcaption>
 					</figure>
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/car.svg" alt="" />
+						<img src="../assets/icons/car.svg" alt="" />
 						<figcaption>Driveway</figcaption>
 					</figure>
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/view.svg" alt="" />
+						<img src="../assets/icons/view.svg" alt="" />
 						<figcaption>Mountain view</figcaption>
 					</figure>
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/wifi.svg" alt="" />
+						<img src="../assets/icons/wifi.svg" alt="" />
 						<figcaption>Free wifi</figcaption>
 					</figure>
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/tv.svg" alt="" />
+						<img src="../assets/icons/tv.svg" alt="" />
 						<figcaption>55-inch TV with Netflix</figcaption>
 					</figure>
 				</div>
@@ -114,7 +113,7 @@ function App() {
 				<h2>Points of interest</h2>
 				<div className="img-container">
 					<figure className="img-with-caption">
-						<img src="./src/assets/images/loch-ness.jpeg" alt="Urquhart Castle, Loch Ness" />
+						<img src="../assets/images/loch-ness.jpeg" alt="Urquhart Castle, Loch Ness" />
 						<figcaption>
 							<h3>Loch Ness</h3>
 							<p>
@@ -124,10 +123,7 @@ function App() {
 						</figcaption>
 					</figure>
 					<figure className="img-with-caption">
-						<img
-							src="./src/assets/images/fort-augustus.webp"
-							alt="Fort Augustus, Inverness-shire"
-						/>
+						<img src="../assets/images/fort-augustus.webp" alt="Fort Augustus, Inverness-shire" />
 						<figcaption>
 							<h3>Fort Augustus</h3>
 							<p>
@@ -137,7 +133,7 @@ function App() {
 						</figcaption>
 					</figure>
 					<figure className="img-with-caption">
-						<img src="./src/assets/images/loch-oich.webp" alt="Loch Oich shore" />
+						<img src="../assets/images/loch-oich.webp" alt="Loch Oich shore" />
 						<figcaption>
 							<h3>Loch Oich</h3>
 							<p>
