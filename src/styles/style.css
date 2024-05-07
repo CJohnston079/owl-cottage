@@ -1,54 +1,7 @@
-:root {
-	--background: white;
-	--foreground: black;
-
-	--site-padding-x: max(12vw, 4rem);
-
-	--heading-font: "Montserrat", sans-serif;
-	--body-font: "Lora", serif;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: black;
-		--foreground: white;
-	}
-}
-
-body {
-	background-color: var(--background);
-
-	font-family: var(--heading-font);
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	color: var(--foreground);
-}
-
 section {
 	--section-padding-y: 4rem;
 
 	padding: var(--section-padding-y) var(--site-padding-x);
-}
-
-h1 {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	font-size: 3rem;
-	font-weight: 800;
-	letter-spacing: -0.1rem;
-}
-
-h2 {
-	margin-bottom: 1rem;
-
-	font-weight: 600;
-	color: hsl(0, 0%, 20%);
-}
-
-p {
-	font-family: var(--body-font);
-	line-height: 1.5;
 }
 
 header {
@@ -99,9 +52,9 @@ nav ul {
 	position: fixed;
 	z-index: 1;
 
-	color: black;
+	color: var(--foreground);
 	background: none;
-	background-color: white;
+	background-color: var(--background);
 
 	animation: fly-down 400ms;
 	transition: opacity 400ms;
@@ -112,7 +65,7 @@ nav ul {
 }
 
 .floating-nav .nav-link {
-	color: black;
+	color: var(--foreground);
 }
 
 .floating-nav .nav-link.active,
@@ -173,9 +126,9 @@ nav ul {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
-	color: var(--foreground);
+	color: black;
 
-	background-color: var(--background);
+	background-color: white;
 	mix-blend-mode: screen;
 
 	transition: border 400ms, filter 400ms;

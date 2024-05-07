@@ -1,5 +1,6 @@
-// import "./styles/App.css";
 import "../script.js";
+import "./styles/style.css";
+// import "./styles/App.css";
 
 function App() {
 	return (
