@@ -1,10 +1,10 @@
-import "../script.js";
-import "./styles/style.css";
-// import "./styles/App.css";
+import "../../script.js";
+import "../styles/style.css";
+// import "../styles/App.css";
 
 function App() {
 	return (
-		<div>
+		<>
 			<section id="hero">
 				<header id="nav">
 					<nav>
@@ -161,7 +161,7 @@ function App() {
 			<footer>
 				<p>Copyright © 2024 Owl Cottage. All rights reserved.</p>
 			</footer>
-		</div>
+		</>
 	);
 }
 
