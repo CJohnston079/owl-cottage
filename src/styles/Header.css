@@ -50,12 +50,12 @@ nav ul {
 
 .floating-nav .nav-link.active,
 .floating-nav .nav-link:hover {
-	border-color: black;
+	border-color: var(--foreground);
 }
 
 .nav-link.active,
 .nav-link:hover {
-	border-bottom: 2px white solid;
+	border-bottom: 2px var(--foreground) solid;
 	transition: border-bottom 200ms;
 }
 
