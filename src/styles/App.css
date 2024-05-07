@@ -8,20 +8,6 @@ section {
 	padding: var(--section-padding-y) var(--site-padding-x);
 }
 
-header {
-	--nav-padding-y: 1rem;
-
-	position: absolute;
-	inset: 0 auto auto 0;
-	padding: var(--nav-padding-y) var(--site-padding-x);
-	width: calc(100vw - calc(var(--site-padding-x) * 2));
-}
-
-header {
-	background-color: hsl(0, 0%, 100%, 0);
-	background: linear-gradient(hsl(0, 0%, 0%, 0.4), hsl(0, 0%, 0%, 0));
-}
-
 footer {
 	--footer-padding-y: 2rem;
 
@@ -30,57 +16,6 @@ footer {
 	color: hsl(0, 0%, 80%);
 
 	background-color: hsl(0, 0%, 10%);
-}
-
-nav ul {
-	display: flex;
-	gap: 2rem;
-}
-
-.nav-link {
-	border-bottom: 2px transparent solid;
-	padding: 0.5rem 0;
-
-	font-size: 0.8rem;
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 0.2rem;
-	color: white;
-
-	transition: border-bottom 800ms;
-
-	cursor: pointer;
-}
-
-.floating-nav {
-	position: fixed;
-	z-index: 1;
-
-	color: var(--foreground);
-	background: none;
-	background-color: var(--background);
-
-	animation: fly-down 400ms;
-	transition: opacity 400ms;
-}
-
-.floating-nav.hidden {
-	opacity: 0;
-}
-
-.floating-nav .nav-link {
-	color: var(--foreground);
-}
-
-.floating-nav .nav-link.active,
-.floating-nav .nav-link:hover {
-	border-color: black;
-}
-
-.nav-link.active,
-.nav-link:hover {
-	border-bottom: 2px white solid;
-	transition: border-bottom 200ms;
 }
 
 #hero {
@@ -219,10 +154,4 @@ nav ul {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	color: hsl(0, 0%, 20%);
-}
-
-@keyframes fly-down {
-	from {
-		transform: translateY(-100%);
-	}
 }
