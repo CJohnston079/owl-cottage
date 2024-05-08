@@ -1,0 +1,29 @@
+.nav-link {
+	border-bottom: 2px transparent solid;
+	padding: 0.5rem 0;
+
+	font-size: 0.8rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: white;
+
+	transition: border-bottom 1200ms;
+
+	cursor: pointer;
+}
+
+.nav-link.active,
+.nav-link:hover {
+	border-bottom: 2px white solid;
+	transition: border-bottom 400ms;
+}
+
+.floating-nav .nav-link {
+	color: var(--foreground);
+}
+
+.floating-nav .nav-link.active,
+.floating-nav .nav-link:hover {
+	border-color: var(--foreground);
+}
