@@ -4,9 +4,19 @@ import "../styles/NavLink.css";
 export default function NavLink({ href, isActive = false }) {
 	const linkContent = href.charAt(1).toUpperCase() + href.slice(2);
 
+	const scrollToTarget = e => {
+		e.preventDefault();
+
+		const targetElement = document.querySelector(href);
+
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<li>
-			<a className={`nav-link ${isActive && "active"}`} href={href}>
+			<a onClick={scrollToTarget} className={`nav-link ${isActive && "active"}`} href={href}>
 				{linkContent}
 			</a>
 		</li>
