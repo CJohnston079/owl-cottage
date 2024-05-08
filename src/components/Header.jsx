@@ -6,7 +6,7 @@ export default function Header() {
 	const [isFloating, setIsFloating] = useState(false);
 
 	const toggleFloatingNav = () => {
-		const boundingElement = document.querySelector("#about");
+		const boundingElement = document.querySelector("#home").nextSibling;
 		const distanceFromBoundingElement = boundingElement.getBoundingClientRect().top;
 
 		setIsFloating(distanceFromBoundingElement <= 0);
