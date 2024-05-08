@@ -6,7 +6,7 @@ import "../styles/App.css";
 function App() {
 	return (
 		<>
-			<section id="hero">
+			<section id="home">
 				<Header />
 				<div className="hero-container">
 					<h1>Owl Cottage</h1>

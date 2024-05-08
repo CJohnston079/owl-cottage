@@ -6,7 +6,7 @@ export default function Header() {
 		<header id="nav">
 			<nav>
 				<ul>
-					<NavLink href="#hero" isActive={true} />
+					<NavLink href="#home" isActive={true} />
 					<NavLink href="#about" />
 					<NavLink href="#location" />
 					<NavLink href="#gallery" />

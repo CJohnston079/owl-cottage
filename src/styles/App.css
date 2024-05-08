@@ -18,7 +18,7 @@ footer {
 	background-color: hsl(0, 0%, 10%);
 }
 
-#hero {
+#home {
 	position: relative;
 	padding: 0 var(--site-padding-x);
 	height: 100vh;
