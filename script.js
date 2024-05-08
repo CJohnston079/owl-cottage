@@ -1,15 +1,3 @@
-window.addEventListener("scroll", function () {
-	const navElement = document.querySelector("#nav");
-	const boundingElement = document.querySelector("#about");
-	const distanceFromTop = boundingElement.getBoundingClientRect().top;
-
-	if (distanceFromTop <= 0) {
-		navElement.classList.add("floating-nav");
-	} else {
-		navElement.classList.remove("floating-nav");
-	}
-});
-
 const navLinks = document.querySelectorAll(".nav-link");
 
 const toggleActiveLink = function () {
