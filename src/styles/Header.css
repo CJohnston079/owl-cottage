@@ -27,7 +27,7 @@ nav ul {
 	letter-spacing: 0.2rem;
 	color: white;
 
-	transition: border-bottom 800ms;
+	transition: border-bottom 1200ms;
 
 	cursor: pointer;
 }
@@ -48,15 +48,15 @@ nav ul {
 	color: var(--foreground);
 }
 
+.nav-link.active,
+.nav-link:hover {
+	border-bottom: 2px white solid;
+	transition: border-bottom 400ms;
+}
+
 .floating-nav .nav-link.active,
 .floating-nav .nav-link:hover {
 	border-color: var(--foreground);
-}
-
-.nav-link.active,
-.nav-link:hover {
-	border-bottom: 2px var(--foreground) solid;
-	transition: border-bottom 200ms;
 }
 
 @keyframes fly-down {
