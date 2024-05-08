@@ -1,3 +1,4 @@
+import NavLink from "./NavLink";
 import "../styles/Header.css";
 
 export default function Header() {
@@ -5,24 +6,12 @@ export default function Header() {
 		<header id="nav">
 			<nav>
 				<ul>
-					<a className="nav-link active" href="#hero">
-						<li>Home</li>
-					</a>
-					<a className="nav-link" href="#about">
-						<li>About</li>
-					</a>
-					<a className="nav-link" href="#location">
-						<li>Location</li>
-					</a>
-					<a className="nav-link" href="#gallery">
-						<li>Gallery</li>
-					</a>
-					<a className="nav-link" href="#reviews">
-						<li>Reviews</li>
-					</a>
-					<a className="nav-link" href="#booking">
-						<li>Booking</li>
-					</a>
+					<NavLink href="#hero" isActive={true} />
+					<NavLink href="#about" />
+					<NavLink href="#location" />
+					<NavLink href="#gallery" />
+					<NavLink href="#reviews" />
+					<NavLink href="#booking" />
 				</ul>
 			</nav>
 		</header>
