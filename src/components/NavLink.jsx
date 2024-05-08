@@ -11,7 +11,16 @@ export default function NavLink({ href, isActive = false }) {
 	);
 }
 
+const startsWithHash = function (props, propName, componentName) {
+	const href = props[propName];
+	const errorMessage = `Invalid prop type \`${propName}\` of type \`${typeof propName}\` supplied to \`${componentName}\`, expected \`string\` beginning with \`#\` character.`;
+
+	if (typeof href !== "string" || !href.startsWith("#")) {
+		return new Error(errorMessage);
+	}
+};
+
 NavLink.propTypes = {
-	href: PropTypes.string,
+	href: startsWithHash,
 	isActive: PropTypes.bool,
 };
