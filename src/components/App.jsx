@@ -1,6 +1,4 @@
 import Header from "./Header.jsx";
-
-import "../../script.js";
 import "../styles/App.css";
 
 function App() {
