@@ -1,6 +1,7 @@
 import NavBar from "./NavBar.jsx";
 import Hero from "./Hero.jsx";
 import Section from "./Section.jsx";
+import copy from "../data/copy.json";
 import "../styles/App.css";
 
 function App() {
@@ -56,25 +57,11 @@ function App() {
 			</Section>
 			<Section sectionId="location">
 				<div className="p-container">
-					<p>A fantastic central point to explore the Highlands and beyond.</p>
-					<p>
-						Loch Oich is just five minutes away. Not as well known as Loch Ness but a real hidden
-						treasure. The Great Glen Way runs along the loch shore and its flat, level path here
-						makes it highly accessible for walking and cycling. Very dog friendly with no nearby
-						roads or livestock. Park at Bridge of Oich to access the loch.
-					</p>
-					<p>
-						The Caledonian Canal from Bridge of Oich to Fort Augustus is another flat, accessible
-						walk, suitable for walkers, cyclists and dogs. Follow the quiet footpath through
-						beautiful forestry to reach the famous Fort Augustus Locks and the start of Loch Ness.
-						You can hire cycles here, try a boat trip on the loch, or for the more adventurous,
-						several companies offer kayaking, canoeing and white water adventures.
-					</p>
-					<p>
-						Many more wonderful walks are within easy reach - at all levels from short, flat paths
-						to challenging Munros. And the ultimate challenge of Ben Nevis is just 40 minutes away.
-					</p>
-					<p>The Isle of Skye is an hour&apos;s drive west, and Inverness is an hour north.</p>
+					<p>{copy.location[0]}</p>
+					<p>{copy.location[1]}</p>
+					<p>{copy.location[2]}</p>
+					<p>{copy.location[3]}</p>
+					<p>{copy.location[4]}</p>
 				</div>
 				<h2>Points of interest</h2>
 				<div className="img-container">
