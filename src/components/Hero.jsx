@@ -1,6 +1,8 @@
+import "../styles/Hero.css";
+
 export default function Hero() {
 	return (
-		<section id="home">
+		<section id="home" className="hero">
 			<div className="hero-container">
 				<h1 className="hero-heading">Owl Cottage</h1>
 				<p className="hero-text">
