@@ -1,11 +1,11 @@
-import Header from "./Header.jsx";
+import NavBar from "./NavBar.jsx";
 import Section from "./Section.jsx";
 import "../styles/App.css";
 
 function App() {
 	return (
 		<>
-			<Header />
+			<NavBar />
 			<section id="home">
 				<div className="hero-container">
 					<h1>Owl Cottage</h1>

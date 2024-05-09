@@ -1,8 +1,8 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
-import "../styles/Header.css";
+import "../styles/NavBar.css";
 
-export default function Header() {
+export default function NavBar() {
 	const [isFloating, setIsFloating] = useState(false);
 	const [activeSection, setActiveSection] = useState("home");
 
