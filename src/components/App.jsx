@@ -1,4 +1,5 @@
 import Header from "./Header.jsx";
+import Section from "./Section.jsx";
 import "../styles/App.css";
 
 function App() {
@@ -17,8 +18,7 @@ function App() {
 					</a>
 				</div>
 			</section>
-			<section id="about">
-				<h1>About</h1>
+			<Section sectionId="about">
 				<div className="p-container">
 					<p>
 						A traditional stone cottage built in 1868, Owl Cottage features a large, sociable
@@ -36,7 +36,7 @@ function App() {
 						the hill - including deer, best spotted at dusk or dawn.
 					</p>
 				</div>
-				<h2>Amenities</h2>
+				<h3>Amenities</h3>
 				<div className="img-grid">
 					<figure className="icon-with-caption">
 						<img src="../assets/icons/bed.svg" alt="" />
@@ -63,9 +63,8 @@ function App() {
 						<figcaption>55-inch TV with Netflix</figcaption>
 					</figure>
 				</div>
-			</section>
-			<section id="location">
-				<h1>Location</h1>
+			</Section>
+			<Section sectionId="location">
 				<div className="p-container">
 					<p>A fantastic central point to explore the Highlands and beyond.</p>
 					<p>
@@ -121,16 +120,10 @@ function App() {
 						</figcaption>
 					</figure>
 				</div>
-			</section>
-			<section id="gallery">
-				<h1>Gallery</h1>
-			</section>
-			<section id="reviews">
-				<h1>Reviews</h1>
-			</section>
-			<section id="booking">
-				<h1>Booking</h1>
-			</section>
+			</Section>
+			<Section sectionId="gallery"></Section>
+			<Section sectionId="reviews"></Section>
+			<Section sectionId="booking"></Section>
 			<footer>
 				<p>Copyright © 2024 Owl Cottage. All rights reserved.</p>
 			</footer>

@@ -5,7 +5,7 @@ export default function Section({ sectionId, children }) {
 
 	return (
 		<section id={sectionId}>
-			<h1>{sectionHeading}</h1>
+			<h2>{sectionHeading}</h2>
 			{children}
 		</section>
 	);
