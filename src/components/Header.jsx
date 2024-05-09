@@ -30,17 +30,17 @@ export default function Header() {
 	window.addEventListener("scroll", toggleFloatingNav);
 	window.addEventListener("scroll", toggleActiveSection);
 
+	const sections = ["home", "about", "location", "gallery", "reviews", "booking"];
+	const navLinks = sections.map(section => {
+		const href = `#${section}`;
+
+		return <NavLink key={section} href={href} isActive={activeSection === section} />;
+	});
+
 	return (
 		<header id="nav" className={isFloating ? "floating-nav" : ""}>
 			<nav>
-				<ul>
-					<NavLink href="#home" isActive={activeSection === "home"} />
-					<NavLink href="#about" isActive={activeSection === "about"} />
-					<NavLink href="#location" isActive={activeSection === "location"} />
-					<NavLink href="#gallery" isActive={activeSection === "gallery"} />
-					<NavLink href="#reviews" isActive={activeSection === "reviews"} />
-					<NavLink href="#booking" isActive={activeSection === "booking"} />
-				</ul>
+				<ul>{navLinks}</ul>
 			</nav>
 		</header>
 	);
