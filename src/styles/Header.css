@@ -3,6 +3,8 @@ header {
 
 	position: absolute;
 	inset: 0 auto auto 0;
+	z-index: 1;
+
 	padding: var(--nav-padding-y) var(--site-padding-x);
 	width: calc(100vw - calc(var(--site-padding-x) * 2));
 
@@ -12,7 +14,6 @@ header {
 
 .floating-nav {
 	position: fixed;
-	z-index: 1;
 
 	color: var(--foreground);
 	background: none;
