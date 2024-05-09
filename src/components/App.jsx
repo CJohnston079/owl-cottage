@@ -1,6 +1,7 @@
 import NavBar from "./NavBar.jsx";
 import Hero from "./Hero.jsx";
 import Section from "./Section.jsx";
+import Paragraphs from "./Paragraphs.jsx";
 import copy from "../data/copy.json";
 import "../styles/App.css";
 
@@ -10,23 +11,7 @@ function App() {
 			<NavBar />
 			<Hero />
 			<Section sectionId="about">
-				<div className="p-container">
-					<p>
-						A traditional stone cottage built in 1868, Owl Cottage features a large, sociable
-						kitchen/dining/living area with wood burner, master bedroom with king size bed, second
-						bedroom with bunk beds, shower room, enclosed back garden, off-street parking and
-						stunning views over the forest and mountains opposite.
-					</p>
-					<p>
-						The well-equipped kitchen features a breakfast bar, dishwasher, electric range cooker,
-						fridge, freezer, Nespresso machine and washer/dryer. Plenty of storage space and a wide
-						range of kitchen equipment makes this great area if you choose to cook on your holiday.
-					</p>
-					<p>
-						The enclosed garden is dog friendly. Enjoy the peace and quiet and spot the wildlife on
-						the hill - including deer, best spotted at dusk or dawn.
-					</p>
-				</div>
+				<Paragraphs paragraphs={copy.about} />
 				<h3>Amenities</h3>
 				<div className="img-grid">
 					<figure className="icon-with-caption">
@@ -56,13 +41,7 @@ function App() {
 				</div>
 			</Section>
 			<Section sectionId="location">
-				<div className="p-container">
-					<p>{copy.location[0]}</p>
-					<p>{copy.location[1]}</p>
-					<p>{copy.location[2]}</p>
-					<p>{copy.location[3]}</p>
-					<p>{copy.location[4]}</p>
-				</div>
+				<Paragraphs paragraphs={copy.location} />
 				<h2>Points of interest</h2>
 				<div className="img-container">
 					<figure className="img-with-caption">
