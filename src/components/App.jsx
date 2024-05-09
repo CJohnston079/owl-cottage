@@ -1,4 +1,5 @@
 import NavBar from "./NavBar.jsx";
+import Hero from "./Hero.jsx";
 import Section from "./Section.jsx";
 import "../styles/App.css";
 
@@ -6,18 +7,7 @@ function App() {
 	return (
 		<>
 			<NavBar />
-			<section id="home">
-				<div className="hero-container">
-					<h1>Owl Cottage</h1>
-					<p>
-						Dog-friendly traditional stone cottage in the heart of the Scottish Highlands, close to
-						Loch Ness, the Great Glen Way and Ben Nevis.
-					</p>
-					<a href="#booking">
-						<button className="hero-action">Book your stay</button>
-					</a>
-				</div>
-			</section>
+			<Hero />
 			<Section sectionId="about">
 				<div className="p-container">
 					<p>
