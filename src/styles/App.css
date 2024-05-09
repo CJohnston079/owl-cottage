@@ -19,14 +19,6 @@ footer {
 	background-color: hsl(0, 0%, 10%);
 }
 
-.p-container {
-	margin-bottom: 2rem;
-}
-
-.p-container * {
-	margin-bottom: 1rem;
-}
-
 .img-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
