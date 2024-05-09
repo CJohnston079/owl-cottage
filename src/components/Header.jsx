@@ -4,7 +4,7 @@ import "../styles/Header.css";
 
 export default function Header() {
 	const [isFloating, setIsFloating] = useState(false);
-	const [activeSection, setActiveSection] = useState("#home");
+	const [activeSection, setActiveSection] = useState("home");
 
 	const toggleFloatingNav = () => {
 		const boundingElement = document.querySelector("#home").nextSibling;
