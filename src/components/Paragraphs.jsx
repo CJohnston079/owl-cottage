@@ -10,5 +10,10 @@ export default function Paragraphs({ paragraphs }) {
 }
 
 Paragraphs.propTypes = {
-	paragraphs: PropTypes.arrayOf(PropTypes.string),
+	paragraphs: PropTypes.arrayOf(
+		PropTypes.shape({
+			id: PropTypes.string.isRequired,
+			content: PropTypes.string.isRequired,
+		})
+	),
 };
