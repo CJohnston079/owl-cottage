@@ -4,11 +4,17 @@ import Section from "./Section";
 import reviews from "../data/reviews.json";
 
 export default function Testimonials() {
-	const randomReviewIds = Array.from({ length: 3 }, () =>
-		Math.floor(Math.random() * reviews.length)
-	);
+	const randomReviewIds = function () {
+		const randomNumsSet = new Set();
 
-	const testimonials = randomReviewIds.map(reviewId => {
+		while (randomNumsSet.size < 3) {
+			randomNumsSet.add(Math.floor(Math.random() * reviews.length));
+		}
+
+		return Array.from(randomNumsSet);
+	};
+
+	const testimonials = randomReviewIds().map(reviewId => {
 		const review = reviews[reviewId];
 
 		return (
