@@ -1,0 +1,10 @@
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.flex-container > * {
+	flex: 1 0 30%;
+	min-width: 20rem;
+}
