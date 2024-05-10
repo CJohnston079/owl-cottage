@@ -81,7 +81,6 @@ function App() {
 					</figure>
 				</div>
 			</Section>
-			<Section sectionId="gallery"></Section>
 			<Testimonials />
 			<Section sectionId="booking"></Section>
 			<footer>
