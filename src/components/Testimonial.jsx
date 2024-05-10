@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../styles/Testimonial.css";
 
 export default function Testimonial({ review }) {
 	const content = review.content;
