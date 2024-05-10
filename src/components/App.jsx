@@ -2,6 +2,7 @@ import NavBar from "./NavBar.jsx";
 import Hero from "./Hero.jsx";
 import Section from "./Section.jsx";
 import Paragraphs from "./Paragraphs.jsx";
+import Review from "./Review.jsx";
 import copy from "../data/copy.json";
 import "../styles/App.css";
 
@@ -81,18 +82,13 @@ function App() {
 				</div>
 			</Section>
 			<Section sectionId="reviews">
-				<div className="review">
-					<img
-						className="review-quotation"
-						src="./src/assets/quotes.svg"
-						alt="Opening quotation mark"
-					/>
-					<p className="review-body">
-						My second stay at Owl Cottage. Such a lovely property, good base for lots of exploring.
-						Will definitely be back.
-					</p>
-					<span className="review-author">Kelly</span>
-				</div>
+				<Review
+					review={{
+						content:
+							"My second stay at Owl Cottage. Such a lovely property, good base for lots of exploring. Will definitely be back.",
+						author: "Kelly",
+					}}
+				/>
 			</Section>
 			<Section sectionId="gallery"></Section>
 			<Section sectionId="booking"></Section>
