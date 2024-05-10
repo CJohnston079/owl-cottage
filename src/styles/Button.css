@@ -1,0 +1,22 @@
+.button {
+	border: solid 2px transparent;
+	border-radius: 8px;
+	padding: 1rem 1.5rem;
+
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: var(--background);
+
+	background-color: var(--foreground);
+
+	transition: 400ms;
+
+	cursor: pointer;
+}
+
+.button:hover {
+	border: solid 2px var(--foreground);
+	color: var(--foreground);
+	background-color: var(--background);
+}
