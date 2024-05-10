@@ -60,9 +60,16 @@ h1,
 h2 {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	font-size: 3rem;
 	font-weight: 800;
-	letter-spacing: -0.1rem;
+}
+
+h1 {
+	font-size: 4rem;
+	letter-spacing: -0.2rem;
+}
+
+h2 {
+	font-size: 3rem;
 }
 
 h3 {
