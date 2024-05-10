@@ -1,23 +1,23 @@
 import PropTypes from "prop-types";
 
-export default function Review({ review }) {
+export default function Testimonial({ review }) {
 	const content = review.content;
 	const author = review.author;
 
 	return (
-		<div className="review">
+		<div className="testimonial">
 			<img
-				className="review-quotation"
+				className="testimonial-quotation"
 				src="./src/assets/quotes.svg"
 				alt="Opening quotation mark"
 			/>
-			<p className="review-body">{content}</p>
-			<span className="review-author">{author}</span>
+			<p className="testimonial-body">{content}</p>
+			<span className="testimonial-author">{author}</span>
 		</div>
 	);
 }
 
-Review.propTypes = {
+Testimonial.propTypes = {
 	review: PropTypes.shape({
 		content: PropTypes.string.isRequired,
 		author: PropTypes.string.isRequired,
