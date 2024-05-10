@@ -80,8 +80,21 @@ function App() {
 					</figure>
 				</div>
 			</Section>
+			<Section sectionId="reviews">
+				<div className="review">
+					<img
+						className="review-quotation"
+						src="./src/assets/quotes.svg"
+						alt="Opening quotation mark"
+					/>
+					<p className="review-body">
+						My second stay at Owl Cottage. Such a lovely property, good base for lots of exploring.
+						Will definitely be back.
+					</p>
+					<span className="review-author">Kelly</span>
+				</div>
+			</Section>
 			<Section sectionId="gallery"></Section>
-			<Section sectionId="reviews"></Section>
 			<Section sectionId="booking"></Section>
 			<footer>
 				<p>Copyright © 2024 Owl Cottage. All rights reserved.</p>

@@ -90,3 +90,8 @@ footer {
 #location {
 	background-color: hsl(0, 0%, 95%);
 }
+
+.review-quotation {
+	max-width: 4rem;
+	filter: saturate(0);
+}

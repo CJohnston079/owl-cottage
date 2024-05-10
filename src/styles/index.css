@@ -72,9 +72,14 @@ h3 {
 	color: hsl(0, 0%, 20%);
 }
 
-p {
+p,
+span {
 	font-family: var(--body-font);
 	line-height: 1.5;
+}
+
+span {
+	font-weight: 700;
 }
 
 img,
