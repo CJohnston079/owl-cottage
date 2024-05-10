@@ -11,7 +11,7 @@ export default function Testimonials() {
 	const randomReviewIds = function () {
 		const randomNumsSet = new Set();
 
-		while (randomNumsSet.size < 3) {
+		while (randomNumsSet.size < 4) {
 			randomNumsSet.add(Math.floor(Math.random() * shortReviews.length));
 		}
 

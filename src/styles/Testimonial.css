@@ -1,4 +1,40 @@
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+
+	border: solid 2px hsl(0, 0%, 90%);
+	border-radius: 4px;
+	padding: 2rem;
+
+	text-align: center;
+}
+
+.testimonial * {
+	font-size: 1.2rem;
+}
+
 .testimonial-quotation {
-	max-width: 4rem;
-	filter: saturate(0);
+	max-width: 3ch;
+	filter: brightness(150%);
+}
+
+.testimonial-body {
+	font-style: italic;
+	color: hsl(0, 0%, 30%);
+}
+
+.testimonial-author::before {
+	content: "–";
+	margin-right: 1ch;
+}
+
+.testimonial-author {
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	color: hsl(0, 0%, 10%);
+
+	transform: translateX(-1ch);
 }
