@@ -86,3 +86,7 @@ footer {
 	letter-spacing: 0.1rem;
 	color: hsl(0, 0%, 20%);
 }
+
+#location {
+	background-color: hsl(0, 0%, 95%);
+}
