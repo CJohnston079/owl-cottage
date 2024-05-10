@@ -1,3 +1,4 @@
+import Button from "./Button";
 import FlexContainer from "./FlexContainer";
 import Testimonial from "./Testimonial";
 import Section from "./Section";
@@ -35,6 +36,7 @@ export default function Testimonials() {
 	return (
 		<Section sectionId="testimonials">
 			<FlexContainer>{testimonials}</FlexContainer>
+			<Button content="Leave a testimonial" href="#home"></Button>
 		</Section>
 	);
 }
