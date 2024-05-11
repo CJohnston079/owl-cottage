@@ -3,6 +3,7 @@ import Hero from "./Hero.jsx";
 import Section from "./Section.jsx";
 import Paragraphs from "./Paragraphs.jsx";
 import Testimonials from "./Testimonials.jsx";
+import FlexContainer from "./FlexContainer.jsx";
 import copy from "../data/copy.json";
 import "../styles/App.css";
 
@@ -44,7 +45,7 @@ function App() {
 			<Section sectionId="location">
 				<Paragraphs paragraphs={copy.location} />
 				<h2>Points of interest</h2>
-				<div className="img-container">
+				<FlexContainer>
 					<figure className="img-with-caption">
 						<img src="./src/assets/images/loch-ness.jpeg" alt="Urquhart Castle, Loch Ness" />
 						<figcaption>
@@ -79,7 +80,7 @@ function App() {
 							</p>
 						</figcaption>
 					</figure>
-				</div>
+				</FlexContainer>
 			</Section>
 			<Testimonials />
 			<Section sectionId="booking"></Section>
