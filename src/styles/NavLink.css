@@ -1,8 +1,7 @@
 .nav-link {
-	border-bottom: 2px transparent solid;
+	border-bottom: 3px transparent solid;
 	padding: 0.5rem 0;
 
-	font-size: 0.8rem;
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -15,7 +14,7 @@
 
 .nav-link.active,
 .nav-link:hover {
-	border-bottom: 2px white solid;
+	border-bottom: 3px white solid;
 	transition: border-bottom 400ms;
 }
 
