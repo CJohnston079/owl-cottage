@@ -13,13 +13,17 @@ export default function Dialog() {
 		setIsOpen(false);
 	};
 
+	const stopPropagation = e => {
+		e.stopPropagation();
+	};
+
 	return (
 		<>
 			<button className="button" onClick={openDialog}>
 				Leave a testimonial
 			</button>
-			<dialog className="dialog" ref={dialogRef} open={isOpen}>
-				<div className="dialog-content">
+			<dialog className="dialog" onClick={closeDialog} ref={dialogRef} open={isOpen}>
+				<div className="dialog-content" onClick={stopPropagation}>
 					<h3>Dialog heading</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
