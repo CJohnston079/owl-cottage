@@ -8,7 +8,7 @@ export default function Location() {
 	return (
 		<Section sectionId="location">
 			<Paragraphs paragraphs={copy.location} />
-			<h2>Points of interest</h2>
+			<h3>Points of interest</h3>
 			<FlexContainer>
 				<figure className="img-with-caption">
 					<img src="./src/assets/images/loch-ness.jpeg" alt="Urquhart Castle, Loch Ness" />
