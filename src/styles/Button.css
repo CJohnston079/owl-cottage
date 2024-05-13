@@ -1,4 +1,4 @@
-.button {
+.btn {
 	border: solid 2px transparent;
 	border-radius: 8px;
 	padding: 1rem 1.5rem;
@@ -15,8 +15,20 @@
 	cursor: pointer;
 }
 
-.button:hover {
+.btn:hover {
 	border: solid 2px var(--foreground);
 	color: var(--foreground);
 	background-color: var(--background);
+}
+
+.btn-hero {
+	color: black;
+
+	background-color: white;
+	mix-blend-mode: screen;
+}
+
+.btn-hero:hover {
+	border: solid 2px black;
+	filter: invert(1);
 }

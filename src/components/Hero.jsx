@@ -1,4 +1,4 @@
-import HeroButton from "./HeroButton";
+import Button from "./Button";
 import "../styles/Hero.css";
 
 export default function Hero() {
@@ -10,7 +10,9 @@ export default function Hero() {
 					Dog-friendly traditional stone cottage in the heart of the Scottish Highlands, close to
 					Loch Ness, the Great Glen Way and Ben Nevis.
 				</p>
-				<HeroButton content="Book your stay" href="#booking" />
+				<Button style={"btn-hero"}>
+					<a href="#booking">Book your stay</a>
+				</Button>
 			</div>
 		</section>
 	);
