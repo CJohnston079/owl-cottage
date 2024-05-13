@@ -37,6 +37,6 @@ export default function Dialog({ heading, children }) {
 }
 
 Dialog.propTypes = {
-	children: PropTypes.nodeList,
+	children: PropTypes.node,
 	heading: PropTypes.string.isRequired,
 };
