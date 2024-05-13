@@ -1,0 +1,21 @@
+.form-field {
+	display: grid;
+	margin-bottom: 2rem;
+}
+
+.field-label {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.field-input {
+	border: solid 1px hsl(0, 0%, 50%);
+	border-radius: 4px;
+	padding: 1rem;
+}
+
+textarea.field-input {
+	min-width: 48ch;
+	min-height: 6lh;
+}
