@@ -1,7 +1,7 @@
+import Dialog from "./Dialog";
 import FlexContainer from "./FlexContainer";
 import Testimonial from "./Testimonial";
 import Section from "./Section";
-import Dialog from "./Dialog";
 import reviews from "../data/reviews.json";
 
 export default function Testimonials() {
@@ -36,7 +36,16 @@ export default function Testimonials() {
 	return (
 		<Section sectionId="testimonials">
 			<FlexContainer>{testimonials}</FlexContainer>
-			<Dialog />
+			<Dialog heading="Leave a testimonial">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+					ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+					sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+					est laborum.
+				</p>
+			</Dialog>
 		</Section>
 	);
 }

@@ -1,7 +1,8 @@
 import { useState, useRef } from "react";
+import PropTypes from "prop-types";
 import "../styles/Dialog.css";
 
-export default function Dialog() {
+export default function Dialog({ heading, children }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const dialogRef = useRef(null);
 
@@ -20,19 +21,12 @@ export default function Dialog() {
 	return (
 		<>
 			<button className="button" onClick={openDialog}>
-				Leave a testimonial
+				{heading}
 			</button>
 			<dialog className="dialog" onClick={closeDialog} ref={dialogRef} open={isOpen}>
 				<div className="dialog-content" onClick={stopPropagation}>
-					<h3>Dialog heading</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-						mollit anim id est laborum.
-					</p>
+					<h3>{heading}</h3>
+					{children}
 					<button className="button" onClick={closeDialog}>
 						Close
 					</button>
@@ -41,3 +35,8 @@ export default function Dialog() {
 		</>
 	);
 }
+
+Dialog.propTypes = {
+	children: PropTypes.nodeList,
+	heading: PropTypes.string.isRequired,
+};
