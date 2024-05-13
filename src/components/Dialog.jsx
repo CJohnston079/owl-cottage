@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import PropTypes from "prop-types";
+import Button from "./Button";
 import "../styles/Dialog.css";
 
 export default function Dialog({ heading, children }) {
@@ -20,16 +21,12 @@ export default function Dialog({ heading, children }) {
 
 	return (
 		<>
-			<button className="button" onClick={openDialog}>
-				{heading}
-			</button>
+			<Button onClick={openDialog}>{heading}</Button>
 			<dialog className="dialog-window" onClick={closeDialog} ref={dialogRef} open={isOpen}>
 				<div className="dialog-content" onClick={stopPropagation}>
 					<h3>{heading}</h3>
 					{children}
-					<button className="button" onClick={closeDialog}>
-						Close
-					</button>
+					<Button onClick={closeDialog}>Close</Button>
 				</div>
 			</dialog>
 		</>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 import "../styles/Form.css";
 
 export default function Form() {
@@ -49,9 +50,7 @@ export default function Form() {
 					></textarea>
 				</li>
 			</ul>
-			<button className="button" type="submit">
-				Submit
-			</button>
+			<Button type="submit">Submit</Button>
 		</form>
 	);
 }
