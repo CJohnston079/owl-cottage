@@ -50,7 +50,9 @@ export default function Form() {
 					></textarea>
 				</li>
 			</ul>
-			<Button type="submit">Submit</Button>
+			<Button type="submit" style="emphasis">
+				Submit
+			</Button>
 		</form>
 	);
 }

@@ -21,7 +21,9 @@ export default function Dialog({ heading, children }) {
 
 	return (
 		<>
-			<Button onClick={openDialog}>{heading}</Button>
+			<Button style="emphasis" onClick={openDialog}>
+				{heading}
+			</Button>
 			<dialog className="dialog-window" onClick={closeDialog} ref={dialogRef} open={isOpen}>
 				<div className="dialog-content" onClick={stopPropagation}>
 					<h3>{heading}</h3>

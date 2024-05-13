@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import "../styles/Button.css";
 
-export default function Button({ type = "button", style = "", onClick, children }) {
+export default function Button({ type = "button", style = "normal", onClick, children }) {
 	return (
-		<button className={`btn ${style}`} type={type} onClick={onClick}>
+		<button className={`btn btn-${style}`} type={type} onClick={onClick}>
 			{children}
 		</button>
 	);

@@ -10,7 +10,7 @@ export default function Hero() {
 					Dog-friendly traditional stone cottage in the heart of the Scottish Highlands, close to
 					Loch Ness, the Great Glen Way and Ben Nevis.
 				</p>
-				<Button style={"btn-hero"}>
+				<Button style={"hero"}>
 					<a href="#booking">Book your stay</a>
 				</Button>
 			</div>
