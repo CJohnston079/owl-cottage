@@ -23,7 +23,7 @@ export default function Dialog({ heading, children }) {
 			<button className="button" onClick={openDialog}>
 				{heading}
 			</button>
-			<dialog className="dialog" onClick={closeDialog} ref={dialogRef} open={isOpen}>
+			<dialog className="dialog-window" onClick={closeDialog} ref={dialogRef} open={isOpen}>
 				<div className="dialog-content" onClick={stopPropagation}>
 					<h3>{heading}</h3>
 					{children}
