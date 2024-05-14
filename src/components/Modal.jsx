@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import ModalForm from "./ModalForm";
@@ -19,6 +19,23 @@ export default function Modal({ heading }) {
 	const stopPropagation = e => {
 		e.stopPropagation();
 	};
+
+	useEffect(() => {
+		const handleKeyDown = e => {
+			if (e.key === "Escape") {
+				closeModal();
+			}
+		};
+
+		if (isOpen) {
+			document.addEventListener("keydown", handleKeyDown);
+		} else {
+			document.removeEventListener("keydown", handleKeyDown);
+		}
+		return () => {
+			document.removeEventListener("keydown", handleKeyDown);
+		};
+	}, [isOpen]);
 
 	return (
 		<>
