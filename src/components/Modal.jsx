@@ -26,9 +26,11 @@ export default function Modal({ heading, children }) {
 			</Button>
 			<dialog className="modal-overlay" onClick={closeModal} ref={dialogRef} open={isOpen}>
 				<div className="modal-content" onClick={stopPropagation}>
-					<h3>{heading}</h3>
+					<div className="modal-header">
+						<h3>{heading}</h3>
+						<Button onClick={closeModal}>Close</Button>
+					</div>
 					{children}
-					<Button onClick={closeModal}>Close</Button>
 				</div>
 			</dialog>
 		</>
