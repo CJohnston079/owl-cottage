@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
 import Section from "./Section";
+import "../styles/Booking.css";
 
 export default function Booking() {
 	const [formData, setFormData] = useState({
