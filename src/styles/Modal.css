@@ -14,6 +14,8 @@
 	border: none;
 
 	background-color: hsl(0, 0%, 0%, 0.2);
+
+	animation: darken-background 1200ms;
 }
 
 .modal-content {
@@ -52,4 +54,10 @@
 
 .close-modal:hover {
 	opacity: 1;
+}
+
+@keyframes darken-background {
+	from {
+		background-color: hsl(0, 0%, 0%, 0);
+	}
 }
