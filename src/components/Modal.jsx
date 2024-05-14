@@ -1,17 +1,17 @@
 import { useState, useRef } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
-import "../styles/Dialog.css";
+import "../styles/Modal.css";
 
-export default function Dialog({ heading, children }) {
+export default function Modal({ heading, children }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const dialogRef = useRef(null);
 
-	const openDialog = () => {
+	const openModal = () => {
 		setIsOpen(true);
 	};
 
-	const closeDialog = () => {
+	const closeModal = () => {
 		setIsOpen(false);
 	};
 
@@ -21,21 +21,21 @@ export default function Dialog({ heading, children }) {
 
 	return (
 		<>
-			<Button style="emphasis" onClick={openDialog}>
+			<Button style="emphasis" onClick={openModal}>
 				{heading}
 			</Button>
-			<dialog className="dialog-window" onClick={closeDialog} ref={dialogRef} open={isOpen}>
-				<div className="dialog-content" onClick={stopPropagation}>
+			<dialog className="modal-overlay" onClick={closeModal} ref={dialogRef} open={isOpen}>
+				<div className="modal-content" onClick={stopPropagation}>
 					<h3>{heading}</h3>
 					{children}
-					<Button onClick={closeDialog}>Close</Button>
+					<Button onClick={closeModal}>Close</Button>
 				</div>
 			</dialog>
 		</>
 	);
 }
 
-Dialog.propTypes = {
+Modal.propTypes = {
 	children: PropTypes.node,
 	heading: PropTypes.string.isRequired,
 };

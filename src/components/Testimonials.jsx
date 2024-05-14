@@ -1,8 +1,8 @@
-import Dialog from "./Dialog";
 import FlexContainer from "./FlexContainer";
 import Form from "./Form";
-import Testimonial from "./Testimonial";
+import Modal from "./Modal";
 import Section from "./Section";
+import Testimonial from "./Testimonial";
 import reviews from "../data/reviews.json";
 
 export default function Testimonials() {
@@ -37,9 +37,9 @@ export default function Testimonials() {
 	return (
 		<Section sectionId="testimonials">
 			<FlexContainer>{testimonials}</FlexContainer>
-			<Dialog heading="Leave a testimonial">
+			<Modal heading="Leave a testimonial">
 				<Form />
-			</Dialog>
+			</Modal>
 		</Section>
 	);
 }

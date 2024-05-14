@@ -1,4 +1,4 @@
-.dialog-window[open] {
+.modal-overlay[open] {
 	position: fixed;
 	inset: 0;
 	z-index: 1;
@@ -16,7 +16,7 @@
 	background-color: hsl(0, 0%, 0%, 0.2);
 }
 
-.dialog-content {
+.modal-content {
 	margin: 4rem;
 	border: solid 1px hsl(0, 0%, 90%);
 	border-radius: 4px;
@@ -25,7 +25,7 @@
 	background-color: var(--background);
 }
 
-.dialog-content > * {
+.modal-content > * {
 	display: block;
 	margin: 2rem 0;
 }
