@@ -1,5 +1,5 @@
 import FlexContainer from "./FlexContainer";
-import Form from "./Form";
+import ModalForm from "./ModalForm";
 import Modal from "./Modal";
 import Section from "./Section";
 import Testimonial from "./Testimonial";
@@ -38,7 +38,7 @@ export default function Testimonials() {
 		<Section sectionId="testimonials">
 			<FlexContainer>{testimonials}</FlexContainer>
 			<Modal heading="Leave a testimonial">
-				<Form />
+				<ModalForm />
 			</Modal>
 		</Section>
 	);

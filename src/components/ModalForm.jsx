@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "./Button";
 import "../styles/Form.css";
 
-export default function Form() {
+export default function ModalForm() {
 	const [formData, setFormData] = useState({
 		name: "",
 		message: "",
