@@ -28,7 +28,9 @@ export default function Modal({ heading, children }) {
 				<div className="modal-content" onClick={stopPropagation}>
 					<div className="modal-header">
 						<h3>{heading}</h3>
-						<Button onClick={closeModal}>Close</Button>
+						<button className="close-modal" onClick={closeModal} title="Close window">
+							<img src="./src/assets/icons/close.svg" alt="Close icon" />
+						</button>
 					</div>
 					{children}
 				</div>
