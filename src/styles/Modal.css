@@ -25,15 +25,13 @@
 	background-color: var(--background);
 }
 
-.modal-content > * {
-	display: block;
-	margin: 2rem 0;
-}
-
 .modal-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 4rem;
+
+	margin-bottom: 2rem;
 }
 
 .modal-header h3 {
