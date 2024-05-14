@@ -1,9 +1,10 @@
 import { useState, useRef } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
+import ModalForm from "./ModalForm";
 import "../styles/Modal.css";
 
-export default function Modal({ heading, children }) {
+export default function Modal({ heading }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const dialogRef = useRef(null);
 
@@ -32,7 +33,7 @@ export default function Modal({ heading, children }) {
 							<img src="./src/assets/icons/close.svg" alt="Close icon" />
 						</button>
 					</div>
-					{children}
+					<ModalForm closeForm={closeModal} />
 				</div>
 			</dialog>
 		</>
@@ -40,6 +41,5 @@ export default function Modal({ heading, children }) {
 }
 
 Modal.propTypes = {
-	children: PropTypes.node,
 	heading: PropTypes.string.isRequired,
 };
