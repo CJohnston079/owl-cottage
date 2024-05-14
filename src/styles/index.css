@@ -107,3 +107,7 @@ textarea,
 select {
 	font: inherit;
 }
+
+dialog:focus-visible {
+	outline: none;
+}
