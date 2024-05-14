@@ -19,3 +19,8 @@ textarea.field-input {
 	min-width: 48ch;
 	min-height: 6lh;
 }
+
+.form-buttons {
+	display: flex;
+	gap: 2rem;
+}

@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import Button from "./Button";
 import "../styles/Form.css";
 
-export default function ModalForm() {
+export default function ModalForm({ closeForm }) {
 	const [formData, setFormData] = useState({
 		name: "",
 		message: "",
@@ -50,9 +51,16 @@ export default function ModalForm() {
 					></textarea>
 				</li>
 			</ul>
-			<Button type="submit" style="emphasis">
-				Submit
-			</Button>
+			<div className="form-buttons">
+				<Button type="submit" style="emphasis">
+					Submit
+				</Button>
+				<Button onClick={closeForm}>Close</Button>
+			</div>
 		</form>
 	);
 }
+
+ModalForm.propTypes = {
+	closeForm: PropTypes.func,
+};
