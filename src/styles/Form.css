@@ -24,3 +24,7 @@ textarea.field-input {
 	display: flex;
 	gap: 2rem;
 }
+
+.form-section button {
+	margin-top: 1rem;
+}

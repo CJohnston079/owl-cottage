@@ -112,14 +112,14 @@ export default function Booking() {
 					</ul>
 				</div>
 				<div className="form-section">
-					<h3>3. Confirm reservation</h3>
-					<ul className="section-fields">
-						<li>Name: {name}</li>
-						<li>Email: {email}</li>
-						<li>Guests: {guests}</li>
-						<li>Start date: {startDate}</li>
-						<li>End date: {endDate}</li>
-					</ul>
+					<h3>3. Confirmation</h3>
+					<p>{`Your booking for Owl Cottage is for ${
+						guests || "guests not specified"
+					} guests from ${startDate || "date not specified"} to ${
+						endDate || "date not specified"
+					}.`}</p>
+					<p>{`Lead booker: ${name || "not specified"}`}</p>
+					<p>{`Contact email address: ${email || "not specified"}`}</p>
 					<Button type="submit" style="emphasis">
 						Confirm booking
 					</Button>
