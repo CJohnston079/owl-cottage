@@ -28,22 +28,16 @@ export default function ModalForm({ closeForm }) {
 					type="text"
 					labelContent="Full name"
 					inputName="name"
-					value={name}
+					value={formData.name}
 					handleInput={handleInput}
 				/>
-				<li className="form-field">
-					<label className="field-label" htmlFor="message">
-						Message:
-					</label>
-					<textarea
-						className="field-input"
-						id="message"
-						name="message"
-						value={formData.message}
-						onChange={handleInput}
-						required
-					></textarea>
-				</li>
+				<LabelledField
+					type="textarea"
+					labelContent="Message"
+					inputName="message"
+					value={formData.message}
+					handleInput={handleInput}
+				/>
 			</ul>
 			<div className="form-buttons">
 				<Button type="submit" style="emphasis">
