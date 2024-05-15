@@ -1,0 +1,15 @@
+.field {
+	display: grid;
+}
+
+.field-label {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.field-input {
+	border: solid 1px hsl(0, 0%, 50%);
+	border-radius: 4px;
+	padding: 0.5rem;
+}
