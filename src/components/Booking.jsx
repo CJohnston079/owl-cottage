@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
+import LabelledField from "./LabelledField";
 import Section from "./Section";
 import "../styles/Booking.css";
 
@@ -32,83 +33,46 @@ export default function Booking() {
 				<div className="form-section">
 					<h3>1. Select dates</h3>
 					<ul className="section-fields">
-						<li className="field">
-							<label className="field-label" htmlFor="startDate">
-								Start date:
-							</label>
-							<input
-								className="field-input"
-								type="date"
-								id="startDate"
-								name="startDate"
-								value={startDate}
-								onChange={handleInput}
-								placeholder="dfdf"
-								required
-							/>
-						</li>
-						<li className="field">
-							<label className="field-label" htmlFor="endDate">
-								End date:
-							</label>
-							<input
-								className="field-input"
-								type="date"
-								id="endDate"
-								name="endDate"
-								value={endDate}
-								onChange={handleInput}
-								required
-							/>
-						</li>
+						<LabelledField
+							type="date"
+							labelContent="Check-in"
+							inputName="startDate"
+							value={startDate}
+							handleInput={handleInput}
+						/>
+						<LabelledField
+							type="date"
+							labelContent="Checkout"
+							inputName="endDate"
+							value={endDate}
+							handleInput={handleInput}
+						/>
 					</ul>
 				</div>
 				<div className="form-section">
 					<h3>2. Your details</h3>
 					<ul className="section-fields">
-						<li className="field">
-							<label className="field-label" htmlFor="name">
-								Full name:
-							</label>
-							<input
-								className="field-input"
-								type="text"
-								id="name"
-								name="name"
-								value={name}
-								onChange={handleInput}
-								required
-							/>
-						</li>
-						<li className="field">
-							<label className="field-label" htmlFor="email">
-								Email:
-							</label>
-							<input
-								className="field-input"
-								type="email"
-								id="email"
-								name="email"
-								value={email}
-								onChange={handleInput}
-								required
-							/>
-						</li>
-						<li className="field">
-							<label className="field-label" htmlFor="guests">
-								Guests
-							</label>
-							<input
-								className="field-input"
-								type="number"
-								id="guests"
-								name="guests"
-								max={4}
-								value={guests}
-								onChange={handleInput}
-								required
-							/>
-						</li>
+						<LabelledField
+							type="text"
+							labelContent="Full name"
+							inputName="name"
+							value={name}
+							handleInput={handleInput}
+						/>
+						<LabelledField
+							type="email"
+							labelContent="Email address"
+							inputName="email"
+							value={email}
+							handleInput={handleInput}
+						/>
+						<LabelledField
+							type="number"
+							labelContent="Number of guests"
+							inputName="guests"
+							value={guests}
+							handleInput={handleInput}
+						/>
 					</ul>
 				</div>
 				<div className="form-section">
