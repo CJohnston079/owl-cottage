@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import Button from "./Button";
+import LabelledField from "./LabelledField";
 import "../styles/Form.css";
 
 export default function ModalForm({ closeForm }) {
@@ -9,7 +10,7 @@ export default function ModalForm({ closeForm }) {
 		message: "",
 	});
 
-	const handleChange = event => {
+	const handleInput = event => {
 		const { name, value } = event.target;
 		setFormData({ ...formData, [name]: value });
 	};
@@ -22,21 +23,14 @@ export default function ModalForm({ closeForm }) {
 
 	return (
 		<form onSubmit={handleSubmit}>
-			<ul>
-				<li className="form-field">
-					<label className="field-label" htmlFor="name">
-						Name:
-					</label>
-					<input
-						className="field-input"
-						type="text"
-						id="name"
-						name="name"
-						value={formData.name}
-						onChange={handleChange}
-						required
-					/>
-				</li>
+			<ul className="section-fields">
+				<LabelledField
+					type="text"
+					labelContent="Full name"
+					inputName="name"
+					value={name}
+					handleInput={handleInput}
+				/>
 				<li className="form-field">
 					<label className="field-label" htmlFor="message">
 						Message:
@@ -46,7 +40,7 @@ export default function ModalForm({ closeForm }) {
 						id="message"
 						name="message"
 						value={formData.message}
-						onChange={handleChange}
+						onChange={handleInput}
 						required
 					></textarea>
 				</li>
