@@ -32,20 +32,27 @@ export default function Booking() {
 				<div className="form-section">
 					<h3>1. Select dates</h3>
 					<ul className="section-fields">
-						<li>
-							<label htmlFor="startDate">Start date:</label>
+						<li className="field">
+							<label className="field-label" htmlFor="startDate">
+								Start date:
+							</label>
 							<input
+								className="field-input"
 								type="date"
 								id="startDate"
 								name="startDate"
 								value={startDate}
 								onChange={handleInput}
+								placeholder="dfdf"
 								required
 							/>
 						</li>
-						<li>
-							<label htmlFor="endDate">End date:</label>
+						<li className="field">
+							<label className="field-label" htmlFor="endDate">
+								End date:
+							</label>
 							<input
+								className="field-input"
 								type="date"
 								id="endDate"
 								name="endDate"
@@ -59,9 +66,12 @@ export default function Booking() {
 				<div className="form-section">
 					<h3>2. Your details</h3>
 					<ul className="section-fields">
-						<li>
-							<label htmlFor="name">Full name:</label>
+						<li className="field">
+							<label className="field-label" htmlFor="name">
+								Full name:
+							</label>
 							<input
+								className="field-input"
 								type="text"
 								id="name"
 								name="name"
@@ -70,9 +80,12 @@ export default function Booking() {
 								required
 							/>
 						</li>
-						<li>
-							<label htmlFor="email">Email:</label>
+						<li className="field">
+							<label className="field-label" htmlFor="email">
+								Email:
+							</label>
 							<input
+								className="field-input"
 								type="email"
 								id="email"
 								name="email"
@@ -81,9 +94,12 @@ export default function Booking() {
 								required
 							/>
 						</li>
-						<li>
-							<label htmlFor="guests">Guests</label>
+						<li className="field">
+							<label className="field-label" htmlFor="guests">
+								Guests
+							</label>
 							<input
+								className="field-input"
 								type="number"
 								id="guests"
 								name="guests"
