@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import ModalForm from "./ModalForm";
+import formFields from "../data/formFields.json";
 import "../styles/Modal.css";
 
 export default function Modal({ heading }) {
@@ -50,7 +51,7 @@ export default function Modal({ heading }) {
 							<img src="./src/assets/icons/close.svg" alt="Close icon" />
 						</button>
 					</header>
-					<ModalForm closeForm={closeModal} />
+					<ModalForm fieldsData={formFields.testimonials} closeForm={closeModal} />
 				</div>
 			</dialog>
 		</>

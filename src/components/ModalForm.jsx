@@ -2,10 +2,9 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import Button from "./Button";
 import LabelledField from "./LabelledField";
-import formFields from "../data/formFields.json";
 import "../styles/Form.css";
 
-export default function ModalForm({ closeForm }) {
+export default function ModalForm({ fieldsData, closeForm }) {
 	const [formData, setFormData] = useState({
 		name: "",
 		message: "",
@@ -22,7 +21,7 @@ export default function ModalForm({ closeForm }) {
 		// Send formData to back-end
 	};
 
-	const fields = formFields.testimonials.map((field, index) => (
+	const fields = fieldsData.map((field, index) => (
 		<LabelledField
 			key={index}
 			type={field.type}
@@ -47,5 +46,12 @@ export default function ModalForm({ closeForm }) {
 }
 
 ModalForm.propTypes = {
+	fieldsData: PropTypes.arrayOf(
+		PropTypes.shape({
+			type: PropTypes.string,
+			labelContent: PropTypes.string,
+			inputName: PropTypes.string,
+		})
+	),
 	closeForm: PropTypes.func,
 };
