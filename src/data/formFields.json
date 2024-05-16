@@ -1,0 +1,14 @@
+{
+	"testimonials": [
+		{
+			"type": "text",
+			"labelContent": "Full name",
+			"inputName": "name"
+		},
+		{
+			"type": "textarea",
+			"labelContent": "Message",
+			"inputName": "message"
+		}
+	]
+}
