@@ -1,14 +1,46 @@
 {
 	"testimonials": [
 		{
-			"type": "text",
 			"labelContent": "Full name",
-			"inputName": "name"
+			"inputName": "name",
+			"type": "text"
 		},
 		{
-			"type": "textarea",
 			"labelContent": "Message",
-			"inputName": "message"
+			"inputName": "message",
+			"type": "textarea"
 		}
-	]
+	],
+	"booking": {
+		"dates": [
+			{
+				"labelContent": "Check-in",
+				"inputName": "startDate",
+				"type": "date"
+			},
+			{
+				"labelContent": "Checkout",
+				"inputName": "endDate",
+				"type": "date"
+			}
+		],
+		"guestDetails": [
+			{
+				"labelContent": "Full name",
+				"inputName": "name",
+				"type": "text"
+			},
+			{
+				"labelContent": "Email address",
+				"inputName": "email",
+				"type": "email"
+			},
+			{
+				"labelContent": "Number of guests",
+				"inputName": "numOfGuests",
+				"type": "number"
+			}
+		],
+		"confirmation": []
+	}
 }
