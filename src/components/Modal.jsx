@@ -51,7 +51,9 @@ export default function Modal({ heading }) {
 							<img src="./src/assets/icons/close.svg" alt="Close icon" />
 						</button>
 					</header>
-					<ModalForm fieldsData={formFields.testimonials} closeForm={closeModal} />
+					<ModalForm fieldsData={formFields.testimonials} closeForm={closeModal}>
+						<Button onClick={closeModal}>Close</Button>
+					</ModalForm>
 				</div>
 			</dialog>
 		</>

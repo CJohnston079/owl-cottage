@@ -4,7 +4,7 @@ import Button from "./Button";
 import LabelledField from "./LabelledField";
 import "../styles/Form.css";
 
-export default function ModalForm({ fieldsData, closeForm }) {
+export default function ModalForm({ fieldsData, children }) {
 	const [formData, setFormData] = useState(
 		fieldsData.reduce((data, field) => ({ ...data, [field.inputName]: "" }), {})
 	);
@@ -38,7 +38,7 @@ export default function ModalForm({ fieldsData, closeForm }) {
 				<Button type="submit" style="emphasis">
 					Submit
 				</Button>
-				<Button onClick={closeForm}>Close</Button>
+				{children}
 			</div>
 		</form>
 	);
@@ -52,5 +52,5 @@ ModalForm.propTypes = {
 			inputName: PropTypes.string,
 		})
 	),
-	closeForm: PropTypes.func,
+	children: PropTypes.node,
 };
