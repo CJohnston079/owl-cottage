@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Button from "./Button";
-// import Form from "./Form";
 import Fields from "./Fields";
+// import Form from "./Form";
+import FormSection from "./FormSection";
 import Section from "./Section";
 import formFields from "../data/formFields.json";
 import "../styles/Booking.css";
@@ -32,16 +33,13 @@ export default function Booking() {
 	return (
 		<Section sectionId={"booking"}>
 			<form onSubmit={handleSubmit}>
-				<div className="form-section">
-					<h3 className="form-section-heading">1. Select dates</h3>
+				<FormSection heading="1. Select dates">
 					<Fields sectionFields={fields.dates} handleInput={handleInput} />
-				</div>
-				<div className="form-section">
-					<h3 className="form-section-heading">2. Your details</h3>
+				</FormSection>
+				<FormSection heading="2. Your details">
 					<Fields sectionFields={fields.guestDetails} handleInput={handleInput} />
-				</div>
-				<div className="form-section">
-					<h3 className="form-section-heading">3. Confirmation</h3>
+				</FormSection>
+				<FormSection heading="3. Confirmation">
 					<p>{`Your stay for Owl Cottage is booked for ${guests || "not specified"} guests from ${
 						startDate || "date not specified"
 					} to ${endDate || "date not specified"}.`}</p>
@@ -50,7 +48,7 @@ export default function Booking() {
 					<Button type="submit" style="emphasis">
 						Confirm booking
 					</Button>
-				</div>
+				</FormSection>
 			</form>
 		</Section>
 	);
