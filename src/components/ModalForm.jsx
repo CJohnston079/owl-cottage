@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import Button from "./Button";
 import LabelledField from "./LabelledField";
+import formFields from "../data/formFields.json";
 import "../styles/Form.css";
 
 export default function ModalForm({ closeForm }) {
@@ -21,24 +22,20 @@ export default function ModalForm({ closeForm }) {
 		// Send formData to back-end
 	};
 
+	const fields = formFields.testimonials.map((field, index) => (
+		<LabelledField
+			key={index}
+			type={field.type}
+			labelContent={field.labelContent}
+			inputName={field.inputName}
+			value={formData[field.inputName]}
+			handleInput={handleInput}
+		/>
+	));
+
 	return (
 		<form onSubmit={handleSubmit}>
-			<ul className="section-fields">
-				<LabelledField
-					type="text"
-					labelContent="Full name"
-					inputName="name"
-					value={formData.name}
-					handleInput={handleInput}
-				/>
-				<LabelledField
-					type="textarea"
-					labelContent="Message"
-					inputName="message"
-					value={formData.message}
-					handleInput={handleInput}
-				/>
-			</ul>
+			<ul className="section-fields">{fields}</ul>
 			<div className="form-buttons">
 				<Button type="submit" style="emphasis">
 					Submit
