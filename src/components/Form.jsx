@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
 import { useState } from "react";
+import PropTypes from "prop-types";
 import Button from "./Button";
 import LabelledField from "./LabelledField";
 import "../styles/Form.css";
 
-export default function ModalForm({ fieldsData, children }) {
+export default function Form({ fieldsData, children }) {
 	const [formData, setFormData] = useState(
 		fieldsData.reduce((data, field) => ({ ...data, [field.inputName]: "" }), {})
 	);
@@ -44,7 +44,7 @@ export default function ModalForm({ fieldsData, children }) {
 	);
 }
 
-ModalForm.propTypes = {
+Form.propTypes = {
 	fieldsData: PropTypes.arrayOf(
 		PropTypes.shape({
 			type: PropTypes.string,

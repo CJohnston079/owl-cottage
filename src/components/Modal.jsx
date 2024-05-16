@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
-import ModalForm from "./ModalForm";
+import Form from "./Form";
 import formFields from "../data/formFields.json";
 import "../styles/Modal.css";
 
@@ -51,9 +51,9 @@ export default function Modal({ heading }) {
 							<img src="./src/assets/icons/close.svg" alt="Close icon" />
 						</button>
 					</header>
-					<ModalForm fieldsData={formFields.testimonials} closeForm={closeModal}>
+					<Form fieldsData={formFields.testimonials} closeForm={closeModal}>
 						<Button onClick={closeModal}>Close</Button>
-					</ModalForm>
+					</Form>
 				</div>
 			</dialog>
 		</>
