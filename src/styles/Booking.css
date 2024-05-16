@@ -12,8 +12,3 @@ form {
 	padding: 2rem;
 	background-color: white;
 }
-
-.section-fields {
-	display: grid;
-	gap: 1rem;
-}
