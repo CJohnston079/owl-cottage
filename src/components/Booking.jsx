@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Button from "./Button";
+import Form from "./Form";
 import LabelledField from "./LabelledField";
 import Section from "./Section";
+import formFields from "../data/formFields.json";
 import "../styles/Booking.css";
 
 export default function Booking() {
@@ -29,9 +31,10 @@ export default function Booking() {
 
 	return (
 		<Section sectionId={"booking"}>
+			<Form fieldsData={formFields.booking.guestDetails} />
 			<form onSubmit={handleSubmit}>
 				<div className="form-section">
-					<h3>1. Select dates</h3>
+					<h3 className="form-section-heading">1. Select dates</h3>
 					<ul className="section-fields">
 						<LabelledField
 							type="date"
@@ -50,7 +53,7 @@ export default function Booking() {
 					</ul>
 				</div>
 				<div className="form-section">
-					<h3>2. Your details</h3>
+					<h3 className="form-section-heading">2. Your details</h3>
 					<ul className="section-fields">
 						<LabelledField
 							type="text"
@@ -76,12 +79,10 @@ export default function Booking() {
 					</ul>
 				</div>
 				<div className="form-section">
-					<h3>3. Confirmation</h3>
-					<p>{`Your booking for Owl Cottage is for ${
-						guests || "guests not specified"
-					} guests from ${startDate || "date not specified"} to ${
-						endDate || "date not specified"
-					}.`}</p>
+					<h3 className="form-section-heading">3. Confirmation</h3>
+					<p>{`Your stay for Owl Cottage is booked for ${guests || "not specified"} guests from ${
+						startDate || "date not specified"
+					} to ${endDate || "date not specified"}.`}</p>
 					<p>{`Lead booker: ${name || "not specified"}`}</p>
 					<p>{`Contact email address: ${email || "not specified"}`}</p>
 					<Button type="submit" style="emphasis">
