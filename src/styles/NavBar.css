@@ -1,4 +1,4 @@
-header {
+#nav {
 	--nav-padding-y: 1.5rem;
 
 	position: absolute;
@@ -10,7 +10,7 @@ header {
 	background: linear-gradient(hsl(0, 0%, 0%, 0.4), hsl(0, 0%, 0%, 0));
 }
 
-.floating-nav {
+#nav.floating-nav {
 	position: fixed;
 
 	color: var(--foreground);

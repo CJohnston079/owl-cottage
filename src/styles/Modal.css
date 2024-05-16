@@ -18,7 +18,7 @@
 	animation: darken-background 1200ms;
 }
 
-.modal-content {
+.modal-window {
 	margin: 4rem;
 	border: solid 1px hsl(0, 0%, 90%);
 	border-radius: 4px;
