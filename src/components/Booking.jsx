@@ -1,12 +1,14 @@
 import { useState } from "react";
 import Button from "./Button";
-import Form from "./Form";
-import LabelledField from "./LabelledField";
+// import Form from "./Form";
+import FormSection from "./FormSection";
 import Section from "./Section";
 import formFields from "../data/formFields.json";
 import "../styles/Booking.css";
 
 export default function Booking() {
+	const fields = formFields.booking;
+
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -31,52 +33,14 @@ export default function Booking() {
 
 	return (
 		<Section sectionId={"booking"}>
-			<Form fieldsData={formFields.booking.guestDetails} />
 			<form onSubmit={handleSubmit}>
 				<div className="form-section">
 					<h3 className="form-section-heading">1. Select dates</h3>
-					<ul className="section-fields">
-						<LabelledField
-							type="date"
-							labelContent="Check-in"
-							inputName="startDate"
-							value={startDate}
-							handleInput={handleInput}
-						/>
-						<LabelledField
-							type="date"
-							labelContent="Checkout"
-							inputName="endDate"
-							value={endDate}
-							handleInput={handleInput}
-						/>
-					</ul>
+					<FormSection sectionFields={fields.dates} handleInput={handleInput} />
 				</div>
 				<div className="form-section">
 					<h3 className="form-section-heading">2. Your details</h3>
-					<ul className="section-fields">
-						<LabelledField
-							type="text"
-							labelContent="Full name"
-							inputName="name"
-							value={name}
-							handleInput={handleInput}
-						/>
-						<LabelledField
-							type="email"
-							labelContent="Email address"
-							inputName="email"
-							value={email}
-							handleInput={handleInput}
-						/>
-						<LabelledField
-							type="number"
-							labelContent="Number of guests"
-							inputName="guests"
-							value={guests}
-							handleInput={handleInput}
-						/>
-					</ul>
+					<FormSection sectionFields={fields.guestDetails} handleInput={handleInput} />
 				</div>
 				<div className="form-section">
 					<h3 className="form-section-heading">3. Confirmation</h3>
