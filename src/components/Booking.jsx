@@ -9,13 +9,11 @@ import "../styles/Booking.css";
 export default function Booking() {
 	const fields = formFields.booking;
 
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		guests: "",
-		startDate: "",
-		endDate: "",
-	});
+	const [formData, setFormData] = useState(() =>
+		Object.values(fields).reduce((data, fieldSection) => {
+			return fieldSection.reduce((subData, field) => ({ ...subData, [field.inputName]: "" }), data);
+		}, {})
+	);
 
 	const handleInput = e => {
 		const { name, value } = e.target;
