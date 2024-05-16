@@ -5,18 +5,17 @@ import LabelledField from "./LabelledField";
 import "../styles/Form.css";
 
 export default function ModalForm({ fieldsData, closeForm }) {
-	const [formData, setFormData] = useState({
-		name: "",
-		message: "",
-	});
+	const [formData, setFormData] = useState(
+		fieldsData.reduce((data, field) => ({ ...data, [field.inputName]: "" }), {})
+	);
 
-	const handleInput = event => {
-		const { name, value } = event.target;
+	const handleInput = e => {
+		const { name, value } = e.target;
 		setFormData({ ...formData, [name]: value });
 	};
 
-	const handleSubmit = event => {
-		event.preventDefault();
+	const handleSubmit = e => {
+		e.preventDefault();
 		console.log("Form submitted:", formData);
 		// Send formData to back-end
 	};
