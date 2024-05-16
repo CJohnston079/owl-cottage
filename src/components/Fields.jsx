@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import LabelledField from "./LabelledField";
 
-export default function FormSection({ sectionFields, handleInput }) {
+export default function Fields({ sectionFields, handleInput }) {
 	const fields = sectionFields.map((field, index) => (
 		<LabelledField
 			key={index}
@@ -16,7 +16,7 @@ export default function FormSection({ sectionFields, handleInput }) {
 	return <ul className="section-fields">{fields}</ul>;
 }
 
-FormSection.propTypes = {
+Fields.propTypes = {
 	sectionFields: PropTypes.arrayOf(
 		PropTypes.shape({
 			labelContent: PropTypes.string,
