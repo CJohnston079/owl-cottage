@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../../styles/shared/Section.css";
 
 export default function Section({ sectionId, children }) {
 	const sectionHeading = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);

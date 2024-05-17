@@ -1,0 +1,5 @@
+section {
+	--section-padding-y: 4rem;
+
+	padding: var(--section-padding-y) var(--site-padding-x);
+}
