@@ -5,7 +5,7 @@
 	color: white;
 
 	background-color: #565e38;
-	background: url(../assets/images/owl-cottage-panorama-2.jpeg),
+	background: url(../../assets/images/owl-cottage-panorama-2.jpeg),
 		linear-gradient(60deg, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.1) 100%);
 	background-position: center;
 	background-size: cover;

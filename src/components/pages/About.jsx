@@ -1,7 +1,7 @@
-import Paragraphs from "./Paragraphs";
-import Section from "./Section";
-import copy from "../data/copy.json";
-import "../styles/About.css";
+import Paragraphs from "../Paragraphs";
+import Section from "../Section";
+import copy from "../../data/copy.json";
+import "../../styles/pages/About.css";
 
 export default function About() {
 	return (

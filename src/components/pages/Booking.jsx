@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Button from "./Button";
-import Fields from "./Fields";
+import Button from "../Button";
+import Fields from "../Fields";
 // import Form from "./Form";
-import FormSection from "./FormSection";
-import Section from "./Section";
-import formFields from "../data/formFields.json";
-import "../styles/Booking.css";
+import FormSection from "../FormSection";
+import Section from "../Section";
+import formFields from "../../data/formFields.json";
+import "../../styles/pages/Booking.css";
 
 export default function Booking() {
 	const fields = formFields.booking;

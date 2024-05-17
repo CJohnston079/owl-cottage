@@ -1,8 +1,8 @@
-import FlexContainer from "./FlexContainer";
-import Modal from "./Modal";
-import Section from "./Section";
-import Testimonial from "./Testimonial";
-import reviews from "../data/reviews.json";
+import FlexContainer from "../FlexContainer";
+import Modal from "../Modal";
+import Section from "../Section";
+import Testimonial from "../Testimonial";
+import reviews from "../../data/reviews.json";
 
 export default function Testimonials() {
 	const shortReviews = reviews.filter(review => {
