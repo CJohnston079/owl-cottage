@@ -1,6 +1,25 @@
 :root {
+	--base-hue-1: 170;
+	--base-hue-2: 32;
+
+	--cl-emphasis-vivid: hsl(var(--base-hue-1), 32%, 40%);
+	--cl-emphasis-light: hsl(var(--base-hue-1), 32%, 80%);
+	--cl-emphasis-dark: hsl(var(--base-hue-1), 32%, 30%);
+	--cl-contrast-vivid: hsl(var(--base-hue-2), 16%, 50%);
+	--cl-contrast-light: hsl(var(--base-hue-2), 42%, 90%);
+	--cl-contrast-dark: hsl(var(--base-hue-2), 24%, 30%);
+
+	--cl-emphasis: var(--cl-emphasis-vivid);
+	--cl-emphasis-shade: var(--cl-emphasis-light);
+	--cl-contrast: var(--cl-contrast-vivid);
+	--cl-contrast-shade: var(--cl-contrast-light);
 	--cl-background: white;
+	--cl-background-shade: hsl(0, 0%, 95%);
+	--cl-background-shade-2: hsl(0, 0%, 90%);
+	--cl-midground: hsl(0, 0%, 50%);
 	--cl-foreground: black;
+	--cl-foreground-shade: hsl(0, 0%, 10%);
+	--cl-foreground-shade-2: hsl(0, 0%, 10%);
 
 	--site-padding-x: max(12vw, 4rem);
 
