@@ -1,6 +1,6 @@
 :root {
-	--background: white;
-	--foreground: black;
+	--cl-background: white;
+	--cl-foreground: black;
 
 	--site-padding-x: max(12vw, 4rem);
 
@@ -15,17 +15,17 @@
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	line-height: 1.5;
-	color: var(--foreground);
+	color: var(--cl-foreground);
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	background-color: var(--background);
+	background-color: var(--cl-background);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background: black;
-		--foreground: white;
+		--cl-background: black;
+		--cl-foreground: white;
 	}
 }

@@ -19,10 +19,10 @@
 }
 
 .floating-nav .nav-link {
-	color: var(--foreground);
+	color: var(--cl-foreground);
 }
 
 .floating-nav .nav-link.active,
 .floating-nav .nav-link:hover {
-	border-color: var(--foreground);
+	border-color: var(--cl-foreground);
 }

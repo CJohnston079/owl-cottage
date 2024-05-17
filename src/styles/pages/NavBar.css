@@ -13,8 +13,8 @@
 #nav.floating-nav {
 	position: fixed;
 
-	color: var(--foreground);
-	background: var(--background);
+	color: var(--cl-foreground);
+	background: var(--cl-background);
 
 	animation: fly-down 400ms;
 }

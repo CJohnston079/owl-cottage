@@ -9,34 +9,34 @@
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 
-	background-color: var(--foreground);
+	background-color: var(--cl-foreground);
 
 	transition: 400ms;
 	cursor: pointer;
 }
 
 .btn-normal {
-	border-color: var(--foreground);
-	color: var(--foreground);
-	background-color: var(--background);
+	border-color: var(--cl-foreground);
+	color: var(--cl-foreground);
+	background-color: var(--cl-background);
 }
 
 .btn-normal:hover {
 	border-color: transparent;
-	color: var(--background);
-	background-color: var(--foreground);
+	color: var(--cl-background);
+	background-color: var(--cl-foreground);
 }
 
 .btn-emphasis {
 	border-color: transparent;
-	color: var(--background);
-	background-color: var(--foreground);
+	color: var(--cl-background);
+	background-color: var(--cl-foreground);
 }
 
 .btn-emphasis:hover {
-	border-color: var(--foreground);
-	color: var(--foreground);
-	background-color: var(--background);
+	border-color: var(--cl-foreground);
+	color: var(--cl-foreground);
+	background-color: var(--cl-background);
 }
 
 .btn-hero {
