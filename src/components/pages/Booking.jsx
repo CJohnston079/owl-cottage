@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Button from "../Button";
-import Fields from "../Fields";
+import Button from "../shared/Button";
+import Fields from "../shared/Fields";
 // import Form from "./Form";
-import FormSection from "../FormSection";
-import Section from "../Section";
+import FormSection from "../shared/FormSection";
+import Section from "../shared/Section";
 import formFields from "../../data/formFields.json";
 import "../../styles/pages/Booking.css";
 

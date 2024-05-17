@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../styles/Paragraphs.css";
+import "../../styles/shared/Paragraphs.css";
 
 export default function Paragraphs({ paragraphs }) {
 	const paragraphElements = paragraphs.map(paragraph => (

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../styles/LabelledField.css";
+import "../../styles/shared/LabelledField.css";
 
 export default function LabelledField({ type, labelContent, inputName, value, handleInput }) {
 	const attributes = {

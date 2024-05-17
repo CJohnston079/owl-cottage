@@ -1,7 +1,7 @@
-import FlexContainer from "../FlexContainer";
-import Modal from "../Modal";
-import Section from "../Section";
-import Testimonial from "../Testimonial";
+import FlexContainer from "../shared/FlexContainer";
+import Modal from "../shared/Modal";
+import Section from "../shared/Section";
+import Testimonial from "../shared/Testimonial";
 import reviews from "../../data/reviews.json";
 
 export default function Testimonials() {

@@ -1,4 +1,4 @@
-import NavBar from "./NavBar.jsx";
+import NavBar from "./shared/NavBar.jsx";
 import Hero from "./pages/Hero.jsx";
 import About from "./pages/About.jsx";
 import Location from "./pages/Location.jsx";

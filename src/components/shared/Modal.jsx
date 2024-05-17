@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import Form from "./Form";
-import formFields from "../data/formFields.json";
-import "../styles/Modal.css";
+import formFields from "../../data/formFields.json";
+import "../../styles/shared/Modal.css";
 
 export default function Modal({ heading }) {
 	const [isOpen, setIsOpen] = useState(false);

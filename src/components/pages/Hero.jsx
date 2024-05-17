@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../shared/Button";
 import "../../styles/pages/Hero.css";
 
 export default function Hero() {

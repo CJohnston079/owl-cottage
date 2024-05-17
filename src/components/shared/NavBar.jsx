@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
-import "../styles/NavBar.css";
+import "../../styles/shared/NavBar.css";
 
 export default function NavBar() {
 	const [isFloating, setIsFloating] = useState(false);

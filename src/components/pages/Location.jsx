@@ -1,6 +1,6 @@
-import FlexContainer from "../FlexContainer";
-import Paragraphs from "../Paragraphs";
-import Section from "../Section";
+import FlexContainer from "../shared/FlexContainer";
+import Paragraphs from "../shared/Paragraphs";
+import Section from "../shared/Section";
 import copy from "../../data/copy.json";
 import "../../styles/pages/Location.css";
 

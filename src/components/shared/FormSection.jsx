@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../styles/FormSection.css";
+import "../../styles/shared/FormSection.css";
 
 export default function FormSection({ heading, children }) {
 	return (

@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import Fields from "./Fields";
-import "../styles/Form.css";
+import "../../styles/shared/Form.css";
 
 export default function Form({ fieldsData, children }) {
 	const [formData, setFormData] = useState(

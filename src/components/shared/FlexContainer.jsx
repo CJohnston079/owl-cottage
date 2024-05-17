@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../styles/FlexContainer.css";
+import "../../styles/shared/FlexContainer.css";
 
 export default function FlexContainer({ children }) {
 	return <div className="flex-container">{children}</div>;

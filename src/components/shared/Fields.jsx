@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import LabelledField from "./LabelledField";
-import "../styles/Fields.css";
+import "../../styles/shared/Fields.css";
 
 export default function Fields({ sectionFields, handleInput }) {
 	const fields = sectionFields.map((field, index) => (
