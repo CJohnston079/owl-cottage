@@ -1,5 +1,5 @@
 #booking {
-	background-color: hsl(0, 0%, 95%);
+	background-color: var(--cl-contrast-shade);
 }
 
 form {

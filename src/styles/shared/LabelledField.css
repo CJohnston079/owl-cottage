@@ -9,9 +9,15 @@
 }
 
 .field-input {
+	outline: solid 1px transparent;
 	border: solid 1px hsl(0, 0%, 50%);
 	border-radius: 4px;
 	padding: 0.5rem;
+	transition: outline 400ms;
+}
+
+.field-input:focus-visible {
+	outline: solid 1px var(--cl-emphasis);
 }
 
 textarea.field-input {

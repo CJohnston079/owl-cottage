@@ -30,7 +30,7 @@
 .btn-emphasis {
 	border-color: transparent;
 	color: var(--cl-background);
-	background-color: var(--cl-foreground);
+	background-color: var(--cl-emphasis);
 }
 
 .btn-emphasis:hover {
