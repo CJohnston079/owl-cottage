@@ -1,5 +1,5 @@
 :root {
-	--emphasis-hue: 170;
+	--emphasis-hue: 160;
 	--contrast-hue: 32;
 
 	--cl-emphasis-vivid: hsl(var(--emphasis-hue), 32%, 40%);
