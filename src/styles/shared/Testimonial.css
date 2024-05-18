@@ -1,7 +1,3 @@
-#testimonials {
-	background-color: var(--cl-background-shade);
-}
-
 .testimonial {
 	display: flex;
 	flex-direction: column;

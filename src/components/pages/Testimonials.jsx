@@ -3,6 +3,7 @@ import Modal from "../shared/Modal";
 import Section from "../shared/Section";
 import Testimonial from "../shared/Testimonial";
 import reviews from "../../data/reviews.json";
+import "../../styles/pages/Testimonials.css";
 
 export default function Testimonials() {
 	const shortReviews = reviews.filter(review => {
