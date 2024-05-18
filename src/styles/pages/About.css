@@ -9,7 +9,7 @@
 	align-items: center;
 	gap: 1rem;
 
-	border-radius: 4px;
+	border-radius: var(--br-normal);
 	padding: 1rem;
 
 	background-color: hsl(0, 0%, 95%);

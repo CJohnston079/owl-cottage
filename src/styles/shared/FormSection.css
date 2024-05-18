@@ -1,6 +1,7 @@
 .form-section {
+	border-radius: var(--br-normal);
 	padding: 2rem;
-	background-color: var(--cl-background);
 
+	background-color: var(--cl-background);
 	box-shadow: var(--box-shadow);
 }

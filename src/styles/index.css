@@ -25,6 +25,8 @@
 	--box-shadow-light: 2px 2px 8px hsl(0, 0%, 50%, 0.1);
 	--box-shadow: var(--box-shadow-dark);
 
+	--br-light: 0.25rem;
+	--br-normal: 0.5rem;
 	--site-padding-x: max(12vw, 4rem);
 
 	--heading-font: "Montserrat", sans-serif;

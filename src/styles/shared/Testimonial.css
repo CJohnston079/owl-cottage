@@ -6,7 +6,7 @@
 	gap: 1rem;
 
 	border: solid 2px var(--cl-emphasis-shade);
-	border-radius: 8px;
+	border-radius: var(--br-normal);
 	padding: 2rem;
 
 	text-align: center;

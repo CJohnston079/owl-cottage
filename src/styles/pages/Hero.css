@@ -40,7 +40,7 @@
 
 .hero-action {
 	border: solid 2px transparent;
-	border-radius: 8px;
+	border-radius: var(--br-normal);
 	padding: 1rem 1.5rem;
 
 	font-size: 0.8rem;

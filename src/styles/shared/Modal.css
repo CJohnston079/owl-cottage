@@ -21,7 +21,7 @@
 .modal-window {
 	margin: 4rem;
 	border: solid 1px hsl(0, 0%, 90%);
-	border-radius: 4px;
+	border-radius: var(--br-normal);
 	padding: 2rem;
 
 	background-color: var(--cl-background);
