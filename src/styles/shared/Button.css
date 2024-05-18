@@ -16,15 +16,13 @@
 }
 
 .btn-normal {
-	border-color: var(--cl-foreground);
-	color: var(--cl-foreground);
-	background-color: var(--cl-background);
+	color: var(--cl-foreground-shade-2);
+	background-color: var(--cl-background-shade);
 }
 
 .btn-normal:hover {
-	border-color: transparent;
-	color: var(--cl-background);
-	background-color: var(--cl-foreground);
+	color: var(--cl-foreground);
+	background-color: var(--cl-background-shade-2);
 }
 
 .btn-emphasis {
@@ -34,9 +32,9 @@
 }
 
 .btn-emphasis:hover {
-	border-color: var(--cl-foreground);
-	color: var(--cl-foreground);
-	background-color: var(--cl-background);
+	border-color: var(--cl-emphasis);
+	color: var(--cl-emphasis);
+	background-color: var(--cl-emphasis-shade);
 }
 
 .btn-hero {
@@ -46,6 +44,8 @@
 }
 
 .btn-hero:hover {
-	border: solid 2px black;
-	filter: invert(1);
+	border: solid 2px white;
+	background-color: black;
+	color: white;
+	backdrop-filter: blur(4px);
 }
