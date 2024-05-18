@@ -18,8 +18,8 @@
 	--cl-background-shade-2: hsl(0, 0%, 90%);
 	--cl-midground: hsl(0, 0%, 50%);
 	--cl-foreground: black;
-	--cl-foreground-shade: hsl(0, 0%, 10%);
-	--cl-foreground-shade-2: hsl(0, 0%, 10%);
+	--cl-foreground-shade: hsl(0, 0%, 15%);
+	--cl-foreground-shade-2: hsl(0, 0%, 30%);
 
 	--site-padding-x: max(12vw, 4rem);
 
