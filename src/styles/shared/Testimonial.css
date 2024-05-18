@@ -12,7 +12,7 @@
 	text-align: center;
 
 	background-color: var(--cl-background);
-	box-shadow: 2px 2px 8px hsl(0, 0%, 0%, 0.1);
+	box-shadow: var(--box-shadow);
 }
 
 .testimonial * {

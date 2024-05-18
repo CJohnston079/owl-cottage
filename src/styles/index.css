@@ -21,6 +21,10 @@
 	--cl-foreground-shade: hsl(0, 0%, 15%);
 	--cl-foreground-shade-2: hsl(0, 0%, 30%);
 
+	--box-shadow-dark: 2px 2px 8px hsl(0, 0%, 0%, 0.1);
+	--box-shadow-light: 2px 2px 8px hsl(0, 0%, 50%, 0.1);
+	--box-shadow: var(--box-shadow-dark);
+
 	--site-padding-x: max(12vw, 4rem);
 
 	--heading-font: "Montserrat", sans-serif;
