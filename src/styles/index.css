@@ -1,13 +1,13 @@
 :root {
-	--base-hue-1: 170;
-	--base-hue-2: 32;
+	--emphasis-hue: 170;
+	--contrast-hue: 32;
 
-	--cl-emphasis-vivid: hsl(var(--base-hue-1), 32%, 40%);
-	--cl-emphasis-light: hsl(var(--base-hue-1), 32%, 80%);
-	--cl-emphasis-dark: hsl(var(--base-hue-1), 32%, 30%);
-	--cl-contrast-vivid: hsl(var(--base-hue-2), 16%, 50%);
-	--cl-contrast-light: hsl(var(--base-hue-2), 42%, 90%);
-	--cl-contrast-dark: hsl(var(--base-hue-2), 24%, 30%);
+	--cl-emphasis-vivid: hsl(var(--emphasis-hue), 32%, 40%);
+	--cl-emphasis-light: hsl(var(--emphasis-hue), 32%, 80%);
+	--cl-emphasis-dark: hsl(var(--emphasis-hue), 32%, 30%);
+	--cl-contrast-vivid: hsl(var(--contrast-hue), 16%, 50%);
+	--cl-contrast-light: hsl(var(--contrast-hue), 42%, 90%);
+	--cl-contrast-dark: hsl(var(--contrast-hue), 24%, 30%);
 
 	--cl-emphasis: var(--cl-emphasis-vivid);
 	--cl-emphasis-shade: var(--cl-emphasis-light);
