@@ -16,8 +16,12 @@
 }
 
 .testimonial-quotation {
-	max-width: 3ch;
-	filter: brightness(150%);
+	margin-top: 2rem;
+	font-size: 4rem;
+	line-height: 0;
+	color: var(--cl-emphasis);
+
+	user-select: none;
 }
 
 .testimonial-body {

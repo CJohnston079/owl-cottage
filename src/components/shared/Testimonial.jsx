@@ -7,11 +7,7 @@ export default function Testimonial({ review }) {
 
 	return (
 		<div className="testimonial">
-			<img
-				className="testimonial-quotation"
-				src="./src/assets/quotes.svg"
-				alt="Opening quotation mark"
-			/>
+			<span className="testimonial-quotation">“</span>
 			<p className="testimonial-body">{content}</p>
 			<span className="testimonial-author">{author}</span>
 		</div>
