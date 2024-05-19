@@ -21,7 +21,7 @@
 
 .modal-window {
 	margin: 4rem;
-	border: solid 1px hsl(0, 0%, 90%);
+	border: solid 1px var(--cl-background-shade-2);
 	border-radius: var(--br-normal);
 	padding: 2rem;
 
@@ -69,6 +69,6 @@
 @keyframes fade-in-scale-down {
 	from {
 		opacity: 0;
-		scale: 1.2;
+		scale: 1.1;
 	}
 }
