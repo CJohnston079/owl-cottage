@@ -1,3 +1,4 @@
+import Button from "../shared/Button";
 import Section from "../shared/Section";
 import "../../styles/pages/About.css";
 
@@ -76,7 +77,7 @@ export default function About() {
 					</figcaption>
 				</figure>
 			</div>
-			<h3>Amenities</h3>
+			<Button style="emphasis">Take a tour of Owl</Button> <h3>Amenities</h3>
 			<div className="img-grid">
 				<figure className="icon-with-caption">
 					<img src="./src/assets/icons/bed.svg" alt="" />
