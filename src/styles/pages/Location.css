@@ -1,3 +1,7 @@
+#location {
+	background-color: var(--cl-emphasis-shade);
+}
+
 .img-with-caption {
 	display: flex;
 	flex-direction: column;
@@ -12,7 +16,7 @@
 
 	padding: 2rem;
 
-	background-color: white;
+	background-color: var(--cl-background-shade);
 }
 
 .img-with-caption h3 {
@@ -21,9 +25,5 @@
 	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	color: hsl(0, 0%, 20%);
-}
-
-#location {
-	background-color: hsl(0, 0%, 95%);
+	color: var(--cl-foreground-shade);
 }
