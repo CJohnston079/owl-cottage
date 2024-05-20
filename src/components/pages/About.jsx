@@ -7,39 +7,36 @@ export default function About() {
 	return (
 		<Section sectionId="about">
 			<FlexContainer>
-				<div>
+				<div className="feature">
 					<p>
 						A traditional stone cottage built in 1868, Owl Cottage features a large, sociable
 						kitchen/dining/living area with wood burner, master bedroom with king size bed, second
 						bedroom with bunk beds, shower room, enclosed back garden, off-street parking and
 						stunning views over the forest and mountains opposite.
 					</p>
+					<p>
+						Dogs are very welcome here and can enjoy the enclosed garden and dog-friendly furniture
+						while you relax in the spacious open-plan living area with log-burner. Amazing views of
+						mountains & countryside - you may even see deer in the garden!
+					</p>
 					<Button style="emphasis">Take a tour of Owl ➞</Button>
 				</div>
 				<div className="img-grid">
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/bed.svg" alt="" />
+						<img src="./src/assets/icons/amenities/bed.png" alt="" />
 						<figcaption>2 bedrooms</figcaption>
 					</figure>
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/pets.svg" alt="" />
+						<img src="./src/assets/icons/amenities/pet.png" alt="" />
 						<figcaption>Pet friendly</figcaption>
 					</figure>
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/car.svg" alt="" />
+						<img src="./src/assets/icons/amenities/parking.png" alt="" />
 						<figcaption>Driveway</figcaption>
 					</figure>
 					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/view.svg" alt="" />
+						<img src="./src/assets/icons/amenities/landscape.png" alt="" />
 						<figcaption>Mountain view</figcaption>
-					</figure>
-					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/wifi.svg" alt="" />
-						<figcaption>Free wifi</figcaption>
-					</figure>
-					<figure className="icon-with-caption">
-						<img src="./src/assets/icons/tv.svg" alt="" />
-						<figcaption>55-inch TV with Netflix</figcaption>
 					</figure>
 				</div>
 			</FlexContainer>

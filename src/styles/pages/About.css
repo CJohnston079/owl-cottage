@@ -2,10 +2,9 @@
 	background-color: var(--cl-background);
 }
 
-.circular-img {
-	aspect-ratio: 1 / 1;
-	border-radius: 50%;
-	object-fit: cover;
+.feature p {
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
 }
 
 .img-grid {
@@ -31,7 +30,6 @@
 }
 
 .icon-with-caption figcaption {
-	font-size: 1rem;
-	font-weight: 500;
-	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: 700;
 }
