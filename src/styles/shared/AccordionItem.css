@@ -1,0 +1,35 @@
+h4 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--cl-foreground-shade);
+}
+
+.accordion-item {
+	--acc-header-height: 2rem;
+	--acc-header-padding: 0.5rem;
+
+	overflow: hidden;
+	border-bottom: solid 1px var(--cl-midground);
+	padding: var(--acc-header-padding) 0;
+	max-height: var(--acc-header-height);
+
+	transition: max-height 400ms;
+}
+
+.accordion-item.active {
+	/* max-height: 4rem; */
+	max-height: max-content;
+}
+
+.accordion-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: calc(var(--acc-header-height) + var(--acc-header-padding));
+}
+
+.accordion-button {
+	width: 1.25rem;
+	cursor: pointer;
+}
