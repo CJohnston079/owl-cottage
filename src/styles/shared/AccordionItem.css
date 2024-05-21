@@ -6,8 +6,12 @@ h4 {
 
 .accordion-item {
 	overflow: hidden;
-	border-bottom: solid 1px var(--cl-midground);
+	border-top: solid 1px var(--cl-midground);
 	padding: 0.5rem 0;
+}
+
+.accordion-item:last-child {
+	border-bottom: solid 1px var(--cl-midground);
 }
 
 .accordion-item.active {
