@@ -1,43 +1,50 @@
 h4 {
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	font-weight: 600;
-	text-transform: uppercase;
 	color: var(--cl-foreground-shade);
 }
 
 .accordion-item {
-	--acc-header-height: 2rem;
-	--acc-header-padding: 0.5rem;
-
 	overflow: hidden;
 	border-bottom: solid 1px var(--cl-midground);
-	padding: var(--acc-header-padding) 0;
-	max-height: var(--acc-header-height);
-
-	transition: max-height 400ms;
+	padding: 0.5rem 0;
 }
 
 .accordion-item.active {
-	/* max-height: 4rem; */
 	max-height: max-content;
 }
 
 .accordion-header {
 	display: flex;
-	justify-content: space-between;
+	gap: 1rem;
 	align-items: center;
-	height: calc(var(--acc-header-height) + var(--acc-header-padding));
-}
 
-.accordion-button {
-	width: 1.5rem;
+	font-size: 1.1rem;
+	font-weight: 600;
 
-	transform: rotate(180deg);
-	transition: transform 400ms;
 	user-select: none;
 	cursor: pointer;
 }
 
-.accordion-item.active .accordion-button {
-	transform: rotate(0deg);
+.accordion-button {
+	width: 1.3rem;
+	aspect-ratio: 1 / 1;
+	padding: 0.5rem;
+
+	transition: transform 400ms;
+
+	filter: invert(0.5);
+}
+
+.active .accordion-button {
+	transform: rotate(180deg);
+}
+
+.accordion-content {
+	display: none;
+}
+
+.active .accordion-content {
+	display: block;
+	margin-top: 0.5rem;
 }
