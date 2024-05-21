@@ -18,7 +18,7 @@ export default function Amenities() {
 				content: (
 					<>
 						<Amenity icon="hair-dryer" content="Hair dryer" />
-						<Amenity icon="housekeeping" content="Cleaning produects" />
+						<Amenity icon="housekeeping" content="Cleaning products" />
 						<Amenity icon="dispenser" content="Soap and shower gel" />
 						<Amenity icon="shower" content="Hot water" />
 					</>

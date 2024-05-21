@@ -1,4 +1,4 @@
-import Amenities from "../shared/Ammenities";
+import Amenities from "../shared/Amenities";
 import Button from "../shared/Button";
 import FlexContainer from "../shared/FlexContainer";
 import Section from "../shared/Section";
