@@ -1,7 +1,9 @@
 import FlexContainer from "../shared/FlexContainer";
 import Modal from "../shared/Modal";
+import ModalForm from "../shared/ModalForm";
 import Section from "../shared/Section";
 import Testimonial from "../shared/Testimonial";
+import formFields from "../../data/formFields.json";
 import reviews from "../../data/reviews.json";
 import "../../styles/pages/Testimonials.css";
 
@@ -37,7 +39,12 @@ export default function Testimonials() {
 	return (
 		<Section sectionId="testimonials">
 			<FlexContainer>{testimonials}</FlexContainer>
-			<Modal heading="Leave a testimonial"></Modal>
+			<Modal heading="Open Form">
+				{({ closeModal }) => (
+					<ModalForm fieldsData={formFields.testimonials} handleClose={closeModal} />
+				)}
+			</Modal>
+			{/* <Modal heading="Leave a testimonial"></Modal> */}
 		</Section>
 	);
 }

@@ -1,11 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
-import ModalForm from "./ModalForm";
-import formFields from "../../data/formFields.json";
 import "../../styles/shared/Modal.css";
 
-export default function Modal({ heading }) {
+export default function Modal({ heading, children }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const dialogRef = useRef(null);
 
@@ -33,6 +31,7 @@ export default function Modal({ heading }) {
 		} else {
 			document.removeEventListener("keydown", handleKeyDown);
 		}
+
 		return () => {
 			document.removeEventListener("keydown", handleKeyDown);
 		};
@@ -51,7 +50,7 @@ export default function Modal({ heading }) {
 							<img src="./src/assets/icons/close.svg" alt="Close icon" />
 						</button>
 					</header>
-					<ModalForm fieldsData={formFields.testimonials} handleClose={closeModal} />
+					{children({ closeModal })}
 				</div>
 			</dialog>
 		</>
@@ -60,4 +59,5 @@ export default function Modal({ heading }) {
 
 Modal.propTypes = {
 	heading: PropTypes.string.isRequired,
+	children: PropTypes.func.isRequired,
 };
