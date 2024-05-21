@@ -30,6 +30,14 @@ h4 {
 }
 
 .accordion-button {
-	width: 1.25rem;
+	width: 1.5rem;
+
+	transform: rotate(180deg);
+	transition: transform 400ms;
+	user-select: none;
 	cursor: pointer;
+}
+
+.accordion-item.active .accordion-button {
+	transform: rotate(0deg);
 }

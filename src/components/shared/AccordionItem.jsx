@@ -7,7 +7,11 @@ export default function AccordionItem({ heading, children, index, isActive, togg
 		<div className={`accordion-item ${isActive && "active"}`}>
 			<header className="accordion-header" onClick={() => toggleHandler(index)}>
 				<h4>{heading}</h4>
-				<img className="accordion-button" src="./src/assets/icons/close.svg" alt="" />
+				<img
+					className="accordion-button"
+					src="./src/assets/icons/chevron.png"
+					alt={isActive ? "Close section" : "Open section"}
+				/>
 			</header>
 			<div className="accordion-content">{children}</div>
 		</div>
