@@ -2,9 +2,9 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
 import Fields from "./Fields";
-import "../../styles/shared/Form.css";
+import "../../styles/shared/ModalForm.css";
 
-export default function Form({ fieldsData, children }) {
+export default function ModalForm({ fieldsData, handleClose }) {
 	const [formData, setFormData] = useState(
 		fieldsData.reduce((data, field) => ({ ...data, [field.inputName]: "" }), {})
 	);
@@ -27,13 +27,13 @@ export default function Form({ fieldsData, children }) {
 				<Button type="submit" style="emphasis">
 					Submit
 				</Button>
-				{children}
+				<Button onClick={handleClose}>Close</Button>
 			</div>
 		</form>
 	);
 }
 
-Form.propTypes = {
+ModalForm.propTypes = {
 	fieldsData: PropTypes.arrayOf(
 		PropTypes.shape({
 			type: PropTypes.string,
@@ -41,5 +41,5 @@ Form.propTypes = {
 			inputName: PropTypes.string,
 		})
 	),
-	children: PropTypes.node,
+	handleClose: PropTypes.func,
 };
