@@ -20,6 +20,11 @@
 }
 
 .modal-window {
+	display: grid;
+	flex-direction: column;
+	gap: 1rem;
+	justify-items: flex-start;
+
 	margin: 4rem;
 	border: solid 1px var(--cl-background-shade-2);
 	border-radius: var(--br-normal);
@@ -34,9 +39,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 	gap: 4rem;
-
-	margin-bottom: 2rem;
 }
 
 .modal-header h3 {

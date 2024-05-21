@@ -22,8 +22,8 @@ export default function About() {
 						mountains & countryside - you may even see deer in the garden!
 					</p>
 					{/* <Button style="emphasis">Take a tour of Owl ➞</Button> */}
-					<Modal buttonText="Full list of amenities" heading="Amenities">
-						{() => <Amenities />}
+					<Modal buttonText="Full list of amenities" heading="Amenities" showCloseButton={true}>
+						{() => <Amenities id="wee" />}
 					</Modal>
 				</div>
 				<div className="img-grid">

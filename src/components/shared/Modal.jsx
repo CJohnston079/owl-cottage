@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 import Button from "./Button";
 import "../../styles/shared/Modal.css";
 
-export default function Modal({ buttonText, heading = buttonText, children }) {
+export default function Modal({
+	buttonText,
+	heading = buttonText,
+	showCloseButton = false,
+	children,
+}) {
 	const [isOpen, setIsOpen] = useState(false);
 	const dialogRef = useRef(null);
 
@@ -51,6 +56,7 @@ export default function Modal({ buttonText, heading = buttonText, children }) {
 						</button>
 					</header>
 					{children({ closeModal })}
+					{showCloseButton && <Button onClick={closeModal}>Close</Button>}
 				</div>
 			</dialog>
 		</>
@@ -60,5 +66,6 @@ export default function Modal({ buttonText, heading = buttonText, children }) {
 Modal.propTypes = {
 	buttonText: PropTypes.string.isRequired,
 	heading: PropTypes.string,
+	showCloseButton: PropTypes.bool,
 	children: PropTypes.func.isRequired,
 };
