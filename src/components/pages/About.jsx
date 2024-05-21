@@ -1,5 +1,6 @@
 import Amenities from "../shared/Amenities";
-import Button from "../shared/Button";
+// import Button from "../shared/Button";
+import Modal from "../shared/Modal";
 import FlexContainer from "../shared/FlexContainer";
 import Section from "../shared/Section";
 import "../../styles/pages/About.css";
@@ -20,7 +21,10 @@ export default function About() {
 						while you relax in the spacious open-plan living area with log-burner. Amazing views of
 						mountains & countryside - you may even see deer in the garden!
 					</p>
-					<Button style="emphasis">Take a tour of Owl ➞</Button>
+					{/* <Button style="emphasis">Take a tour of Owl ➞</Button> */}
+					<Modal buttonText="Full list of amenities" heading="Amenities">
+						{() => <Amenities />}
+					</Modal>
 				</div>
 				<div className="img-grid">
 					<figure className="icon-with-caption">
@@ -41,8 +45,6 @@ export default function About() {
 					</figure>
 				</div>
 			</FlexContainer>
-			<h3>Amenities</h3>
-			<Amenities />
 		</Section>
 	);
 }
