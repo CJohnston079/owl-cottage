@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Button from "./Button";
 import "../../styles/shared/Modal.css";
 
-export default function Modal({ heading, children }) {
+export default function Modal({ buttonText, heading = buttonText, children }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const dialogRef = useRef(null);
 
@@ -40,7 +40,7 @@ export default function Modal({ heading, children }) {
 	return (
 		<>
 			<Button style="emphasis" onClick={openModal}>
-				{heading}
+				{buttonText}
 			</Button>
 			<dialog className="modal-overlay" onClick={closeModal} ref={dialogRef} open={isOpen}>
 				<div className="modal-window" onClick={stopPropagation}>
@@ -58,6 +58,7 @@ export default function Modal({ heading, children }) {
 }
 
 Modal.propTypes = {
-	heading: PropTypes.string.isRequired,
+	buttonText: PropTypes.string.isRequired,
+	heading: PropTypes.string,
 	children: PropTypes.func.isRequired,
 };

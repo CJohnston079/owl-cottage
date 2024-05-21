@@ -39,7 +39,7 @@ export default function Testimonials() {
 	return (
 		<Section sectionId="testimonials">
 			<FlexContainer>{testimonials}</FlexContainer>
-			<Modal heading="Open Form">
+			<Modal buttonText="Leave a testimonial">
 				{({ closeModal }) => (
 					<ModalForm fieldsData={formFields.testimonials} handleClose={closeModal} />
 				)}
