@@ -4,7 +4,7 @@ import "../../styles/shared/Amenities.css";
 
 export default function Amenities() {
 	return (
-		<AccordionContainer>
+		<AccordionContainer id="amenities">
 			{{
 				heading: "Scenic",
 				content: (

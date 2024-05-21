@@ -2,7 +2,7 @@ import AccordionItem from "./AccordionItem";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-export default function AccordionContainer({ children }) {
+export default function AccordionContainer({ id = "", children }) {
 	const [activeItem, setActiveItem] = useState(null);
 
 	const toggleHandler = index => {
@@ -21,9 +21,14 @@ export default function AccordionContainer({ children }) {
 		</AccordionItem>
 	));
 
-	return <div className="accordion-container">{accordionItems}</div>;
+	return (
+		<div id={id} className="accordion-container">
+			{accordionItems}
+		</div>
+	);
 }
 
 AccordionContainer.propTypes = {
+	id: PropTypes.string,
 	children: PropTypes.array,
 };
