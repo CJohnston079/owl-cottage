@@ -1,0 +1,38 @@
+[
+	{
+		"q": "Is there wifi or mobile phone reception?",
+		"a": "No, there is no wifi or television reception at the cottage. There is a DVD player with a selection of DVDs and a range of books and games supplied for quiet evenings in. Phone reception may be limited depending on your provider."
+	},
+	{
+		"q": "Are dogs allowed on the furniture?",
+		"a": "Yes! Dogs are welcome on the furniture - special dog blankets are provided."
+	},
+	{
+		"q": "How much deposit is required to confirm a booking?",
+		"a": "50% of the balance is required to confirm your booking."
+	},
+	{
+		"q": "When do I have to pay the balance of my stay?",
+		"a": "The balance of your stay is due no less than one month before check-in."
+	},
+	{
+		"q": "What times is check-in/checkout?",
+		"a": "Check-in is at 16:00; checkout is at 10:00."
+	},
+	{
+		"q": "Is there on-site parking available?",
+		"a": "There is parking in front of the cottage for one car."
+	},
+	{
+		"q": "Are there any steps in the cottage?",
+		"a": "There is a step at the front door and another from the entrance hall into the main living area. There are two large steps from the back door into the garden, although this can be accessed step-free from the side of the house."
+	},
+	{
+		"q": "Is there a minimum or maximum stay?",
+		"a": "There is a four night minimum stay. Long-term stays are available."
+	},
+	{
+		"q": "Will I get a change on linens for long-term stays?",
+		"a": "For stays of more than 10 days you will be offered a change of linens halfway through your stay."
+	}
+]
