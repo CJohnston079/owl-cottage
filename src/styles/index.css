@@ -29,12 +29,12 @@
 	--br-normal: 0.5rem;
 	--site-padding-x: max(12vw, 4rem);
 
-	--heading-font: "Montserrat", sans-serif;
-	--body-font: "Lora", serif;
+	--sans-serif: "Montserrat", sans-serif;
+	--serif: "Lora", serif;
 
 	color-scheme: light dark;
 
-	font-family: var(--heading-font);
+	font-family: var(--sans-serif);
 	font-weight: 400;
 	font-optical-sizing: auto;
 	font-synthesis: none;

@@ -21,6 +21,6 @@
 }
 
 .amenity-text {
-	font-family: var(--heading-text);
+	font-family: var(--sans-serif);
 	font-weight: 300;
 }
