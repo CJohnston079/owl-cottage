@@ -30,7 +30,7 @@ export default function NavBar() {
 	window.addEventListener("scroll", toggleFloatingNav);
 	window.addEventListener("scroll", toggleActiveSection);
 
-	const sections = ["home", "about", "location", "testimonials", "booking"];
+	const sections = ["home", "about", "location", "faq", "testimonials", "booking"];
 	const navLinks = sections.map(section => {
 		const href = `#${section}`;
 
