@@ -7,7 +7,7 @@ export default function Faq() {
 		return { heading: data.q, content: data.a };
 	});
 	return (
-		<Section sectionId="faq">
+		<Section sectionId="faq" heading="Frequently asked questions">
 			<AccordionContainer items={faqElements}></AccordionContainer>
 		</Section>
 	);
