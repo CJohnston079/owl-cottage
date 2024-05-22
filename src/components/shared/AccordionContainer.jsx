@@ -2,22 +2,22 @@ import AccordionItem from "./AccordionItem";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-export default function AccordionContainer({ id = "", children }) {
+export default function AccordionContainer({ id = "", items }) {
 	const [activeItem, setActiveItem] = useState(null);
 
 	const toggleHandler = index => {
 		setActiveItem(prevIndex => (prevIndex === index ? null : index));
 	};
 
-	const accordionItems = children.map((child, index) => (
+	const accordionItems = items.map((item, index) => (
 		<AccordionItem
 			key={index}
 			index={index}
 			isActive={activeItem === index}
 			toggleHandler={toggleHandler}
-			heading={child.heading}
+			heading={item.heading}
 		>
-			{child.content}
+			{item.content}
 		</AccordionItem>
 	));
 
@@ -30,5 +30,5 @@ export default function AccordionContainer({ id = "", children }) {
 
 AccordionContainer.propTypes = {
 	id: PropTypes.string,
-	children: PropTypes.array,
+	items: PropTypes.array,
 };
