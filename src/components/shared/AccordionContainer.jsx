@@ -30,5 +30,10 @@ export default function AccordionContainer({ id = "", items }) {
 
 AccordionContainer.propTypes = {
 	id: PropTypes.string,
-	items: PropTypes.array,
+	items: PropTypes.arrayOf(
+		PropTypes.shape({
+			heading: PropTypes.string.isRequired,
+			content: PropTypes.node.isRequired,
+		})
+	).isRequired,
 };
