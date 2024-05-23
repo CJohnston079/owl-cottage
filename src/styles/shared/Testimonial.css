@@ -49,6 +49,41 @@
 	height: 3lh;
 }
 
+.testimonial-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.testimonial .btn {
+	border-radius: var(--br-light);
+	padding: 0.5rem 1rem;
+	font-size: 0.8rem;
+}
+
+.testimonial .btn-emphasis {
+	border-color: var(--cl-emphasis);
+	border-radius: var(--br-light);
+	padding: 0.5rem 1rem;
+
+	background-color: var(--cl-background-shade);
+
+	color: var(--cl-emphasis);
+
+	box-shadow: 0 -0 1rem var(--cl-background-shade-2);
+	transform: translateY(-1ch);
+}
+
+.testimonial .btn-emphasis:hover {
+	background-color: var(--cl-emphasis);
+	color: var(--cl-background-shade);
+}
+
+.overflow-body {
+	max-width: 60ch;
+	text-align: left;
+}
+
 .testimonial-author::before {
 	content: "–";
 	margin-right: 1ch;
