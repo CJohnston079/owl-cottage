@@ -12,7 +12,7 @@ export default function Testimonial({ review }) {
 	return (
 		<div className="testimonial">
 			<span className="testimonial-quotation">“</span>
-			<p className="testimonial-body">{content}</p>
+			<p className={`testimonial-body ${content.length > 210 && "overflow"}`}>{content}</p>
 			<p className="testimonial-footer">
 				<span className="testimonial-author">{author}</span>
 				<span className="testimonial-location">{location}</span>

@@ -9,7 +9,7 @@ import "../../styles/pages/Testimonials.css";
 
 export default function Testimonials() {
 	const shortReviews = reviews.filter(review => {
-		return review.content.length > 140 && review.content.length <= 210;
+		return review.content.length > 140; // && review.content.length <= 210;
 	});
 
 	const randomReviewIds = function () {

@@ -29,8 +29,24 @@
 }
 
 .testimonial-body {
+	max-height: 5lh;
+	overflow: hidden;
+
 	font-style: italic;
 	color: var(--cl-foreground-shade-2);
+}
+
+.overflow {
+	position: relative;
+}
+
+.overflow::after {
+	content: "";
+	position: absolute;
+	inset: auto auto 0 0;
+	background: linear-gradient(transparent, var(--cl-background));
+	width: 100%;
+	height: 3lh;
 }
 
 .testimonial-author::before {
