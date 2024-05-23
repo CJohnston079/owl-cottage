@@ -13,10 +13,11 @@ export default function Testimonial({ review }) {
 		<div className="testimonial">
 			<span className="testimonial-quotation">“</span>
 			<p className="testimonial-body">{content}</p>
-			<p>
-				<span className="testimonial-author">{author},</span> {location}
+			<p className="testimonial-footer">
+				<span className="testimonial-author">{author}</span>
+				<span className="testimonial-location">{location}</span>
+				<span className="testimonial-date">{date}</span>
 			</p>
-			<span>{date}</span>
 		</div>
 	);
 }
