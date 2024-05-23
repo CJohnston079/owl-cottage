@@ -25,15 +25,7 @@ export default function Testimonials() {
 	const testimonials = randomReviewIds().map(reviewId => {
 		const review = shortReviews[reviewId];
 
-		return (
-			<Testimonial
-				key={reviewId}
-				review={{
-					content: review.content,
-					author: review.name,
-				}}
-			/>
-		);
+		return <Testimonial key={reviewId} review={review} />;
 	});
 
 	return (
