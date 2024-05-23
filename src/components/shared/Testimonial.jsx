@@ -10,14 +10,15 @@ export default function Testimonial({ review }) {
 		review.location,
 	];
 
+	const charLimit = 200;
 	const overflowHeading = `Message from ${author}, ${date}`;
 
 	return (
 		<div className="testimonial">
 			<span className="testimonial-quotation">“</span>
 			<div className="testimonial-container">
-				<p className={`testimonial-body ${content.length > 210 && "overflow"}`}>{content}</p>
-				{content.length > 210 && (
+				<p className={`testimonial-body ${content.length > charLimit && "overflow"}`}>{content}</p>
+				{content.length > charLimit && (
 					<Modal buttonText="Show more" heading={overflowHeading} showCloseButton={true}>
 						{() => <p className="overflow-body">{content}</p>}
 					</Modal>
