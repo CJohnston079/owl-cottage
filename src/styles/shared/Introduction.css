@@ -1,0 +1,10 @@
+#introduction {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	gap: 2rem;
+}
+
+.intro-text {
+	margin-bottom: 2rem;
+}

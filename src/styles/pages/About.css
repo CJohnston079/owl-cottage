@@ -1,15 +1,10 @@
-:root {
-	--bento-gap: 1rem;
-}
-
 #about {
+	display: grid;
 	background-color: var(--cl-background);
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: calc(2 * var(--bento-gap));
+#about #introduction {
+	margin-bottom: 4rem;
 }
 
 .feature p {
