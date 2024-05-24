@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
+import closeIcon from "../../assets/icons/close.svg";
 import "../../styles/shared/Modal.css";
 
 export default function Modal({
@@ -52,7 +53,7 @@ export default function Modal({
 					<header className="modal-header">
 						<h3>{heading}</h3>
 						<button className="close-modal" onClick={closeModal} title="Close window">
-							<img src="./src/assets/icons/close.svg" alt="Close icon" />
+							<img src={closeIcon} alt="Close icon" />
 						</button>
 					</header>
 					{children({ closeModal })}

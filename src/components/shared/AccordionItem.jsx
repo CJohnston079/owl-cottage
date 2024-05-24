@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import chevronIcon from "../../assets/icons/chevron.png";
 import "../../styles/shared/AccordionItem.css";
 
 export default function AccordionItem({ heading, children, index, isActive, toggleHandler }) {
@@ -7,7 +8,7 @@ export default function AccordionItem({ heading, children, index, isActive, togg
 			<header className="accordion-header" onClick={() => toggleHandler(index)}>
 				<img
 					className="accordion-button"
-					src="./src/assets/icons/chevron.png"
+					src={chevronIcon}
 					alt={isActive ? "Close section" : "Open section"}
 				/>
 				<h4>{heading}</h4>
