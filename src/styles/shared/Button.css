@@ -3,8 +3,9 @@
 
 	border: solid 2px transparent;
 	border-radius: var(--br-normal);
-	padding: 1rem 1.5rem;
+	padding: 0.8rem 1.5rem;
 
+	font-size: 0.8rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -38,6 +39,9 @@
 }
 
 .btn-hero {
+	padding: 1rem 1.5rem;
+
+	font-size: 1rem;
 	color: black;
 	background-color: white;
 	mix-blend-mode: screen;
