@@ -1,6 +1,6 @@
 #amenities {
 	min-width: min(32rem, 50vw);
 	max-width: min(32rem, 50vw);
-	max-height: 70vh;
+	max-height: 60vh;
 	overflow: scroll;
 }
