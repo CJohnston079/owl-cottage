@@ -1,0 +1,22 @@
+.bento-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--bento-gap);
+}
+
+.bento-column {
+	display: grid;
+	grid-template-rows: 3fr 2fr;
+	gap: var(--bento-gap);
+}
+
+.bento-column:nth-child(2) {
+	display: grid;
+	grid-template-rows: 2fr 3fr;
+}
+
+.bento-img {
+	border-radius: var(--br-normal);
+	height: 100%;
+	object-fit: cover;
+}
