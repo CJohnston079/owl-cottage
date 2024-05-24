@@ -1,10 +1,27 @@
 import Amenities from "../shared/Amenities";
+import Bento from "../shared/Bento";
 import Button from "../shared/Button";
 import Modal from "../shared/Modal";
 import Section from "../shared/Section";
 import "../../styles/pages/About.css";
 
+import owlKitchen from "../../assets/images/owl-kitchen.webp";
+import owlBedroom from "../../assets/images/owl-bedroom.webp";
+import owlSignpost from "../../assets/images/owl-signpost.webp";
+import owlFurniture from "../../assets/images/owl-furniture.webp";
+import owlGarden from "../../assets/images/owl-garden.webp";
+import owlCoffee from "../../assets/images/owl-coffee.webp";
+
 export default function About() {
+	const images = [
+		{ src: owlKitchen, alt: "Kitchen" },
+		{ src: owlBedroom, alt: "Bedroom" },
+		{ src: owlSignpost, alt: "Signpost" },
+		{ src: owlFurniture, alt: "Furniture" },
+		{ src: owlGarden, alt: "Garden" },
+		{ src: owlCoffee, alt: "Coffee" },
+	];
+
 	return (
 		<Section sectionId="about">
 			<div style={{ marginBottom: "4rem" }} className="grid">
@@ -25,20 +42,7 @@ export default function About() {
 					<br />
 					<Button style="emphasis">Take a tour of Owl ➞</Button>
 				</div>
-				<div className="bento-grid">
-					<div className="bento-column">
-						<img className="bento-img" src="./src/assets/images/owl-kitchen.webp" alt="s" />
-						<img className="bento-img" src="./src/assets/images/owl-bedroom.webp" alt="s" />
-					</div>
-					<div className="bento-column">
-						<img className="bento-img" src="./src/assets/images/owl-signpost.webp" alt="s" />
-						<img className="bento-img" src="./src/assets/images/owl-furniture.webp" alt="s" />
-					</div>
-					<div className="bento-column">
-						<img className="bento-img" src="./src/assets/images/owl-garden.webp" alt="s" />
-						<img className="bento-img" src="./src/assets/images/owl-coffee.webp" alt="s" />
-					</div>
-				</div>
+				<Bento images={images} />
 			</div>
 			<h3>Amenities</h3>
 			<div style={{ display: "flex", gap: "1rem", marginBottom: "2rem" }}>
