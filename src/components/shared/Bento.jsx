@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import "../../styles/shared/Bento.css";
 
 export default function Bento({ images }) {
@@ -25,10 +24,29 @@ export default function Bento({ images }) {
 }
 
 Bento.propTypes = {
-	images: PropTypes.arrayOf(
-		PropTypes.shape({
-			src: PropTypes.string.isRequired,
-			alt: PropTypes.string.isRequired,
-		})
-	).isRequired,
+	images: (props, propName, componentName) => {
+		if (!Array.isArray(props[propName])) {
+			return new Error(
+				`Invalid prop ${propName} supplied to ${componentName}. Expected array, received ${typeof props[
+					propName
+				]}.`
+			);
+		}
+
+		if (props[propName].length !== 6) {
+			return new Error(
+				`Not enough images supplied to ${componentName}. Expected 6, received ${props[propName].length}.`
+			);
+		}
+
+		for (let i = 0; i < props[propName].length; i += 1) {
+			const image = props[propName][i];
+
+			if (!image.src || !image.alt) {
+				return new Error(
+					`Invalid prop ${propName}[${i}] supplied to ${componentName}. Each image must have 'src' and 'alt' properties.`
+				);
+			}
+		}
+	},
 };
