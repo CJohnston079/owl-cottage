@@ -1,7 +1,7 @@
 import AccordionContainer from "./AccordionContainer";
 import Amenity from "./Amenity";
 import amenitiesData from "../../data/amenities.json";
-import "../../styles/shared/Amenities.css";
+import "../../styles/shared/AmenitiesList.css";
 
 const amenitiesComponents = amenitiesData.map(amenityData => {
 	return {
@@ -12,6 +12,6 @@ const amenitiesComponents = amenitiesData.map(amenityData => {
 	};
 });
 
-export default function Amenities() {
-	return <AccordionContainer id="amenities" items={amenitiesComponents} />;
+export default function AmenitiesList() {
+	return <AccordionContainer id="amenities-list" items={amenitiesComponents} />;
 }

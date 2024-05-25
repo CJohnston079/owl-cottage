@@ -1,4 +1,4 @@
-import Amenities from "../shared/Amenities";
+import AmenitiesList from "../shared/AmenitiesList";
 import Introduction from "../shared/Introduction";
 import Modal from "../shared/Modal";
 import Section from "../shared/Section";
@@ -24,7 +24,7 @@ export default function About() {
 				</figure>
 			</div>
 			<Modal buttonText="Full list of amenities ➞" heading="Amenities" showCloseButton={true}>
-				{() => <Amenities id="wee" />}
+				{() => <AmenitiesList id="wee" />}
 			</Modal>
 		</Section>
 	);
