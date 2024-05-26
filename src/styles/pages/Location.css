@@ -1,5 +1,11 @@
 #location {
-	background-color: var(--cl-background);
+	background-color: var(--cl-emphasis-shade);
+}
+
+.map {
+	border: solid 4px var(--cl-background) !important;
+	border-radius: var(--br-normal);
+	box-shadow: var(--box-shadow);
 }
 
 .img-with-caption {

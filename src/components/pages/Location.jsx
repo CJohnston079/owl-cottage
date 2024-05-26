@@ -8,7 +8,14 @@ export default function Location() {
 	return (
 		<Section sectionId="location">
 			<Paragraphs paragraphs={copy.location} />
-			<h3>Points of interest</h3>
+			<h3>Local area map</h3>
+			<iframe
+				className="map"
+				src="https://snazzymaps.com/embed/611220"
+				width="100%"
+				height="600px"
+				style={{ border: "none" }}
+			></iframe>
 			<FlexContainer>
 				<figure className="img-with-caption">
 					<img src="./src/assets/images/loch-ness.jpeg" alt="Urquhart Castle, Loch Ness" />
