@@ -1,4 +1,5 @@
 import About from "./pages/About.jsx";
+import Amenities from "./pages/Amenities.jsx";
 import Booking from "./pages/Booking.jsx";
 import Faq from "./pages/Faq.jsx";
 import Hero from "./pages/Hero.jsx";
@@ -13,6 +14,7 @@ function App() {
 			<NavBar />
 			<Hero />
 			<About />
+			<Amenities />
 			<Location />
 			<Testimonials />
 			<Faq />

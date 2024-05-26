@@ -1,12 +1,11 @@
-import AmenitiesList from "./AmenitiesList";
+import AmenitiesList from "../shared/AmenitiesList";
 import Modal from "../shared/Modal";
+import Section from "../shared/Section";
 import "../../styles/shared/Amenities.css";
 
 export default function Amenities() {
 	return (
-		<div id="amenities">
-			<h2>Amenities</h2>
-			<br />
+		<Section sectionId="amenities">
 			<div className="amenities-container">
 				<figure className="ft-amenity">
 					<img className="ft-amenity-icon" src="./src/assets/bed.png" alt="" />
@@ -43,6 +42,6 @@ export default function Amenities() {
 			<Modal buttonText="Full list of amenities ➞" heading="Amenities" showCloseButton={true}>
 				{() => <AmenitiesList id="wee" />}
 			</Modal>
-		</div>
+		</Section>
 	);
 }
