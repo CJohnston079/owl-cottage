@@ -4,6 +4,10 @@ import Section from "../shared/Section";
 import copy from "../../data/copy.json";
 import "../../styles/pages/Location.css";
 
+import lochOich from "../../assets/images/loch-oich.webp";
+import fortAugustus from "../../assets/images/fort-augustus.webp";
+import lochNess from "../../assets/images/loch-ness.jpeg";
+
 export default function Location() {
 	return (
 		<Section sectionId="location">
@@ -18,7 +22,7 @@ export default function Location() {
 			></iframe>
 			<FlexContainer>
 				<figure className="img-with-caption">
-					<img src="./src/assets/images/loch-ness.jpeg" alt="Urquhart Castle, Loch Ness" />
+					<img src={lochNess} alt="Urquhart Castle, Loch Ness" />
 					<figcaption>
 						<h3>Loch Ness</h3>
 						<p>
@@ -28,7 +32,7 @@ export default function Location() {
 					</figcaption>
 				</figure>
 				<figure className="img-with-caption">
-					<img src="./src/assets/images/fort-augustus.webp" alt="Fort Augustus, Inverness-shire" />
+					<img src={fortAugustus} alt="Fort Augustus, Inverness-shire" />
 					<figcaption>
 						<h3>Fort Augustus</h3>
 						<p>
@@ -38,7 +42,7 @@ export default function Location() {
 					</figcaption>
 				</figure>
 				<figure className="img-with-caption">
-					<img src="./src/assets/images/loch-oich.webp" alt="Loch Oich shore" />
+					<img src={lochOich} alt="Loch Oich shore" />
 					<figcaption>
 						<h3>Loch Oich</h3>
 						<p>
