@@ -5,6 +5,7 @@
 .amenities-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
 	margin-bottom: 2rem;
 }
 
@@ -13,16 +14,20 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 1rem;
-	padding: 0 2rem;
+
+	border: solid 1px var(--cl-background-shade-2);
+	border-radius: var(--br-normal);
+	padding: 2rem;
 
 	text-align: center;
 
-	opacity: 0.7;
+	background-color: var(--cl-background);
+	box-shadow: var(--box-shadow);
 }
 
-.ft-amenity:nth-child(2) {
-	border-left: solid 2px var(--cl-midground);
-	border-right: solid 2px var(--cl-midground);
+.ft-amenity hr {
+	width: 100%;
+	border: solid 0.5px var(--cl-background-shade-2);
 }
 
 .ft-amenity-icon {
@@ -35,6 +40,7 @@
 	margin-bottom: 0.5rem;
 	min-height: 3lh;
 
+	font-size: 1rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.05rem;

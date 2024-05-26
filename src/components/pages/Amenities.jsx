@@ -9,6 +9,7 @@ export default function Amenities() {
 			<div className="amenities-container">
 				<figure className="ft-amenity">
 					<img className="ft-amenity-icon" src="./src/assets/bed.png" alt="" />
+					<hr />
 					<figcaption className="ft-amenity-text-wrapper">
 						<h4 className="ft-amenity-heading">Two bedrooms, sleeps up to four guests</h4>
 						<p className="ft-amenity-description">
@@ -19,6 +20,7 @@ export default function Amenities() {
 				</figure>
 				<figure className="ft-amenity">
 					<img className="ft-amenity-icon" src="./src/assets/mountains.png" alt="" />
+					<hr />
 					<figcaption className="ft-amenity-text-wrapper">
 						<h4 className="ft-amenity-heading">Amazing views of mountains & countryside</h4>
 						<p className="ft-amenity-description">
@@ -30,6 +32,7 @@ export default function Amenities() {
 				</figure>
 				<figure className="ft-amenity">
 					<img className="ft-amenity-icon" src="./src/assets/dog.png" alt="" />
+					<hr />
 					<figcaption className="ft-amenity-text-wrapper">
 						<h4 className="ft-amenity-heading">Dog-friendly furniture and enclosed garden</h4>
 						<p className="ft-amenity-description">
