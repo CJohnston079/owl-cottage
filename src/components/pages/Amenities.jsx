@@ -3,12 +3,16 @@ import Modal from "../shared/Modal";
 import Section from "../shared/Section";
 import "../../styles/shared/Amenities.css";
 
+import bedIcon from "../../assets/bed.png";
+import mountainsIcon from "../../assets/mountains.png";
+import dogIcon from "../../assets/dog.png";
+
 export default function Amenities() {
 	return (
 		<Section sectionId="amenities">
 			<div className="amenities-container">
 				<figure className="ft-amenity">
-					<img className="ft-amenity-icon" src="./src/assets/bed.png" alt="" />
+					<img className="ft-amenity-icon" src={bedIcon} alt="" />
 					<hr />
 					<figcaption className="ft-amenity-text-wrapper">
 						<h4 className="ft-amenity-heading">Two bedrooms, sleeps up to four guests</h4>
@@ -19,7 +23,7 @@ export default function Amenities() {
 					</figcaption>
 				</figure>
 				<figure className="ft-amenity">
-					<img className="ft-amenity-icon" src="./src/assets/mountains.png" alt="" />
+					<img className="ft-amenity-icon" src={mountainsIcon} alt="" />
 					<hr />
 					<figcaption className="ft-amenity-text-wrapper">
 						<h4 className="ft-amenity-heading">Amazing views of mountains & countryside</h4>
@@ -31,7 +35,7 @@ export default function Amenities() {
 					</figcaption>
 				</figure>
 				<figure className="ft-amenity">
-					<img className="ft-amenity-icon" src="./src/assets/dog.png" alt="" />
+					<img className="ft-amenity-icon" src={dogIcon} alt="" />
 					<hr />
 					<figcaption className="ft-amenity-text-wrapper">
 						<h4 className="ft-amenity-heading">Dog-friendly furniture and enclosed garden</h4>
