@@ -41,3 +41,7 @@ textarea.field-input {
 	letter-spacing: -0.2px;
 	color: var(--cl-emphasis);
 }
+
+.field-input:focus-visible + .yellow {
+	color: hsl(40, 80%, 50%) !important;
+}

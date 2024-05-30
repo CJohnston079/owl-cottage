@@ -25,7 +25,9 @@ export default function LabelledField({ type, labelContent, inputName, value, ha
 			{type === "textarea" ? (
 				<>
 					<textarea onInput={handleInputChange} {...attributes}></textarea>
-					<span className="char-count">{`${charCount} characters`}</span>
+					<span
+						className={`char-count ${charCount > 250 && "yellow"}`}
+					>{`${charCount} / 250`}</span>
 				</>
 			) : (
 				<input {...attributes} type={type} />
