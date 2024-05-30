@@ -1,14 +1,8 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
+import Textarea from "./Textarea";
 import "../../styles/shared/LabelledField.css";
 
 export default function LabelledField({ type, labelContent, inputName, value, handleInput }) {
-	const [charCount, setCharCount] = useState(0);
-
-	const handleInputChange = event => {
-		setCharCount(event.target.value.length);
-	};
-
 	const attributes = {
 		className: "field-input",
 		id: inputName,
@@ -23,12 +17,7 @@ export default function LabelledField({ type, labelContent, inputName, value, ha
 				{labelContent + ":"}
 			</label>
 			{type === "textarea" ? (
-				<>
-					<textarea onInput={handleInputChange} {...attributes}></textarea>
-					<span
-						className={`char-count ${charCount > 250 && "yellow"}`}
-					>{`${charCount} / 250`}</span>
-				</>
+				<Textarea attributes={attributes} />
 			) : (
 				<input {...attributes} type={type} />
 			)}
