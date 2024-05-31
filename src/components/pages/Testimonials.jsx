@@ -1,3 +1,5 @@
+import { useState } from "react";
+import Button from "../shared/Button";
 import FlexContainer from "../shared/FlexContainer";
 import Modal from "../shared/Modal";
 import ModalForm from "../shared/ModalForm";
@@ -12,7 +14,7 @@ export default function Testimonials() {
 		return review.content.length > 140; // && review.content.length <= 210;
 	});
 
-	const randomReviewIds = function () {
+	const randomReviewIds = () => {
 		const randomNumsSet = new Set();
 
 		while (randomNumsSet.size < 4) {
@@ -22,20 +24,30 @@ export default function Testimonials() {
 		return Array.from(randomNumsSet);
 	};
 
-	const testimonials = randomReviewIds().map(reviewId => {
-		const review = longReviews[reviewId];
+	const [testimonials, setTestimonials] = useState(generateTestimonials());
 
-		return <Testimonial key={reviewId} review={review} />;
-	});
+	function generateTestimonials() {
+		return randomReviewIds().map(reviewId => {
+			const review = longReviews[reviewId];
+			return <Testimonial key={reviewId} review={review} />;
+		});
+	}
+
+	const handleShowMoreTestimonials = () => {
+		setTestimonials(generateTestimonials());
+	};
 
 	return (
 		<Section sectionId="testimonials">
 			<FlexContainer>{testimonials}</FlexContainer>
-			<Modal buttonText="Leave a testimonial">
-				{({ closeModal }) => (
-					<ModalForm fieldsData={formFields.testimonials} handleClose={closeModal} />
-				)}
-			</Modal>
+			<div className="t-buttons">
+				<Button onClick={handleShowMoreTestimonials}>Show more testimonials</Button>
+				<Modal buttonText="Leave a testimonial">
+					{({ closeModal }) => (
+						<ModalForm fieldsData={formFields.testimonials} handleClose={closeModal} />
+					)}
+				</Modal>
+			</div>
 		</Section>
 	);
 }

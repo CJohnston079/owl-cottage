@@ -1,3 +1,9 @@
 #testimonials {
 	background-color: var(--cl-background-shade);
 }
+
+.t-buttons {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
