@@ -8,7 +8,7 @@ import reviews from "../../data/reviews.json";
 import "../../styles/pages/Testimonials.css";
 
 export default function Testimonials() {
-	const shortReviews = reviews.filter(review => {
+	const longReviews = reviews.filter(review => {
 		return review.content.length > 140; // && review.content.length <= 210;
 	});
 
@@ -16,14 +16,14 @@ export default function Testimonials() {
 		const randomNumsSet = new Set();
 
 		while (randomNumsSet.size < 4) {
-			randomNumsSet.add(Math.floor(Math.random() * shortReviews.length));
+			randomNumsSet.add(Math.floor(Math.random() * longReviews.length));
 		}
 
 		return Array.from(randomNumsSet);
 	};
 
 	const testimonials = randomReviewIds().map(reviewId => {
-		const review = shortReviews[reviewId];
+		const review = longReviews[reviewId];
 
 		return <Testimonial key={reviewId} review={review} />;
 	});
@@ -36,7 +36,6 @@ export default function Testimonials() {
 					<ModalForm fieldsData={formFields.testimonials} handleClose={closeModal} />
 				)}
 			</Modal>
-			{/* <Modal heading="Leave a testimonial"></Modal> */}
 		</Section>
 	);
 }
