@@ -2,9 +2,18 @@
 	background-color: var(--cl-emphasis-shade);
 }
 
+.p-container {
+	padding: 2rem;
+	border: solid 2px var(--cl-background-shade-2);
+	border-radius: var(--br-normal);
+	background-color: var(--cl-background);
+	box-shadow: var(--box-shadow);
+}
+
 .map {
 	border: solid 4px var(--cl-background) !important;
 	border-radius: var(--br-normal);
+	background-color: var(--cl-background);
 	box-shadow: var(--box-shadow);
 }
 

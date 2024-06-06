@@ -12,7 +12,6 @@ export default function Location() {
 	return (
 		<Section sectionId="location">
 			<Paragraphs paragraphs={copy.location} />
-			<h3>Local area map</h3>
 			<iframe
 				className="map"
 				src="https://snazzymaps.com/embed/611220"
