@@ -49,7 +49,8 @@
 	cursor: pointer;
 }
 
-.poi.active {
+.poi.active,
+.poi.active:hover {
 	border-color: var(--cl-background-shade-2);
 	color: var(--cl-foreground);
 	background-color: var(--cl-background);
@@ -74,9 +75,15 @@
 	overflow: hidden;
 }
 
-.img-with-caption figcaption {
-	flex-grow: 1;
+.img-with-caption img {
+	object-fit: cover;
+}
 
+.img-with-caption * {
+	flex: 1;
+}
+
+.img-with-caption figcaption {
 	padding: 2rem;
 
 	background-color: var(--cl-background);
