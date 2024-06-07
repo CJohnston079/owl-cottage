@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Card from "./Card";
 import Modal from "./Modal";
 import "../../styles/shared/Testimonial.css";
 
@@ -14,22 +15,26 @@ export default function Testimonial({ review }) {
 	const overflowHeading = `Message from ${author}, ${date}`;
 
 	return (
-		<div className="testimonial">
-			<span className="testimonial-quotation">“</span>
-			<div className="testimonial-container">
-				<p className={`testimonial-body ${content.length > charLimit && "overflow"}`}>{content}</p>
-				{content.length > charLimit && (
-					<Modal buttonText="Show more" heading={overflowHeading} showCloseButton={true}>
-						{() => <p className="overflow-body">{content}</p>}
-					</Modal>
-				)}
+		<Card>
+			<div className="testimonial">
+				<span className="testimonial-quotation">“</span>
+				<div className="testimonial-container">
+					<p className={`testimonial-body ${content.length > charLimit && "overflow"}`}>
+						{content}
+					</p>
+					{content.length > charLimit && (
+						<Modal buttonText="Show more" heading={overflowHeading} showCloseButton={true}>
+							{() => <p className="overflow-body">{content}</p>}
+						</Modal>
+					)}
+				</div>
+				<p className="testimonial-footer">
+					<span className="testimonial-author">{author}</span>
+					<span className="testimonial-location">{location}</span>
+					<span className="testimonial-date">{date}</span>
+				</p>
 			</div>
-			<p className="testimonial-footer">
-				<span className="testimonial-author">{author}</span>
-				<span className="testimonial-location">{location}</span>
-				<span className="testimonial-date">{date}</span>
-			</p>
-		</div>
+		</Card>
 	);
 }
 

@@ -15,14 +15,7 @@
 	align-items: center;
 	gap: 1rem;
 
-	border: solid 1px var(--cl-background-shade-2);
-	border-radius: var(--br-normal);
-	padding: 2rem;
-
 	text-align: center;
-
-	background-color: var(--cl-background);
-	box-shadow: var(--box-shadow);
 }
 
 .ft-amenity hr {
