@@ -1,3 +1,57 @@
-#local-area-map {
+#points-of-interest {
 	background-color: var(--cl-contrast-shade);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	align-items: center;
+	gap: 2rem;
+}
+
+#points-of-interest .grid-container {
+	grid-template-columns: 1fr 2fr 4fr;
+	gap: 1rem;
+}
+
+.poi-container > *:not(:last-child) {
+	margin-bottom: 0.5rem;
+}
+
+.poi {
+	display: block;
+	border: solid 1px var(--cl-background-shade-2);
+	border-radius: var(--br-light);
+	padding: 1rem;
+	width: 100%;
+
+	background-color: var(--cl-background);
+}
+
+.img-with-caption {
+	display: flex;
+	flex-direction: column;
+
+	border-radius: var(--br-normal);
+
+	height: 100%;
+
+	overflow: hidden;
+}
+
+.img-with-caption figcaption {
+	flex-grow: 1;
+
+	padding: 2rem;
+
+	background-color: var(--cl-background);
+}
+
+.img-with-caption h3 {
+	margin-bottom: 1rem;
+
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	color: var(--cl-foreground-shade);
 }

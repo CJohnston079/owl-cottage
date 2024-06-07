@@ -19,29 +19,3 @@
 	background-color: var(--cl-background);
 	box-shadow: var(--box-shadow);
 }
-
-.img-with-caption {
-	display: flex;
-	flex-direction: column;
-
-	border-radius: var(--br-normal);
-
-	overflow: hidden;
-}
-
-.img-with-caption figcaption {
-	flex-grow: 1;
-
-	padding: 2rem;
-
-	background-color: var(--cl-background-shade);
-}
-
-.img-with-caption h3 {
-	margin-bottom: 1rem;
-
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	color: var(--cl-foreground-shade);
-}
