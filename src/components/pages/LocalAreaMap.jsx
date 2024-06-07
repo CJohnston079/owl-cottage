@@ -33,10 +33,9 @@ export default function LocalAreaMap() {
 					<figcaption>
 						<h3>{selectedPOI.name}</h3>
 						<p>
-							Loch Oich is just five minutes away. Not as well known as Loch Ness but a real hidden
-							treasure. The Great Glen Way runs along the loch shore and its flat, level path here
-							makes it highly accessible for walking and cycling. Very dog friendly with no nearby
-							roads or livestock. Park at Bridge of Oich to access the loch.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus.
+							Metus aliquam eleifend mi in nulla posuere sollicitudin.
 						</p>
 					</figcaption>
 				</figure>
