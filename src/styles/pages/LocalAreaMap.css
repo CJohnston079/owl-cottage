@@ -24,6 +24,8 @@
 
 .map {
 	background-color: var(--cl-emphasis-shade);
+	min-height: 42rem;
+	height: 100%;
 }
 
 .poi-container {
@@ -65,8 +67,8 @@
 }
 
 .img-with-caption {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
 
 	border-right: solid 4px var(--cl-background);
 
@@ -77,15 +79,11 @@
 
 .img-with-caption img {
 	object-fit: cover;
-}
-
-.img-with-caption * {
-	flex: 1;
+	height: 100%;
 }
 
 .img-with-caption figcaption {
 	padding: 2rem;
-
 	background-color: var(--cl-background);
 }
 
