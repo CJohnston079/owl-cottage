@@ -2,21 +2,21 @@ import Bento from "../shared/Bento";
 import Section from "../shared/Section";
 import "../../styles/pages/Location.css";
 
-import owlKitchen from "../../assets/images/owl-kitchen.webp";
-import owlBedroom from "../../assets/images/owl-bedroom.webp";
-import owlSignpost from "../../assets/images/owl-signpost.webp";
-import owlFurniture from "../../assets/images/owl-furniture.webp";
-import owlGarden from "../../assets/images/owl-garden.webp";
-import owlCoffee from "../../assets/images/owl-coffee.webp";
+import lochNess from "../../assets/images/poi-loch-ness.jpg";
+import isleOfSkye from "../../assets/images/poi-portree-isle-of-skye.jpeg";
+import invergarryWoods from "../../assets/images/poi-invergarry-woods.jpg";
+import bridgeOfOich from "../../assets/images/poi-bridge-of-oich.jpg";
+import fallOfFoyers from "../../assets/images/poi-fall-of-foyers.jpg";
+import fortAugustus from "../../assets/images/poi-fort-augustus.webp";
 
 export default function Location() {
 	const images = [
-		{ src: owlKitchen, alt: "Kitchen" },
-		{ src: owlBedroom, alt: "Bedroom" },
-		{ src: owlSignpost, alt: "Signpost" },
-		{ src: owlFurniture, alt: "Furniture" },
-		{ src: owlGarden, alt: "Garden" },
-		{ src: owlCoffee, alt: "Coffee" },
+		{ src: bridgeOfOich, alt: "Bridge of Oich" },
+		{ src: invergarryWoods, alt: "Invergarry Woods" },
+		{ src: isleOfSkye, alt: "Portree, Isle of Skye" },
+		{ src: fortAugustus, alt: "Fort Augustus" },
+		{ src: fallOfFoyers, alt: "Fall of Foyers" },
+		{ src: lochNess, alt: "Loch Ness" },
 	];
 
 	return (
