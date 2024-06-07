@@ -12,10 +12,3 @@
 .p-container *:not(:last-child) {
 	margin-bottom: 1rem;
 }
-
-.map {
-	border: solid 4px var(--cl-background) !important;
-	border-radius: var(--br-normal);
-	background-color: var(--cl-background);
-	box-shadow: var(--box-shadow);
-}

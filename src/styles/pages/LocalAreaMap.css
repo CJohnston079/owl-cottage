@@ -1,5 +1,6 @@
 #points-of-interest {
 	background-color: var(--cl-contrast-shade);
+	box-shadow: inset var(--box-shadow);
 }
 
 .grid-container {
@@ -10,29 +11,45 @@
 }
 
 #points-of-interest .grid-container {
-	grid-template-columns: 1fr 2fr 4fr;
-	gap: 1rem;
+	grid-template-columns: 1fr 2fr;
+	gap: 0rem;
+
+	border: solid 4px var(--cl-background) !important;
+	border-radius: var(--br-normal);
+	overflow: hidden;
+
+	background-color: var(--cl-background);
+	box-shadow: var(--box-shadow);
 }
 
-.poi-container > *:not(:last-child) {
-	margin-bottom: 0.5rem;
+.map {
+	background-color: var(--cl-emphasis-shade);
+}
+
+.poi-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 1rem;
 }
 
 .poi {
-	display: block;
 	border: solid 1px var(--cl-background-shade-2);
-	border-radius: var(--br-light);
+	border-radius: var(--br-normal);
 	padding: 1rem;
-	width: 100%;
+
+	font-weight: 600;
 
 	background-color: var(--cl-background);
+	box-shadow: var(--box-shadow);
 }
 
 .img-with-caption {
 	display: flex;
 	flex-direction: column;
 
-	border-radius: var(--br-normal);
+	border-right: solid 4px var(--cl-background);
 
 	height: 100%;
 
