@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "../../styles/shared/Section.css";
 
 export default function Section({ sectionId, heading = sectionId, children }) {
-	const sectionHeading = heading.replace("#", "").charAt(0).toUpperCase() + heading.slice(1);
+	const sectionHeading = heading.charAt(0).toUpperCase() + heading.slice(1).replaceAll("-", " ");
 
 	return (
 		<section id={sectionId}>
