@@ -1,11 +1,16 @@
 .bento-container {
 	--bento-gap: 1rem;
 
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	/* display: grid;
+	grid-template-columns: repeat(3, 1fr); */
+	display: flex;
 	gap: var(--bento-gap);
 
 	height: 100%;
+}
+
+.bento-container * {
+	flex: 1;
 }
 
 .bento-column {
@@ -23,4 +28,23 @@
 	border-radius: var(--br-normal);
 	height: 100%;
 	object-fit: cover;
+}
+
+@media screen and (max-width: 1400px) {
+	.bento-container {
+		flex-direction: column;
+	}
+
+	.bento-column {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		grid-template-rows: auto;
+		gap: var(--bento-gap);
+	}
+
+	.bento-column:nth-child(2) {
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		grid-template-rows: auto;
+	}
 }
