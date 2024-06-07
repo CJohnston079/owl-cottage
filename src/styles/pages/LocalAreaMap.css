@@ -40,9 +40,27 @@
 	padding: 1rem;
 
 	font-weight: 600;
+	color: var(--cl-midground);
 
-	background-color: var(--cl-background);
+	background-color: var(--cl-background-shade);
 	box-shadow: var(--box-shadow);
+
+	transition: 800ms;
+	cursor: pointer;
+}
+
+.poi.active {
+	border-color: var(--cl-background-shade-2);
+	color: var(--cl-foreground);
+	background-color: var(--cl-background);
+}
+
+.poi:hover {
+	border-color: var(--cl-emphasis-shade);
+	color: var(--cl-background);
+	background-color: var(--cl-emphasis);
+
+	transition: 400ms;
 }
 
 .img-with-caption {
