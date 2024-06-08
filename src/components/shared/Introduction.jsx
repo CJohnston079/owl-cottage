@@ -21,14 +21,23 @@ export default function Introduction() {
 	];
 
 	return (
-		<div id="introduction">
-			<div>
+		<div id="introduction" className="grid-container">
+			<div className="p-container">
 				<h3>The Cottage</h3>
 				<p className="intro-text">
 					A traditional stone cottage built in 1868, Owl Cottage features a large, sociable
 					kitchen/dining/living area with wood burner, master bedroom with king size bed, second
 					bedroom with bunk beds, shower room, enclosed back garden, off-street parking and stunning
 					views over the forest and mountains opposite.
+				</p>
+				<p>
+					The well-equipped kitchen features a breakfast bar, dishwasher, electric range cooker,
+					fridge, freezer, Nespresso machine and washer/dryer. Plenty of storage space and a wide
+					range of kitchen equipment makes this great area if you choose to cook on your holiday.
+				</p>
+				<p>
+					The enclosed garden is dog friendly. Enjoy the peace and quiet and spot the wildlife on
+					the hill - including deer, best spotted at dusk or dawn.
 				</p>
 				<Button style="emphasis">Take a tour of Owl ➞</Button>
 			</div>
