@@ -4,8 +4,8 @@
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
-	align-items: center;
+	grid-template-columns: max(20vw, 20rem) auto;
+	align-items: flex-start;
 	gap: 4rem;
 }
 

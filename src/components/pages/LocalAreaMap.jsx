@@ -27,7 +27,7 @@ export default function LocalAreaMap() {
 
 	return (
 		<Section sectionId="points-of-interest">
-			<div className="grid-container">
+			<div className="map-container">
 				<figure className="img-with-caption">
 					<img src={selectedPOI.src} alt={selectedPOI.alt} />
 					<figcaption>

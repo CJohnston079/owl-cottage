@@ -3,14 +3,14 @@
 	box-shadow: inset var(--box-shadow);
 }
 
-.grid-container {
+.map-container {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	align-items: center;
 	gap: 2rem;
 }
 
-#points-of-interest .grid-container {
+#points-of-interest .map-container {
 	grid-template-columns: 1fr 2fr;
 	gap: 0rem;
 
