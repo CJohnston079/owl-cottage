@@ -1,12 +1,8 @@
 .bento-container {
 	--bento-gap: 1rem;
 
-	/* display: grid;
-	grid-template-columns: repeat(3, 1fr); */
 	display: flex;
 	gap: var(--bento-gap);
-
-	height: 100%;
 }
 
 .bento-container * {

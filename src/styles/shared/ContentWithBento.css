@@ -1,8 +1,11 @@
 .col-bento-container {
-	display: grid;
-	grid-template-columns: max(20vw, 20rem) auto;
-	align-items: flex-start;
+	display: flex;
+	/* grid-template-columns: max(20vw, 20rem) auto; */
 	gap: 4rem;
+}
+
+.content {
+	min-width: max(20vw, 20rem);
 }
 
 .content *:not(:last-child) {
