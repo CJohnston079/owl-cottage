@@ -1,14 +1,3 @@
 #location {
 	background-color: var(--cl-background);
 }
-
-.grid-container {
-	display: grid;
-	grid-template-columns: max(20vw, 20rem) auto;
-	align-items: flex-start;
-	gap: 4rem;
-}
-
-.p-container *:not(:last-child) {
-	margin-bottom: 1rem;
-}
