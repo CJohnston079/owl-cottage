@@ -1,13 +1,3 @@
 #about {
-	display: grid;
 	background-color: var(--cl-background);
-}
-
-#about #introduction {
-	margin-bottom: 4rem;
-}
-
-.feature p {
-	margin-bottom: 1rem;
-	font-size: 1.2rem;
 }
