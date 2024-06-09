@@ -1,0 +1,10 @@
+.col-bento-container {
+	display: grid;
+	grid-template-columns: max(20vw, 20rem) auto;
+	align-items: flex-start;
+	gap: 4rem;
+}
+
+.content *:not(:last-child) {
+	margin-bottom: 1rem;
+}
