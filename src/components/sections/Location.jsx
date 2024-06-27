@@ -1,13 +1,13 @@
 import ContentWithBento from "../shared/ContentWithBento";
 import Section from "../shared/Section";
-import "../../styles/pages/Location.css";
+import "../../styles/sections/Location.css";
 
-import lochNess from "../../assets/images/poi-loch-ness.jpg";
-import isleOfSkye from "../../assets/images/poi-portree-isle-of-skye.jpeg";
-import invergarryWoods from "../../assets/images/poi-invergarry-woods.jpg";
-import bridgeOfOich from "../../assets/images/poi-bridge-of-oich.jpg";
-import fallOfFoyers from "../../assets/images/poi-fall-of-foyers.jpg";
-import fortAugustus from "../../assets/images/poi-fort-augustus.webp";
+import lochNess from "../../assets/images/locations/poi-loch-ness.jpg";
+import isleOfSkye from "../../assets/images/locations/poi-portree-isle-of-skye.jpeg";
+import invergarryWoods from "../../assets/images/locations/poi-invergarry-woods.jpg";
+import bridgeOfOich from "../../assets/images/locations/poi-bridge-of-oich.jpg";
+import fallOfFoyers from "../../assets/images/locations/poi-fall-of-foyers.jpg";
+import fortAugustus from "../../assets/images/locations/poi-fort-augustus.webp";
 
 export default function Location() {
 	const images = [

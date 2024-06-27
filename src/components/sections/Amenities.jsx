@@ -1,12 +1,12 @@
-import FeaturedAmenity from "../shared/FeaturedAmenity";
-import AmenitiesList from "../shared/AmenitiesList";
+import FeaturedAmenity from "./amenities/FeaturedAmenity";
+import AmenitiesList from "./amenities/AmenitiesList";
 import Modal from "../shared/Modal";
 import Section from "../shared/Section";
-import "../../styles/shared/Amenities.css";
+import "../../styles/sections/Amenities.css";
 
-import bedIcon from "../../assets/bed.png";
-import mountainsIcon from "../../assets/mountains.png";
-import dogIcon from "../../assets/dog.png";
+import bedIcon from "../../assets/icons/bed.png";
+import mountainsIcon from "../../assets/icons/mountains.png";
+import dogIcon from "../../assets/icons/dog.png";
 
 export default function Amenities() {
 	const ftAmeneityData = [
