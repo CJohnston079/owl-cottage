@@ -7,18 +7,17 @@ import "./styles/index.css";
 
 const router = createBrowserRouter([
 	{
-		path: "/owl-cottage/",
+		path: "/",
 		element: <App />,
 	},
 	{
-		path: "/owl-cottage/tour",
+		path: "/tour",
 		element: <Tour />,
 	},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		{/* <RouterProvider router={router} /> */}
-		<App />
+		<RouterProvider router={router} />
 	</React.StrictMode>
 );

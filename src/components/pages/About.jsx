@@ -41,8 +41,7 @@ export default function About() {
 					the hill - including deer, best spotted at dusk or dawn.
 				</p>
 				<Button style="emphasis">
-					{/* <Link to="tour">Take a tour of Owl ➞</Link> */}
-					Take a tour of Owl
+					<Link to="tour">Take a tour of Owl ➞</Link>
 				</Button>
 			</ContentWithBento>
 		</Section>
