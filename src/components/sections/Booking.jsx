@@ -5,7 +5,7 @@ import Fields from "../shared/Fields";
 import FormSection from "../shared/FormSection";
 import Section from "../shared/Section";
 import formFields from "../../data/formFields.json";
-import "../../styles/pages/Booking.css";
+import "../../styles/sections/Booking.css";
 
 export default function Booking() {
 	const fields = formFields.booking;

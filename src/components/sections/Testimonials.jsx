@@ -7,7 +7,7 @@ import Section from "../shared/Section";
 import Testimonial from "../shared/Testimonial";
 import formFields from "../../data/formFields.json";
 import reviews from "../../data/reviews.json";
-import "../../styles/pages/Testimonials.css";
+import "../../styles/sections/Testimonials.css";
 
 export default function Testimonials() {
 	const longReviews = reviews.filter(review => {

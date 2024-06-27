@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./components/App.jsx";
-import Tour from "./components/Tour.jsx";
+import Home from "./components/pages/Home.jsx";
+import Tour from "./components/pages/Tour.jsx";
 import "./styles/index.css";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <App />,
+		element: <Home />,
 	},
 	{
 		path: "/tour",

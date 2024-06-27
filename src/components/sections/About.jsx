@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import Button from "../shared/Button";
 import ContentWithBento from "../shared/ContentWithBento";
 import Section from "../shared/Section";
-import "../../styles/pages/About.css";
+import "../../styles/sections/About.css";
 
-import owlKitchen from "../../assets/images/owl-kitchen.webp";
-import owlBedroom from "../../assets/images/owl-bedroom.webp";
-import owlSignpost from "../../assets/images/owl-signpost.webp";
-import owlFurniture from "../../assets/images/owl-furniture.webp";
-import owlGarden from "../../assets/images/owl-garden.webp";
-import owlCoffee from "../../assets/images/owl-coffee.webp";
+import owlKitchen from "../../assets/images/cottage/owl-kitchen.webp";
+import owlBedroom from "../../assets/images/cottage/owl-bedroom.webp";
+import owlSignpost from "../../assets/images/cottage/owl-signpost.webp";
+import owlFurniture from "../../assets/images/cottage/owl-furniture.webp";
+import owlGarden from "../../assets/images/cottage/owl-garden.webp";
+import owlCoffee from "../../assets/images/cottage/owl-coffee.webp";
 
 export default function About() {
 	const images = [

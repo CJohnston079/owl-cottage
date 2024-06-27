@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../../styles/shared/NavLink.css";
+import "../../styles/nav/NavLink.css";
 
 export default function NavLink({ href, isActive = false }) {
 	const linkContent = href.charAt(1).toUpperCase() + href.slice(2);

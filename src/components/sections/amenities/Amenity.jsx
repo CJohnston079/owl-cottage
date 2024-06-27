@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import "../../styles/shared/Amenity.css";
+import "../../../styles/sections/amenities/Amenity.css";
 
 export default function Amenity({ icon, content }) {
 	const [iconPath, setIconPath] = useState(null);
 
 	useEffect(() => {
 		const fetchIcon = async () => {
-			const amenityIcon = await import(`../../assets/icons/amenities/${icon}.png`);
+			const amenityIcon = await import(`../../../assets/icons/amenities/${icon}.png`);
 			setIconPath(amenityIcon.default);
 		};
 
