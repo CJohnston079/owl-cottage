@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../shared/Button";
 import Section from "../shared/Section";
+import "../../styles/pages/Tour.css";
 
 import owl1 from "../../assets/images/cottage/Owl1.jpg";
 import owl2 from "../../assets/images/cottage/Owl2.jpg";
