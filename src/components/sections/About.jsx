@@ -40,9 +40,9 @@ export default function About() {
 					The enclosed garden is dog friendly. Enjoy the peace and quiet and spot the wildlife on
 					the hill - including deer, best spotted at dusk or dawn.
 				</p>
-				<Button style="emphasis">
-					<Link to="tour">Take a tour of Owl ➞</Link>
-				</Button>
+				<Link to="/tour">
+					<Button style="emphasis">Take a tour of Owl ➞</Button>
+				</Link>
 			</ContentWithBento>
 		</Section>
 	);
