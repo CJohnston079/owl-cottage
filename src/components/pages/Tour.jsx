@@ -82,7 +82,7 @@ export default function Tour() {
 	return (
 		<Section sectionId="tour">
 			<Link to="/">
-				<Button>⭠ Back</Button>
+				<Button style="emphasis">⭠ Back</Button>
 			</Link>
 			<div id="photos">{photos}</div>
 		</Section>

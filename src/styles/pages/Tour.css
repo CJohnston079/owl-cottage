@@ -2,4 +2,22 @@
 	width: fit-content;
 	position: fixed;
 	top: 2rem;
+	transform: translateX(-3rem);
+}
+
+#tour button {
+	box-shadow: 0 0 8px hsl(0, 0%, 100%, 0.5);
+}
+
+#photos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+#photos * {
+	max-width: 30%;
+	object-fit: cover;
+	aspect-ratio: 1 / 1;
+	border-radius: var(--br-normal);
 }
