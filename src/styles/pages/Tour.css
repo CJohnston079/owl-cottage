@@ -14,10 +14,3 @@
 	flex-wrap: wrap;
 	gap: 2rem;
 }
-
-#photos * {
-	max-width: 30%;
-	object-fit: cover;
-	aspect-ratio: 1 / 1;
-	border-radius: var(--br-normal);
-}

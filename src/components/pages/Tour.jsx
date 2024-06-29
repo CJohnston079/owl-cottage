@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../shared/Button";
+import ImgThumb from "../shared/ImgThumb";
 import Section from "../shared/Section";
 import "../../styles/pages/Tour.css";
 
@@ -78,7 +79,7 @@ const owlImages = [
 ];
 
 export default function Tour() {
-	const photos = owlImages.map((image, i) => <img key={i} src={image} />);
+	const photos = owlImages.map((image, i) => <ImgThumb key={i} imgSrc={image} alt={"Image"} />);
 	return (
 		<Section sectionId="tour">
 			<Link to="/">
