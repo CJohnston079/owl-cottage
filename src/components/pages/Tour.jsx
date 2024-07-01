@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
-import Button from "../shared/Button";
 import ImgThumb from "../shared/ImgThumb";
-// import NavBar from "../nav/NavBar.jsx";
+import NavBar from "../nav/NavBar.jsx";
+import Button from "../shared/Button.jsx";
+import { Link } from "react-router-dom";
+
 import Section from "../shared/Section";
 import "../../styles/pages/Tour.css";
 
@@ -90,23 +91,26 @@ export default function Tour() {
 
 	return (
 		<>
-			{/* <NavBar /> */}
-			<Link className="back" to="/">
-				<Button style="emphasis">⭠ Back</Button>
-			</Link>
-			<Section sectionId="Living room">
+			<NavBar links={["living", "kitchen", "bedrooms", "bathrooms", "exterior"]}>
+				<Link to="/">
+					<Button style="emphasis">
+						<span style={{ display: "inline-block", rotate: "180deg" }}>➞</span> Back
+					</Button>
+				</Link>
+			</NavBar>
+			<Section sectionId="living" heading="Living room">
 				<div className="photos">{livingRoomPhotos}</div>
 			</Section>
-			<Section sectionId="Kitchen and dinign area">
+			<Section sectionId="kitchen" heading="Kitchen and dining area">
 				<div className="photos">{kitchenPhotos}</div>
 			</Section>
-			<Section sectionId="Bedrooms">
+			<Section sectionId="bedrooms" heading="Bedrooms">
 				<div className="photos">{BedroomPhotos}</div>
 			</Section>
-			<Section sectionId="Bathrooms">
+			<Section sectionId="bathrooms" heading="Bathrooms">
 				<div className="photos">{BathroomPhotos}</div>
 			</Section>
-			<Section sectionId="Exterior">
+			<Section sectionId="exterior" heading="Exterior">
 				<div className="photos">{exteriorPhotos}</div>
 			</Section>
 		</>

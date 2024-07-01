@@ -1,12 +1,5 @@
-.back {
-	width: fit-content;
-	position: fixed;
-	top: 2rem;
-}
-
 .photos {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2rem;
-	margin-bottom: 4rem;
 }
