@@ -21,9 +21,6 @@ function Home() {
 			<Testimonials />
 			<Faq />
 			<Booking />
-			<footer>
-				<p>Copyright © 2024 Owl Cottage. All rights reserved.</p>
-			</footer>
 		</>
 	);
 }
