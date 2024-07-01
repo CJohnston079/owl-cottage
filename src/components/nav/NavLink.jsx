@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import "../../styles/nav/NavLink.css";
 
-export default function NavLink({ href, isActive = false }) {
-	const linkContent = href.charAt(1).toUpperCase() + href.slice(2);
+export default function NavLink({ href, linkTitle = href, isActive = false }) {
+	const cleanedLink = linkTitle.replace("#", "");
+	const linkContent = cleanedLink.charAt(0).toUpperCase() + cleanedLink.slice(1);
+	const linkTarget = href.charAt(0) !== "#" ? `/${href}` : href;
 
 	const scrollToTarget = e => {
 		e.preventDefault();
@@ -14,25 +16,23 @@ export default function NavLink({ href, isActive = false }) {
 		}
 	};
 
+	const isInternalLink = href.startsWith("#");
+
 	return (
 		<li>
-			<a onClick={scrollToTarget} className={`nav-link ${isActive && "active"}`} href={href}>
+			<a
+				onClick={isInternalLink ? scrollToTarget : undefined}
+				className={`nav-link ${isActive && "active"}`}
+				href={href === "home" ? "/" : linkTarget}
+			>
 				{linkContent}
 			</a>
 		</li>
 	);
 }
 
-const startsWithHash = function (props, propName, componentName) {
-	const href = props[propName];
-	const errorMessage = `Invalid prop type \`${propName}\` of type \`${typeof propName}\` supplied to \`${componentName}\`, expected \`string\` beginning with \`#\` character.`;
-
-	if (typeof href !== "string" || !href.startsWith("#")) {
-		return new Error(errorMessage);
-	}
-};
-
 NavLink.propTypes = {
-	href: startsWithHash,
+	href: PropTypes.string,
+	linkTitle: PropTypes.string,
 	isActive: PropTypes.bool,
 };

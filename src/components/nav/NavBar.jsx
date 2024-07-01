@@ -1,15 +1,18 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import NavLink from "./NavLink";
 import "../../styles/nav/NavBar.css";
 
-export default function NavBar() {
+export default function NavBar({ links, children }) {
 	const [isFloating, setIsFloating] = useState(false);
 	const [activeSection, setActiveSection] = useState("home");
 
 	const toggleFloatingNav = () => {
-		const boundingElement = document.querySelector("#home").nextSibling;
-		const distanceFromBoundingElement = boundingElement.getBoundingClientRect().top;
-
+		const homeElement = document.querySelector("#home");
+		const boundingElement = homeElement ? homeElement.nextSibling : undefined;
+		const distanceFromBoundingElement = boundingElement
+			? boundingElement.getBoundingClientRect().top
+			: 0;
 		setIsFloating(distanceFromBoundingElement <= 0);
 	};
 
@@ -30,7 +33,7 @@ export default function NavBar() {
 	window.addEventListener("scroll", toggleFloatingNav);
 	window.addEventListener("scroll", toggleActiveSection);
 
-	const sections = ["home", "about", "location", "faq", "testimonials", "booking"];
+	const sections = links;
 	const navLinks = sections.map(section => {
 		const href = `#${section}`;
 
@@ -40,8 +43,17 @@ export default function NavBar() {
 	return (
 		<header id="nav" className={isFloating ? "floating-nav" : ""}>
 			<nav>
-				<ul>{navLinks}</ul>
+				<ul>
+					<NavLink href="home" isActive={activeSection === "home"} />
+					{navLinks}
+				</ul>
+				{children}
 			</nav>
 		</header>
 	);
 }
+
+NavBar.propTypes = {
+	links: PropTypes.array,
+	children: PropTypes.node,
+};
