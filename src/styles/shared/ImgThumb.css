@@ -3,4 +3,10 @@
 	aspect-ratio: 1 / 1;
 	border-radius: var(--br-normal);
 	cursor: pointer;
+	transition: 400ms;
+}
+
+.img-thumb:hover {
+	opacity: 0.9;
+	transform: scale(1.02);
 }
