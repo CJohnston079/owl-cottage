@@ -1,8 +1,19 @@
 #booking {
-	background-color: var(--cl-contrast-shade);
+	background: var(--cl-contrast-shade);
+	background: url(../../assets/images/urquhart-castle.jpg);
+	background-position: bottom left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	background-attachment: fixed;
+}
+
+#booking h2 {
+	color: white;
 }
 
 form {
+	max-width: max(40%, 32rem);
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
