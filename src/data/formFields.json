@@ -14,12 +14,12 @@
 	"booking": {
 		"dates": [
 			{
-				"labelContent": "Check-in",
+				"labelContent": "Preferred check-in",
 				"inputName": "startDate",
 				"type": "date"
 			},
 			{
-				"labelContent": "Checkout",
+				"labelContent": "Preferred checkout",
 				"inputName": "endDate",
 				"type": "date"
 			}

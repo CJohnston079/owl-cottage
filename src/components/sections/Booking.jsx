@@ -28,26 +28,19 @@ export default function Booking() {
 		// Reset form fields
 	};
 
-	const { name, email, guests, startDate, endDate } = formData;
-
 	return (
 		<Section sectionId={"booking"}>
 			<form onSubmit={handleSubmit}>
-				<FormSection heading="1. Select dates">
+				<FormSection heading="Make a booking enquiry">
 					<Fields sectionFields={fields.dates} handleInput={handleInput} />
-				</FormSection>
-				<FormSection heading="2. Your details">
 					<Fields sectionFields={fields.guestDetails} handleInput={handleInput} />
-				</FormSection>
-				<FormSection heading="3. Confirmation">
-					<p>{`Your stay for Owl Cottage is booked for ${guests || "not specified"} guests from ${
-						startDate || "date not specified"
-					} to ${endDate || "date not specified"}.`}</p>
-					<p>{`Lead booker: ${name || "not specified"}`}</p>
-					<p>{`Contact email address: ${email || "not specified"}`}</p>
 					<Button type="submit" style="emphasis">
-						Confirm booking
+						Submit booking request
 					</Button>
+					<hr />
+					<p>
+						For all other enquiries, please email <span>jane@dogfriendlycottagesscotland.com</span>.
+					</p>
 				</FormSection>
 			</form>
 		</Section>

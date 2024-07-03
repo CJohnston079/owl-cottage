@@ -1,7 +1,14 @@
 .form-section {
+	display: grid;
+	gap: 1rem;
 	border-radius: var(--br-normal);
 	padding: 2rem;
 
 	background-color: var(--cl-background);
 	box-shadow: var(--box-shadow);
+}
+
+.form-section button {
+	margin: 1rem 0;
+	margin-right: auto;
 }
