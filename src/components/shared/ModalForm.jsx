@@ -5,6 +5,7 @@ import Fields from "./Fields";
 import "../../styles/shared/ModalForm.css";
 
 export default function ModalForm({ fieldsData, handleClose }) {
+	const [isSubmitted, setIsSubmitted] = useState(false);
 	const [formData, setFormData] = useState(
 		fieldsData.reduce((data, field) => ({ ...data, [field.inputName]: "" }), {})
 	);
@@ -16,12 +17,13 @@ export default function ModalForm({ fieldsData, handleClose }) {
 
 	const handleSubmit = e => {
 		e.preventDefault();
+		setIsSubmitted(true);
 		console.log("Form submitted:", formData);
 		// Send formData to back-end
 	};
 
-	return (
-		<form onSubmit={handleSubmit}>
+	const fieldElements = (
+		<>
 			<Fields sectionFields={fieldsData} handleInput={handleInput} />
 			<div className="form-buttons">
 				<Button type="submit" style="emphasis">
@@ -29,8 +31,17 @@ export default function ModalForm({ fieldsData, handleClose }) {
 				</Button>
 				<Button onClick={handleClose}>Close</Button>
 			</div>
-		</form>
+		</>
 	);
+
+	const submitMessage = (
+		<>
+			<p>Thank you!</p>
+			<Button onClick={handleClose}>Close</Button>
+		</>
+	);
+
+	return <form onSubmit={handleSubmit}>{isSubmitted ? submitMessage : fieldElements}</form>;
 }
 
 ModalForm.propTypes = {
