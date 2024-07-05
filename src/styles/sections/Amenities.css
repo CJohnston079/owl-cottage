@@ -29,6 +29,7 @@
 
 .ft-amenity-heading {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	margin-bottom: 0.5rem;
 	min-height: 3lh;
@@ -38,4 +39,13 @@
 	text-transform: uppercase;
 	letter-spacing: 0.05rem;
 	color: var(--cl-foreground);
+}
+
+@media screen and (max-width: 1000px) {
+	.amenities-container {
+		display: grid;
+		grid-template-columns: auto;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
 }
