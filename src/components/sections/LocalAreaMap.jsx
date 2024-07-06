@@ -3,7 +3,6 @@ import Section from "../shared/Section";
 import "../../styles/sections/LocalAreaMap.css";
 
 import lochNess from "../../assets/images/locations/poi-loch-ness.jpg";
-import isleOfSkye from "../../assets/images/locations/poi-portree-isle-of-skye.jpeg";
 import invergarryWoods from "../../assets/images/locations/poi-invergarry-woods.jpg";
 import bridgeOfOich from "../../assets/images/locations/poi-bridge-of-oich.jpg";
 import fallOfFoyers from "../../assets/images/locations/poi-fall-of-foyers.jpg";
@@ -25,7 +24,9 @@ export default function LocalAreaMap() {
 			src: fortAugustus,
 			alt: "Fort Augustus",
 			description: [
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus. Metus aliquam eleifend mi in nulla posuere sollicitudin.",
+				"Fort Augustus offers spectacular views down Loch Ness and is a paradise for keen walkers and cyclists with many beautiful walks around the area, the most popular being the Great Glen Way.",
+				"The Caledonian Canal from Bridge of Oich to Fort Augustus is another flat, accessible walk, suitable for walkers, cyclists and dogs. Follow the quiet footpath through beautiful forestry to reach the famous Fort Augustus Locks and the start of Loch Ness.",
+				"You can hire cycles here, try a boat trip on the loch, or for the more adventurous, several companies offer kayaking, canoeing and white water adventures.",
 			],
 		},
 		{
@@ -33,7 +34,7 @@ export default function LocalAreaMap() {
 			src: lochNess,
 			alt: "Loch Ness",
 			description: [
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus. Metus aliquam eleifend mi in nulla posuere sollicitudin.",
+				"The world-famous Loch Ness needs no introduction, and is just three miles away.",
 			],
 		},
 		{
@@ -41,7 +42,7 @@ export default function LocalAreaMap() {
 			src: invergarryWoods,
 			alt: "Invergarry Woods",
 			description: [
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus. Metus aliquam eleifend mi in nulla posuere sollicitudin.",
+				"Try this 4.7-km circular trail near Invergarry, Highlands. It is a well-marked Forestry Commission walk which follows a delightful stream up through the forest, passing an attractive waterfall. Generally considered a moderately challenging route, it takes an average of 1 h 24 min to complete. This is a popular trail for hiking, running, and walking, but you can still enjoy some solitude during quieter times of day.",
 			],
 		},
 		{
@@ -49,15 +50,7 @@ export default function LocalAreaMap() {
 			src: fallOfFoyers,
 			alt: "Fall of Foyers",
 			description: [
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus. Metus aliquam eleifend mi in nulla posuere sollicitudin.",
-			],
-		},
-		{
-			name: "Isle of Skye",
-			src: isleOfSkye,
-			alt: "Portree, Isle of Skye",
-			description: [
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus. Metus aliquam eleifend mi in nulla posuere sollicitudin.",
+				"Take the B862 up the less travelled side of Loch Ness for stunning views and access to the wonderful Falls of Foyers and on to Dores.",
 			],
 		},
 	];
