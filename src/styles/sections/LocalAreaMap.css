@@ -95,3 +95,24 @@
 	letter-spacing: 0.1rem;
 	color: var(--cl-foreground-shade);
 }
+
+@media screen and (max-width: 1000px) {
+	#points-of-interest .map-container {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.img-with-caption {
+		display: block;
+	}
+
+	.img-with-caption img {
+		display: none;
+	}
+
+	.map {
+		background-color: var(--cl-emphasis-shade);
+		min-height: 24rem;
+		height: 100%;
+	}
+}
