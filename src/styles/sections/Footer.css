@@ -1,0 +1,9 @@
+footer {
+	--footer-padding-y: 2rem;
+
+	padding: var(--footer-padding-y) var(--site-padding-x);
+
+	color: hsl(0, 0%, 80%);
+
+	background-color: hsl(0, 0%, 10%);
+}

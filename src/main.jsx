@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/pages/Home.jsx";
 import Tour from "./components/pages/Tour.jsx";
+import Footer from "./components/sections/Footer.jsx";
 import "./styles/index.css";
 
 const router = createBrowserRouter([
@@ -19,8 +20,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<RouterProvider router={router} />
-		<footer>
-			<p>Copyright © 2024 Owl Cottage. All rights reserved.</p>
-		</footer>
+		<Footer />
 	</React.StrictMode>
 );
