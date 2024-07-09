@@ -9,5 +9,5 @@
 
 .flex-container > * {
 	flex: 1 0 30%;
-	min-width: 20rem;
+	min-width: max(40%, 12rem);
 }
