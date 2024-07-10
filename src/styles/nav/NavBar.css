@@ -30,8 +30,28 @@ nav ul {
 	gap: 2rem;
 }
 
+.hamburger {
+	display: none;
+	width: 2rem;
+	aspect-ratio: 1 / 1;
+	border: none;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+}
+
 @keyframes fly-down {
 	from {
 		transform: translateY(-100%);
+	}
+}
+
+@media (max-width: 900px) {
+	nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
 	}
 }

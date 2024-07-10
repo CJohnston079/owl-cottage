@@ -3,6 +3,8 @@ import { useState } from "react";
 import NavLink from "./NavLink";
 import "../../styles/nav/NavBar.css";
 
+import hamburgerIcon from "../../assets/icons/menu.svg";
+
 export default function NavBar({ links, children }) {
 	const [isFloating, setIsFloating] = useState(false);
 	const [activeSection, setActiveSection] = useState("home");
@@ -42,6 +44,9 @@ export default function NavBar({ links, children }) {
 
 	return (
 		<header id="nav" className={isFloating ? "floating-nav" : ""}>
+			<button className="hamburger">
+				<img src={hamburgerIcon} alt="Navigation links" />
+			</button>
 			<nav>
 				<ul>
 					<NavLink href="home" isActive={activeSection === "home"} />
