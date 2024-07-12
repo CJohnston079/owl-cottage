@@ -68,6 +68,6 @@
 
 @media only screen and (max-width: 600px) {
 	:root {
-		--site-padding-x: max(12vw, 2rem);
+		--site-padding-x: max(8vw, 1rem);
 	}
 }
