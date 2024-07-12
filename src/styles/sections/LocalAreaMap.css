@@ -112,7 +112,11 @@
 
 	.map {
 		background-color: var(--cl-emphasis-shade);
-		min-height: 24rem;
+		min-height: 12rem;
 		height: 100%;
+	}
+
+	.poi-container * {
+		width: 100%;
 	}
 }
