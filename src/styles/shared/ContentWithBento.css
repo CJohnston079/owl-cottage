@@ -5,7 +5,7 @@
 }
 
 .content {
-	min-width: max(20vw, 20rem);
+	min-width: max(20vw, 15rem);
 }
 
 .content *:not(:last-child) {
