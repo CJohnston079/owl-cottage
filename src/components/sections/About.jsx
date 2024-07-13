@@ -26,19 +26,31 @@ export default function About() {
 			<ContentWithBento bentoImages={images}>
 				<h3>The Cottage</h3>
 				<p className="intro-text">
-					A traditional stone cottage built in 1868, Owl Cottage features a large, sociable
-					kitchen/dining/living area with wood burner, master bedroom with king size bed, second
-					bedroom with bunk beds, shower room, enclosed back garden, off-street parking and stunning
-					views over the forest and mountains opposite.
+					A cozy and inviting traditional stone cottage built in 1868, Owl Cottage is an ideal base
+					for your Highlands adventures. We have lovingly furnished it to feel like a real home from
+					home, for you, your family and your furry friends.
 				</p>
 				<p>
-					The well-equipped kitchen features a breakfast bar, dishwasher, electric range cooker,
-					fridge, freezer, Nespresso machine and washer/dryer. Plenty of storage space and a wide
-					range of kitchen equipment makes this great area if you choose to cook on your holiday.
+					The heart of the home is a large and sociable open-plan kitchen, dining and living room
+					with space for the whole family. The well-equipped kitchen is perfect for preparing
+					home-cooked meals to enjoy at the farmhouse dining table with the family. In the evenings
+					you can relax around the wood burner and enjoy our wide range of books, games and DVDs.
 				</p>
 				<p>
-					The enclosed garden is dog friendly. Enjoy the peace and quiet and spot the wildlife on
-					the hill - including deer, best spotted at dusk or dawn.
+					The master bedroom has a king size bed with memory-foam mattress while the second bedroom
+					has bunk beds, ideal for the kids and fun for adults too. Between the two rooms is a fresh
+					and modern shower room.
+				</p>
+				<p>
+					The enclosed back garden is ideal for children and dogs alike. Soak up the sun on the
+					large patio with luxury garden furniture and enjoy the peace and quiet. Watch out for the
+					local wildlife including red squirrels, red kite and deer, who can often be seen in the
+					garden at dusk. To the front of the cottage is space for one vehicle and spectacular views
+					over the forest and mountains opposite.
+				</p>
+				<p>
+					Please note that the cottage does not have internet access but does have mobile phone
+					reception.
 				</p>
 				<Link to="/tour">
 					<Button style="emphasis">Take a tour of Owl ➞</Button>
