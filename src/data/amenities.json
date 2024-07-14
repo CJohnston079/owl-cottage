@@ -1,104 +1,66 @@
 [
 	{
-		"heading": "Scenic",
-		"content": [{ "icon": "landscape", "description": "Mountain view" }]
-	},
-	{
-		"heading": "Bathroom",
+		"heading": "Living area",
 		"content": [
-			{ "icon": "hair-dryer", "description": "Hair dryer" },
-			{ "icon": "housekeeping", "description": "Cleaning products" },
-			{ "icon": "dispenser", "description": "Soap and shower gel" },
-			{ "icon": "shower", "description": "Hot water" }
-		]
-	},
-	{
-		"heading": "Bedroom and laundry",
-		"content": [
-			{ "icon": "bed", "description": "1x king-sized bed" },
-			{ "icon": "bunk-bed", "description": "1x bunk bed" },
-			{ "icon": "washing-machine", "description": "Free washer - in unit" },
-			{ "icon": "tumble-dryer", "description": "Free dryer - in unit" },
-			{ "icon": "drawers", "description": "Bedroom storage" },
-			{ "icon": "towel", "description": "Towels" },
-			{ "icon": "toilet-paper", "description": "Toilet paper" },
-			{ "icon": "sheets", "description": "Bed linin" },
-			{ "icon": "hanger", "description": "Hangers" },
-			{ "icon": "pillow", "description": "Extra pillows" },
-			{ "icon": "iron", "description": "Iron" }
-		]
-	},
-	{
-		"heading": "Entertainment",
-		"content": [
-			{ "icon": "tv", "description": "55-inch HDTV" },
-			{ "icon": "cd", "description": "DVD player" },
-			{ "icon": "book", "description": "Books and reading material" }
-		]
-	},
-	{
-		"heading": "Children and family",
-		"content": [
-			{ "icon": "rocking-horse", "description": "Children's books and toys" },
 			{
-				"icon": "high-chair",
-				"description": "Standalone high chair with straps/harness and food tray"
+				"icon": "burner",
+				"description": "Cozy log burner with welcome pack of wood and kindling"
 			},
-			{ "icon": "chess-board", "description": "Board games" },
-			{ "icon": "fire", "description": "Fireplace guards" }
-		]
-	},
-	{
-		"heading": "Heating and cooling",
-		"content": [{ "icon": "burner", "description": "Indoor fireplace: wood burning" }]
-	},
-	{
-		"heading": "Safety",
-		"content": [
-			{ "icon": "smoke-detector", "description": "Smoke alarm" },
+			{ "icon": "", "description": "Comfy sofas with  throws" },
 			{
-				"icon": "fire-alarm",
-				"description": "Carbon monoxide alarm, located near the living room wood burner"
+				"icon": "book",
+				"description": "A wide range of books, games and DVDs for children and adults"
 			},
-			{ "icon": "fire-extinguisher", "description": "Fire extinguisher" }
+			{ "icon": "", "description": "Radio with Bluetooth connection" },
+			{
+				"icon": "",
+				"description": "Play your own music and podcasts through the radio's Bluetooth speakers"
+			}
 		]
 	},
 	{
 		"heading": "Kitchen and dining",
 		"content": [
-			{ "icon": "kitchen", "description": "Kitchen" },
-			{ "icon": "fridge", "description": "Fridge" },
+			{ "icon": "cooker", "description": "Range cooker" },
 			{ "icon": "microwave", "description": "Microwave" },
-			{ "icon": "cooking-pot", "description": "Cooking basics" },
-			{ "icon": "tableware", "description": "Dishes and cutlery" },
-			{ "icon": "freezer", "description": "Freezer" },
+			{ "icon": "fridge", "description": "Fridge freezer" },
 			{ "icon": "dishwasher", "description": "Dishwasher" },
-			{ "icon": "cooker", "description": "Oven with lectric hob" },
-			{ "icon": "kettle", "description": "Kettle" },
+			{ "icon": "washing-machine", "description": "Washing machine with tumble dryer" },
 			{ "icon": "coffee-machine", "description": "Nespresso coffee machine" },
-			{ "icon": "wine-glass", "description": "Wine glasses" },
-			{ "icon": "toaster", "description": "Toaster" },
-			{ "icon": "bread", "description": "Baking sheet" },
-			{ "icon": "table", "description": "Dining table" },
-			{ "icon": "coffee-beans", "description": "Coffee" }
+			{ "icon": "table", "description": "Farmhouse dining table" },
+			{ "icon": "high-chair", "description": "Infant's high chair with harness and food tray" },
+			{ "icon": "kitchen", "description": "Breakfast bar" },
+			{ "icon": "tableware", "description": "Welcome pack of essentials" }
+		]
+	},
+	{
+		"heading": "Bedroom and bathroom",
+		"content": [
+			{ "icon": "towel", "description": "Fresh towels and bedding" },
+			{ "icon": "pillows", "description": "Extra bedding for chilling nights" },
+			{ "icon": "sheets", "description": "Dog throws" },
+			{ "icon": "hair-dryer", "description": "Hair dryer" },
+			{ "icon": "iron", "description": "Iron and ironing board" }
 		]
 	},
 	{
 		"heading": "Outdoor",
 		"content": [
-			{ "icon": "oak-tree", "description": "Enclosed garden" },
-			{ "icon": "picnic-table", "description": "Outdoor dining area with furniture" }
+			{ "icon": "oak-tree", "description": "Enclosed child- and dog-friendly garden" },
+			{ "icon": "picnic-table", "description": "Large terrace with outdoor dining area" },
+			{ "icon": "picnic-table", "description": "Outdoor sofa and chairs with cushions" },
+			{ "icon": "parking", "description": "Free off-road parking for one vehicle" },
+			{ "icon": "dog", "description": "Secure storage for bicycles" },
+			{ "icon": "landscape", "description": "Spectacular forest and mountain views" }
 		]
 	},
 	{
-		"heading": "Services",
+		"heading": "Safety features",
 		"content": [
-			{ "icon": "door-handle", "description": "Private entrance" },
-			{ "icon": "parking", "description": "Free parking on premesis - 1 space" },
-			{ "icon": "dog", "description": "Pets allowed" },
-			{ "icon": "calendar-plus", "description": "Long-term stays allowed" },
-			{ "icon": "key", "description": "Self check-in" },
-			{ "icon": "safe", "description": "Lockbox" }
+			{ "icon": "smoke-detector", "description": "Smoke alarm" },
+			{ "icon": "fire-alarm", "description": "Carbon monoxide alarm" },
+			{ "icon": "fire-extinguisher", "description": "Fire extinguisher" },
+			{ "icon": "burner", "description": "Fireplace guard" }
 		]
 	}
 ]
