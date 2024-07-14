@@ -1,38 +1,58 @@
 [
 	{
 		"q": "Is there wifi or mobile phone reception?",
-		"a": "No, there is no wifi or television reception at the cottage. There is a DVD player with a selection of DVDs and a range of books and games supplied for quiet evenings in. Phone reception may be limited depending on your provider."
+		"a": "There is no wifi or television reception at the cottage. There is a radio with Bluetooth connection, DVD player with a selection of DVDs and a range of books and games supplied for quiet evenings in. Phone reception may be limited depending on your provider."
 	},
 	{
 		"q": "Are dogs allowed on the furniture?",
-		"a": "Yes! Dogs are welcome on the furniture - special dog blankets are provided."
+		"a": "Yes! Dogs are welcome on the beds and sofas – special dog blankets are provided."
 	},
 	{
-		"q": "How much deposit is required to confirm a booking?",
-		"a": "50% of the balance is required to confirm your booking."
+		"q": "Are the bunk beds suitable for adults or young children?",
+		"a": "Yes. Each bunk is a full sized single bed and suitable for children and adults alike. Please only use the top bunk for your child if you are sure that they are able to use it safely and we suggest that children under 6 should use the bottom bunk. We recommend a maximum weight of 60kg for the top bunk for safety."
 	},
 	{
-		"q": "When do I have to pay the balance of my stay?",
-		"a": "The balance of your stay is due no less than one month before check-in."
+		"q": "Is a cot available for infants?",
+		"a": "We do not provide a cot but you are welcome to bring your own travel cot if required. A highchair is available."
 	},
 	{
-		"q": "What times is check-in/checkout?",
-		"a": "Check-in is at 16:00; checkout is at 10:00."
+		"q": "Are bedding and towels supplied?",
+		"a": "Yes, you will be provided with fresh bedding and towels for all guests. For stays of more than 10 days you will be offered a change of linens halfway through your stay."
 	},
 	{
 		"q": "Is there on-site parking available?",
-		"a": "There is parking in front of the cottage for one car."
+		"a": "There is parking in front of the cottage for one car. Secure storage for bicycles is available in the lockable shed."
 	},
 	{
 		"q": "Are there any steps in the cottage?",
 		"a": "There is a step at the front door and another from the entrance hall into the main living area. There are two large steps from the back door into the garden, although this can be accessed step-free from the side of the house."
 	},
 	{
+		"q": "Is there a local shop for essentials?",
+		"a": "There is a small supermarket, a petrol station and a range of other shops in Fort Augustus, a five-minute drive away. The nearest large supermarkets are in Fort William or Inverness."
+	},
+	{
 		"q": "Is there a minimum or maximum stay?",
 		"a": "There is a four night minimum stay. Long-term stays are available."
 	},
 	{
-		"q": "Will I get a change on linens for long-term stays?",
-		"a": "For stays of more than 10 days you will be offered a change of linens halfway through your stay."
+		"q": "When is check-in/checkout?",
+		"a": "You can check-in/check-out on any day. Check-in is at 16:00; checkout is at 10:00."
+	},
+	{
+		"q": "What is included in the price?",
+		"a": "We have no hidden costs in addition to the prices quoted here. Prices are for the cottage and include up to four guests and all pets. All of our prices include heating and hot water, 1st basket of firewood, bed linen, towels & taxes. Please note that we are not able to offer electric car charging. A refundable £250 security deposit is payable with your final payment. This will be returned to you at the end of your stay subject to inspection. Any proposed deduction will be discussed with you prior to repayment. See our terms & conditions [Link] for full details."
+	},
+	{
+		"q": "How much deposit is required to confirm a booking?",
+		"a": "50% of the balance is required to confirm your booking. For stays booked less than one month before your check-in date, payment in full is required at time of booking."
+	},
+	{
+		"q": "When do I have to pay the balance of my stay?",
+		"a": "The balance of your stay is due no less than one month before check in."
+	},
+	{
+		"q": "What forms of payment do you accept?",
+		"a": "We accept payment by bank transfer or credit/debit card. Please note there is a 2.5% transaction fee for credit/debit card payments to cover the extra cost to ourselves."
 	}
 ]
