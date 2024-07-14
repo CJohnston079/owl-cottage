@@ -6,14 +6,14 @@
 				"icon": "burner",
 				"description": "Cozy log burner with welcome pack of wood and kindling"
 			},
-			{ "icon": "", "description": "Comfy sofas with  throws" },
+			{ "icon": "sofa", "description": "Comfy sofas with  throws" },
 			{
 				"icon": "book",
 				"description": "A wide range of books, games and DVDs for children and adults"
 			},
-			{ "icon": "", "description": "Radio with Bluetooth connection" },
+			{ "icon": "radio", "description": "Radio with Bluetooth connection" },
 			{
-				"icon": "",
+				"icon": "bluetooth",
 				"description": "Play your own music and podcasts through the radio's Bluetooth speakers"
 			}
 		]
@@ -37,8 +37,8 @@
 		"heading": "Bedroom and bathroom",
 		"content": [
 			{ "icon": "towel", "description": "Fresh towels and bedding" },
-			{ "icon": "pillows", "description": "Extra bedding for chilling nights" },
-			{ "icon": "sheets", "description": "Dog throws" },
+			{ "icon": "pillow", "description": "Extra bedding for chilling nights" },
+			{ "icon": "rug", "description": "Dog throws" },
 			{ "icon": "hair-dryer", "description": "Hair dryer" },
 			{ "icon": "iron", "description": "Iron and ironing board" }
 		]
@@ -48,9 +48,9 @@
 		"content": [
 			{ "icon": "oak-tree", "description": "Enclosed child- and dog-friendly garden" },
 			{ "icon": "picnic-table", "description": "Large terrace with outdoor dining area" },
-			{ "icon": "picnic-table", "description": "Outdoor sofa and chairs with cushions" },
+			{ "icon": "chair", "description": "Outdoor sofa and chairs with cushions" },
 			{ "icon": "parking", "description": "Free off-road parking for one vehicle" },
-			{ "icon": "dog", "description": "Secure storage for bicycles" },
+			{ "icon": "bicycle", "description": "Secure storage for bicycles" },
 			{ "icon": "landscape", "description": "Spectacular forest and mountain views" }
 		]
 	},
