@@ -78,6 +78,17 @@ export default function LocalAreaMap() {
 
 	return (
 		<Section sectionId="points-of-interest">
+			<div className="poi-container">
+				{pointsOfInterest.map(poi => (
+					<button
+						key={poi.name}
+						className={`poi ${selectedPOI.name === poi.name ? "active" : ""}`}
+						onClick={() => handlePOIClick(poi)}
+					>
+						{poi.name}
+					</button>
+				))}
+			</div>
 			<div className="map-container">
 				<figure className="img-with-caption">
 					<img src={selectedPOI.src} alt={selectedPOI.alt} />
@@ -93,17 +104,6 @@ export default function LocalAreaMap() {
 					height="600px"
 					style={{ border: "none" }}
 				></iframe>
-			</div>
-			<div className="poi-container">
-				{pointsOfInterest.map(poi => (
-					<button
-						key={poi.name}
-						className={`poi ${selectedPOI.name === poi.name ? "active" : ""}`}
-						onClick={() => handlePOIClick(poi)}
-					>
-						{poi.name}
-					</button>
-				))}
 			</div>
 		</Section>
 	);
