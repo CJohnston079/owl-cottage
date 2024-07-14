@@ -11,12 +11,11 @@ import fortAugustus from "../../assets/images/locations/poi-fort-augustus.webp";
 export default function LocalAreaMap() {
 	const pointsOfInterest = [
 		{
-			name: "Bridge of Oich",
+			name: "Loch Oich",
 			src: bridgeOfOich,
-			alt: "Bridge of Oich",
+			alt: "Loch Oich",
 			description: [
-				"Loch Oich is just five minutes away. Not as well known as Loch Ness but a real hidden treasure. The Great Glen Way runs along the loch shore and its flat, level path here makes it highly accessible for walking and cycling. Very dog friendly with no nearby roads or livestock. Park at Bridge of Oich to access the loch.",
-				"The Loch Oich circuit is a great walk that can be tackled in one or broken down into sections - the flat wide cycle path on the east of the loch is ideal for those seeking a more accessible walk.",
+				"Loch Oich is just five minutes away. Not as well known as Loch Ness but a real hidden treasure. The Great Glen Way runs along the loch shore and its flat, level path here makes it highly accessible for walking and cycling. This is a very dog friendly route with no nearby roads or livestock. Park at Bridge of Oich to start your walk along the loch or up the Caledonian Canal. Stop to admire the magnificent Victorian suspension bridge.",
 			],
 		},
 		{
@@ -24,9 +23,7 @@ export default function LocalAreaMap() {
 			src: fortAugustus,
 			alt: "Fort Augustus",
 			description: [
-				"Fort Augustus offers spectacular views down Loch Ness and is a paradise for keen walkers and cyclists with many beautiful walks around the area, the most popular being the Great Glen Way.",
-				"The Caledonian Canal from Bridge of Oich to Fort Augustus is another flat, accessible walk, suitable for walkers, cyclists and dogs. Follow the quiet footpath through beautiful forestry to reach the famous Fort Augustus Locks and the start of Loch Ness.",
-				"You can hire cycles here, try a boat trip on the loch, or for the more adventurous, several companies offer kayaking, canoeing and white water adventures.",
+				"Fort Augustus offers spectacular views down Loch Ness and is a paradise for keen walkers and cyclists with many beautiful walks around the area, the most popular being the Great Glen Way. This is the home of the famous Fort Augustus Locks and the start of Loch Ness. On a summer’s day you can enjoy the spectacle of boats making their way through the dramatic series of five locks that step down to Loch Ness. There are some excellent shops and eateries in the village and a range of attractions including the Caledonian Canal Centre, Clansman Centre and a glass-blowing workshop. You can hire cycles here, try a boat trip on the loch, or for the more adventurous, several companies offer kayaking, canoeing and white water adventures.",
 			],
 		},
 		{
@@ -34,23 +31,39 @@ export default function LocalAreaMap() {
 			src: lochNess,
 			alt: "Loch Ness",
 			description: [
-				"The world-famous Loch Ness needs no introduction, and is just three miles away.",
+				"Loch Ness is renowned worldwide for its breathtaking natural beauty and legendary folklore. Stretching for 36km and reaching depths of over 240m, it is the largest and second deepest freshwater loch in Scotland. Explore its serene shores to capture stunning vistas, discover charming villages like Drumnadrochit, Glenmoriston and Foyers, and delve into the mystery of the elusive Nessie, the Loch Ness Monster. There are ample opportunities for hiking, boating, and wildlife spotting. The surrounding landscape, dotted with ancient castles and lush forests, invites exploration and adventure. If you’re feeling brave, the Loch Ness 360 outdoor activity trail loops for 120km around the whole circumference of the loch.",
 			],
 		},
 		{
-			name: "Alt na Calliche Trail",
+			name: "The Caledonian Canal",
 			src: invergarryWoods,
-			alt: "Invergarry Woods",
+			alt: "The Caledonian Canal",
 			description: [
-				"Try this 4.7-km circular trail near Invergarry, Highlands. It is a well-marked Forestry Commission walk which follows a delightful stream up through the forest, passing an attractive waterfall. Generally considered a moderately challenging route, it takes an average of 1 h 24 min to complete. This is a popular trail for hiking, running, and walking, but you can still enjoy some solitude during quieter times of day.",
+				"This marvel of engineering stretches nearly 100km from Inverness to Fort William. Built by Thomas Telford in the early 19th century, it connects a series of picturesque lochs, including Loch Ness. Enjoy scenic boat trips, cycling, and walking along the towpaths, taking in breathtaking landscapes and historical sites. The canal offers a serene escape into nature, with opportunities for wildlife spotting and photography.",
 			],
 		},
 		{
 			name: "Falls of Foyers",
 			src: fallOfFoyers,
-			alt: "Fall of Foyers",
+			alt: "Falls of Foyers",
 			description: [
-				"Take the B862 up the less travelled side of Loch Ness for stunning views and access to the wonderful Falls of Foyers and on to Dores.",
+				"The Falls of Foyers is a stunning waterfall cascading into a deep gorge near Loch Ness. This spectacular natural attraction, with a drop of 50m, inspired poets like Robert Burns. Enjoy scenic walks through lush woodlands, offering breathtaking views of the falls, the loch and the surrounding landscape. The trails are well-marked and suitable for dogs and children. In the village of Foyers the charming Waterfall Café has delicious cakes and tables outside for dogs. Or just outside the village Camerons Tearooms is dog friendly inside and out, and has deer and Highland Cows to view.",
+			],
+		},
+		{
+			name: "Invermoriston",
+			src: fallOfFoyers,
+			alt: "Invermoriston",
+			description: [
+				"Invermoriston, the next village after Fort Augustus, is nestled on the banks of the River Moriston near Loch Ness. Famous for its picturesque Thomas Telford Bridge which crosses the spectacular River Moriston falls, it offers scenic walks and stunning views. The delightful Glen Rowan Café is dog friendly with beautiful views across the glen.",
+			],
+		},
+		{
+			name: "Dundreggan Rewilding Centre",
+			src: fallOfFoyers,
+			alt: "Dundreggan Rewilding Centre",
+			description: [
+				"A pioneering conservation project dedicated to restoring the native Caledonian Forest, the centre offers a unique opportunity to engage with rewilding efforts. Explore ancient pinewood, experience rewilding in action, discover centuries of Gaelic culture and immerse yourself in nature with fun activities for the whole family. The centre features hands-on activities, such as tree planting and habitat restoration, allowing visitors to contribute to conservation. A must-visit for nature enthusiasts and anyone interested in environmental sustainability and the revival of Scotland’s wild heritage, the Rewilding Centre is free to enter and dog-friendly.",
 			],
 		},
 	];
