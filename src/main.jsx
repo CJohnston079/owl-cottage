@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/pages/Home.jsx";
 import Tour from "./components/pages/Tour.jsx";
+import Terms from "./components/pages/Terms.jsx";
 import Footer from "./components/sections/Footer.jsx";
 import "./styles/index.css";
 
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
 	{
 		path: "/tour",
 		element: <Tour />,
+	},
+	{
+		path: "/terms-and-conditions",
+		element: <Terms />,
 	},
 ]);
 
