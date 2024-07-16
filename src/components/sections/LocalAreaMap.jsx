@@ -2,17 +2,19 @@ import { useState } from "react";
 import Section from "../shared/Section";
 import "../../styles/sections/LocalAreaMap.css";
 
-import lochNess from "../../assets/images/locations/poi-loch-ness.jpg";
-import invergarryWoods from "../../assets/images/locations/poi-invergarry-woods.jpg";
-import bridgeOfOich from "../../assets/images/locations/poi-bridge-of-oich.jpg";
-import fallOfFoyers from "../../assets/images/locations/poi-fall-of-foyers.jpg";
-import fortAugustus from "../../assets/images/locations/poi-fort-augustus.webp";
+import lochOich from "../../assets/images/points-of-interest/loch-oich.jpg";
+import fortAugustus from "../../assets/images/points-of-interest/fort-augustus.jpg";
+import lochNess from "../../assets/images/points-of-interest/loch-ness.jpg";
+import caledonianCanal from "../../assets/images/points-of-interest/caledonian-canal.jpg";
+import fallsOfFoyers from "../../assets/images/points-of-interest/falls-of-foyers.jpg";
+import invermoriston from "../../assets/images/points-of-interest/invermoriston.jpg";
+import dundreggan from "../../assets/images/points-of-interest/dundreggan.jpg";
 
 export default function LocalAreaMap() {
 	const pointsOfInterest = [
 		{
 			name: "Loch Oich",
-			src: bridgeOfOich,
+			src: lochOich,
 			alt: "Loch Oich",
 			description: [
 				"Loch Oich is just five minutes away. Not as well known as Loch Ness but a real hidden treasure. The Great Glen Way runs along the loch shore and its flat, level path here makes it highly accessible for walking and cycling. This is a very dog friendly route with no nearby roads or livestock. Park at Bridge of Oich to start your walk along the loch or up the Caledonian Canal. Stop to admire the magnificent Victorian suspension bridge.",
@@ -36,7 +38,7 @@ export default function LocalAreaMap() {
 		},
 		{
 			name: "The Caledonian Canal",
-			src: invergarryWoods,
+			src: caledonianCanal,
 			alt: "The Caledonian Canal",
 			description: [
 				"This marvel of engineering stretches nearly 100km from Inverness to Fort William. Built by Thomas Telford in the early 19th century, it connects a series of picturesque lochs, including Loch Ness. Enjoy scenic boat trips, cycling, and walking along the towpaths, taking in breathtaking landscapes and historical sites. The canal offers a serene escape into nature, with opportunities for wildlife spotting and photography.",
@@ -44,7 +46,7 @@ export default function LocalAreaMap() {
 		},
 		{
 			name: "Falls of Foyers",
-			src: fallOfFoyers,
+			src: fallsOfFoyers,
 			alt: "Falls of Foyers",
 			description: [
 				"The Falls of Foyers is a stunning waterfall cascading into a deep gorge near Loch Ness. This spectacular natural attraction, with a drop of 50m, inspired poets like Robert Burns. Enjoy scenic walks through lush woodlands, offering breathtaking views of the falls, the loch and the surrounding landscape. The trails are well-marked and suitable for dogs and children. In the village of Foyers the charming Waterfall Café has delicious cakes and tables outside for dogs. Or just outside the village Camerons Tearooms is dog friendly inside and out, and has deer and Highland Cows to view.",
@@ -52,7 +54,7 @@ export default function LocalAreaMap() {
 		},
 		{
 			name: "Invermoriston",
-			src: fallOfFoyers,
+			src: invermoriston,
 			alt: "Invermoriston",
 			description: [
 				"Invermoriston, the next village after Fort Augustus, is nestled on the banks of the River Moriston near Loch Ness. Famous for its picturesque Thomas Telford Bridge which crosses the spectacular River Moriston falls, it offers scenic walks and stunning views. The delightful Glen Rowan Café is dog friendly with beautiful views across the glen.",
@@ -60,7 +62,7 @@ export default function LocalAreaMap() {
 		},
 		{
 			name: "Dundreggan Rewilding Centre",
-			src: fallOfFoyers,
+			src: dundreggan,
 			alt: "Dundreggan Rewilding Centre",
 			description: [
 				"A pioneering conservation project dedicated to restoring the native Caledonian Forest, the centre offers a unique opportunity to engage with rewilding efforts. Explore ancient pinewood, experience rewilding in action, discover centuries of Gaelic culture and immerse yourself in nature with fun activities for the whole family. The centre features hands-on activities, such as tree planting and habitat restoration, allowing visitors to contribute to conservation. A must-visit for nature enthusiasts and anyone interested in environmental sustainability and the revival of Scotland’s wild heritage, the Rewilding Centre is free to enter and dog-friendly.",
