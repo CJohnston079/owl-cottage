@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import Button from "../shared/Button";
+import AmenitiesList from "./amenities/AmenitiesList";
+import Modal from "../shared/Modal";
 import ContentWithBento from "../shared/ContentWithBento";
 import Section from "../shared/Section";
 import "../../styles/sections/About.css";
+import "../../styles/sections/Amenities.css";
 
 import owlKitchen from "../../assets/images/cottage/owl-kitchen.webp";
 import owlBedroom from "../../assets/images/cottage/owl-bedroom.webp";
@@ -55,6 +58,9 @@ export default function About() {
 				<Link to="/tour">
 					<Button style="emphasis">Take a tour of Owl ➞</Button>
 				</Link>
+				<Modal buttonText="Full list of amenities ➞" heading="Amenities" showCloseButton={true}>
+					{() => <AmenitiesList />}
+				</Modal>
 			</ContentWithBento>
 		</Section>
 	);

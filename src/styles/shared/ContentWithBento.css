@@ -5,11 +5,9 @@
 }
 
 .content {
+	display: grid;
+	gap: 1rem;
 	min-width: max(20vw, 15rem);
-}
-
-.content *:not(:last-child) {
-	margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 1000px) {

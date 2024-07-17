@@ -1,6 +1,4 @@
 import FeaturedAmenity from "./amenities/FeaturedAmenity";
-import AmenitiesList from "./amenities/AmenitiesList";
-import Modal from "../shared/Modal";
 import Section from "../shared/Section";
 import "../../styles/sections/Amenities.css";
 
@@ -37,9 +35,6 @@ export default function Amenities() {
 	return (
 		<Section sectionId="amenities">
 			<div className="amenities-container">{ftAmenitiyComponents}</div>
-			<Modal buttonText="Full list of amenities ➞" heading="Amenities" showCloseButton={true}>
-				{() => <AmenitiesList id="wee" />}
-			</Modal>
 		</Section>
 	);
 }
