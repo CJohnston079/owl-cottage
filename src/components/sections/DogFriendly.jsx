@@ -6,7 +6,7 @@ import bedIcon from "../../assets/icons/bed.png";
 import mountainsIcon from "../../assets/icons/mountains.png";
 import dogIcon from "../../assets/icons/dog.png";
 
-export default function Amenities() {
+export default function DogFriendly() {
 	const ftAmeneityData = [
 		{
 			iconSrc: bedIcon,
@@ -33,7 +33,7 @@ export default function Amenities() {
 	));
 
 	return (
-		<Section sectionId="amenities">
+		<Section sectionId="dog-friendly">
 			<div className="amenities-container">{ftAmenitiyComponents}</div>
 		</Section>
 	);

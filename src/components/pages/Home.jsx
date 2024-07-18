@@ -1,5 +1,5 @@
 import About from "../sections/About.jsx";
-import Amenities from "../sections/Amenities.jsx";
+import DogFriendly from "../sections/DogFriendly.jsx";
 import Booking from "../sections/Booking.jsx";
 import Faq from "../sections/Faq.jsx";
 import Hero from "../sections/Hero.jsx";
@@ -15,7 +15,7 @@ function Home() {
 			<NavBar links={["about", "location", "faq", "testimonials", "booking"]} />
 			<Hero />
 			<About />
-			<Amenities />
+			<DogFriendly />
 			<Location />
 			<LocalAreaMap />
 			<Testimonials />
