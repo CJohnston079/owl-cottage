@@ -55,8 +55,9 @@ export default function About() {
 					Please note that the cottage does not have internet access but does have mobile phone
 					reception.
 				</p>
+				<p></p>
 				<Link to="/tour">
-					<Button style="emphasis">Take a tour of Owl ➞</Button>
+					<Button style="normal">Take a tour of Owl ➞</Button>
 				</Link>
 				<Modal buttonText="Full list of amenities ➞" heading="Amenities" showCloseButton={true}>
 					{() => <AmenitiesList />}

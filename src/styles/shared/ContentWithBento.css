@@ -5,9 +5,19 @@
 }
 
 .content {
-	display: grid;
-	gap: 1rem;
 	min-width: max(20vw, 15rem);
+}
+
+.content > *:not(:first-child) {
+	margin-top: 1rem;
+}
+
+.content button {
+	display: inline;
+}
+
+.content * > button {
+	margin-right: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
