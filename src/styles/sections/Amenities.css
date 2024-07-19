@@ -1,15 +1,15 @@
-#amenities {
+#dogs-welcome {
 	background-color: var(--cl-background-shade);
 }
 
-.amenities-container {
+.icard-container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	gap: 2rem;
-	margin-bottom: 2rem;
+	margin-top: 2rem;
 }
 
-.ft-amenity {
+.icard {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -18,33 +18,31 @@
 	text-align: center;
 }
 
-.ft-amenity hr {
+.icard hr {
 	width: 100%;
 	border: solid 0.5px var(--cl-background-shade-2);
 }
 
-.ft-amenity-icon {
-	max-width: 50%;
+.icard-icon {
+	max-width: 80%;
 }
 
-.ft-amenity-heading {
+.icard-heading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 0.5rem;
 	min-height: 3lh;
 
-	font-size: 1rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.05rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.02rem;
 	color: var(--cl-foreground);
 }
 
-@media screen and (max-width: 1000px) {
-	.amenities-container {
+@media screen and (max-width: 1400px) {
+	.icard-container {
 		display: grid;
-		grid-template-columns: auto;
+		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
 		margin-bottom: 2rem;
 	}

@@ -1,5 +1,5 @@
 import ContentWithBento from "../shared/ContentWithBento";
-import FeaturedAmenity from "./amenities/FeaturedAmenity";
+import IconCard from "./amenities/IconCard";
 import Section from "../shared/Section";
 import "../../styles/sections/Amenities.css";
 
@@ -37,7 +37,7 @@ export default function DogFriendly() {
 	];
 
 	const cardComponents = ftAmeneityData.map((data, i) => (
-		<FeaturedAmenity key={i} iconSrc={data.iconSrc} heading={data.heading} content={data.content} />
+		<IconCard key={i} iconSrc={data.iconSrc} heading={data.heading} content={data.content} />
 	));
 
 	return (
@@ -60,7 +60,7 @@ export default function DogFriendly() {
 					<b>your pups stay for free</b>.
 				</p>
 			</ContentWithBento>
-			<div className="amenities-container">{cardComponents}</div>
+			<div className="icard-container">{cardComponents}</div>
 		</Section>
 	);
 }
