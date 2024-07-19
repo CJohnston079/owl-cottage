@@ -12,7 +12,7 @@ import "../../styles/pages/Home.css";
 function Home() {
 	return (
 		<>
-			<NavBar links={["about", "location", "faq", "testimonials", "booking"]} />
+			<NavBar links={["home", "about", "location", "faq", "testimonials", "booking"]} />
 			<Hero />
 			<About />
 			<DogFriendly />

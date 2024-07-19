@@ -43,12 +43,9 @@ export default function NavBar({ links, children }) {
 
 	return (
 		<header id="nav" className={isFloating ? "floating-nav" : ""}>
-			<NavMenu navLinks={navLinks} />
+			<NavMenu navLinks={navLinks} activeSection={activeSection} />
 			<nav>
-				<ul>
-					<NavLink href="home" isActive={activeSection === "home"} />
-					{navLinks}
-				</ul>
+				<ul>{navLinks}</ul>
 				{children}
 			</nav>
 		</header>

@@ -1,14 +1,31 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
+import "../../styles/nav/NavMenu.css";
 
 import hamburgerIcon from "../../assets/icons/menu.svg";
+import closeIcon from "../../assets/icons/close.svg";
 
 export default function NavMenu({ navLinks }) {
+	const [showMenu, setShowMenu] = useState(false);
+
+	const toggleMenu = () => setShowMenu(!showMenu);
+
 	return (
 		<>
-			<button className="hamburger">
-				<img src={hamburgerIcon} alt="Navigation links" />
+			<button className="menu-button" onClick={toggleMenu}>
+				<img src={hamburgerIcon} alt="Open menu" />
+				<p className="menu-text">Menu</p>
 			</button>
-			{/* <div>{navLinks}</div> */}
+			<div className={`menu-overlay ${!showMenu ? "hidden" : ""}`}>
+				<div id="nav-menu">
+					<button className="menu-button" onClick={toggleMenu}>
+						<img src={closeIcon} alt="Close menu" />
+						<p className="menu-text">Close</p>
+					</button>
+					<ul className="nav-menu-links">{navLinks}</ul>
+				</div>
+				<div className="menu-backdrop" onClick={toggleMenu}></div>
+			</div>
 		</>
 	);
 }
