@@ -1,3 +1,7 @@
+.hidden {
+	display: none;
+}
+
 .menu-overlay {
 	position: fixed;
 	inset: 0;
@@ -27,10 +31,12 @@
 	padding-bottom: 0.25rem;
 }
 
-.menu-text {
-	font-family: var(--sans-serif);
-	font-size: 1.4rem;
-	font-weight: 700;
+#nav > .menu-button {
+	filter: invert();
+}
+
+#nav.floating-nav .menu-button {
+	filter: none;
 }
 
 .menu-button {
@@ -43,7 +49,13 @@
 	padding: 0;
 	background: none;
 	cursor: pointer;
-	opacity: 0.7;
+	opacity: 0.8;
+}
+
+.menu-text {
+	font-family: var(--sans-serif);
+	font-size: 1.4rem;
+	font-weight: 700;
 }
 
 .nav-menu-links {
@@ -53,10 +65,6 @@
 
 .nav-menu-links li {
 	padding: 0.5rem 0;
-}
-
-.hidden {
-	display: none;
 }
 
 @media (max-width: 900px) {
