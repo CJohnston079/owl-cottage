@@ -8,7 +8,14 @@
 	box-shadow: var(--box-shadow);
 }
 
+.form-section a {
+	margin-top: 1rem;
+}
+
+.form-section > button {
+	margin-bottom: 1rem;
+}
+
 .form-section button {
-	margin: 1rem 0;
 	margin-right: auto;
 }

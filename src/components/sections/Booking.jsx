@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import Button from "../shared/Button";
 import Fields from "../shared/Fields";
 // import Form from "./Form";
@@ -34,6 +36,9 @@ export default function Booking() {
 				<FormSection heading="Make a booking enquiry">
 					<Fields sectionFields={fields.dates} handleInput={handleInput} />
 					<Fields sectionFields={fields.guestDetails} handleInput={handleInput} />
+					<Link to="/terms-and-conditions">
+						<Button style="normal">Terms and conditions</Button>
+					</Link>
 					<Button type="submit" style="emphasis">
 						Submit booking request
 					</Button>
