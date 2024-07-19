@@ -2,21 +2,21 @@ import ContentWithBento from "../shared/ContentWithBento";
 import Section from "../shared/Section";
 import "../../styles/sections/Location.css";
 
-import lochNess from "../../assets/images/locations/poi-loch-ness.jpg";
-import isleOfSkye from "../../assets/images/locations/poi-portree-isle-of-skye.jpeg";
-import invergarryWoods from "../../assets/images/locations/poi-invergarry-woods.jpg";
-import bridgeOfOich from "../../assets/images/locations/poi-bridge-of-oich.jpg";
-import fallOfFoyers from "../../assets/images/locations/poi-fall-of-foyers.jpg";
-import fortAugustus from "../../assets/images/locations/poi-fort-augustus.webp";
+import highlandCow from "../../assets/images/locations/highland-cow.jpg";
+import highlandWinter from "../../assets/images/locations/highland-winter.jpg";
+import benNevis from "../../assets/images/locations/ben-nevis.jpg";
+import lochNess from "../../assets/images/locations/loch-ness.jpg";
+import lochTarff from "../../assets/images/locations/loch-tarff.jpg";
+import UrquhartCastle from "../../assets/images/locations/urquhart-castle.jpg";
 
 export default function Location() {
 	const images = [
-		{ src: bridgeOfOich, alt: "Bridge of Oich" },
-		{ src: invergarryWoods, alt: "Invergarry Woods" },
-		{ src: isleOfSkye, alt: "Portree, Isle of Skye" },
-		{ src: fortAugustus, alt: "Fort Augustus" },
-		{ src: fallOfFoyers, alt: "Fall of Foyers" },
+		{ src: highlandCow, alt: "Highland Cow" },
+		{ src: UrquhartCastle, alt: "Urquhart Castle" },
+		{ src: highlandWinter, alt: "Highland winter" },
+		{ src: benNevis, alt: "Ben Nevis" },
 		{ src: lochNess, alt: "Loch Ness" },
+		{ src: lochTarff, alt: "Loch Tarff" },
 	];
 
 	return (
