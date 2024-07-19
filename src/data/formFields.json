@@ -39,6 +39,11 @@
 				"labelContent": "Number of guests",
 				"inputName": "numOfGuests",
 				"type": "number"
+			},
+			{
+				"labelContent": "Number of pets",
+				"inputName": "numOfPets",
+				"type": "number"
 			}
 		],
 		"confirmation": []
