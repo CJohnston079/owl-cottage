@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import NavLink from "./NavLink";
+import NavMenu from "./NavMenu";
 import "../../styles/nav/NavBar.css";
-
-import hamburgerIcon from "../../assets/icons/menu.svg";
 
 export default function NavBar({ links, children }) {
 	const [isFloating, setIsFloating] = useState(false);
@@ -44,9 +43,7 @@ export default function NavBar({ links, children }) {
 
 	return (
 		<header id="nav" className={isFloating ? "floating-nav" : ""}>
-			<button className="hamburger">
-				<img src={hamburgerIcon} alt="Navigation links" />
-			</button>
+			<NavMenu navLinks={navLinks} />
 			<nav>
 				<ul>
 					<NavLink href="home" isActive={activeSection === "home"} />
