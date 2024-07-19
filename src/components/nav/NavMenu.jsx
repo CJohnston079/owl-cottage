@@ -16,7 +16,7 @@ export default function NavMenu({ navLinks }) {
 				<img src={hamburgerIcon} alt="Open menu" />
 				<p className="menu-text">Menu</p>
 			</button>
-			<div className={`menu-overlay ${!showMenu ? "hidden" : ""}`}>
+			<div className={`menu-overlay ${!showMenu && "hidden"}`}>
 				<div id="nav-menu">
 					<button className="menu-button" onClick={toggleMenu}>
 						<img src={closeIcon} alt="Close menu" />
