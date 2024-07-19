@@ -3,9 +3,12 @@ import FeaturedAmenity from "./amenities/FeaturedAmenity";
 import Section from "../shared/Section";
 import "../../styles/sections/Amenities.css";
 
-import bedIcon from "../../assets/icons/bed.png";
-import mountainsIcon from "../../assets/icons/mountains.png";
 import dogIcon from "../../assets/icons/dog.png";
+import bowlIcon from "../../assets/icons/bowl.png";
+import petBedIcon from "../../assets/icons/pet-bed.png";
+import blanketIcon from "../../assets/icons/blanket.png";
+import fenceIcon from "../../assets/icons/fence.png";
+import floorIcon from "../../assets/icons/floor.png";
 
 import bella from "../../assets/images/dogs/bella.jpg";
 import tilly from "../../assets/images/dogs/tilly.jpg";
@@ -25,33 +28,20 @@ export default function DogFriendly() {
 	];
 
 	const ftAmeneityData = [
-		{
-			iconSrc: bedIcon,
-			heading: "Two bedrooms, sleeps up to four guests",
-			content:
-				"The cottage is furnished with one king-sized bed and one bunk bed. Please note that the top bunk bed is for those aged six and over and for a maximum of 60kg.",
-		},
-		{
-			iconSrc: mountainsIcon,
-			heading: "Amazing views of mountains & countryside",
-			content:
-				"The view from the front looks out over forest to the Corbett Meall Dubh (Black Hill), the highest point of the moors between Glen Garry and Glen Moriston.",
-		},
-		{
-			iconSrc: dogIcon,
-			heading: "Dog-friendly furniture and enclosed garden",
-			content:
-				"Dogs are very welcome here and can enjoy the enclosed garden and dog-friendly furniture while you relax in the spacious open-plan living area with log-burner.",
-		},
+		{ iconSrc: dogIcon, heading: "Dogs can access all areas" },
+		{ iconSrc: blanketIcon, heading: "Blankets and throws to cover furniture" },
+		{ iconSrc: petBedIcon, heading: "Comfy dog bed and large crate available" },
+		{ iconSrc: bowlIcon, heading: "Dog bowls, treats and poo bags" },
+		{ iconSrc: fenceIcon, heading: "Enclosed garden for doggies to run around" },
+		{ iconSrc: floorIcon, heading: "Wooden floors throughout for muddy paws" },
 	];
 
-	const ftAmenitiyComponents = ftAmeneityData.map((data, i) => (
+	const cardComponents = ftAmeneityData.map((data, i) => (
 		<FeaturedAmenity key={i} iconSrc={data.iconSrc} heading={data.heading} content={data.content} />
 	));
 
 	return (
-		<Section sectionId="dog-friendly">
-			<div className="amenities-container">{ftAmenitiyComponents}</div>
+		<Section sectionId="dogs-welcome">
 			<ContentWithBento bentoImages={images}>
 				<p>
 					<b>Doggy heaven for your furry best friends</b>
@@ -66,19 +56,11 @@ export default function DogFriendly() {
 					the bed or sofa with you on our doggy throws, explore new sights and smells in the
 					enclosed garden or spread out in front of the cozy log burner with a complimentary dog
 					treat. And just as there&apos;s no limit to our love for dogs, there&apos;s no limit on
-					the number of four-footed friends you can bring along. Extra charges? Not at Owl Cottage -
-					your pups stay for free.
+					the number of four-footed friends you can bring along. Extra charges? Not at Owl Cottage -{" "}
+					<b>your pups stay for free</b>.
 				</p>
-				<ul>
-					<li>Access all areas</li>
-					<li>Blankets and throws to cover furniture</li>
-					<li>Comfy dog bed</li>
-					<li>Dog bowls, treats and poo bags</li>
-					<li>Large dog crate available if required</li>
-					<li>Enclosed garded</li>
-					<li>Woodn floors throughout for muddy paws</li>
-				</ul>
 			</ContentWithBento>
+			<div className="amenities-container">{cardComponents}</div>
 		</Section>
 	);
 }
