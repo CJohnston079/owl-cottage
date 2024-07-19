@@ -15,8 +15,8 @@ export default function Location() {
 		{ src: UrquhartCastle, alt: "Urquhart Castle" },
 		{ src: highlandWinter, alt: "Highland winter" },
 		{ src: benNevis, alt: "Ben Nevis" },
-		{ src: lochNess, alt: "Loch Ness" },
 		{ src: lochTarff, alt: "Loch Tarff" },
+		{ src: lochNess, alt: "Loch Ness" },
 	];
 
 	return (
