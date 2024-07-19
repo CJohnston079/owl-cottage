@@ -22,7 +22,9 @@ export default function NavMenu({ navLinks }) {
 						<img src={closeIcon} alt="Close menu" />
 						<p className="menu-text">Close</p>
 					</button>
-					<ul className="nav-menu-links">{navLinks}</ul>
+					<ul className="nav-menu-links" onClick={toggleMenu}>
+						{navLinks}
+					</ul>
 				</div>
 				<div className="menu-backdrop" onClick={toggleMenu}></div>
 			</div>
