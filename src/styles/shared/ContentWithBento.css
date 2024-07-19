@@ -1,11 +1,7 @@
 .col-bento-container {
-	display: flex;
-	/* grid-template-columns: max(20vw, 20rem) auto; */
+	display: grid;
+	grid-template-columns: minmax(15rem, 1fr) 3fr;
 	gap: 4rem;
-}
-
-.content {
-	min-width: max(20vw, 15rem);
 }
 
 .content > *:not(:first-child) {
