@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 1000px) {
 	.col-bento-container {
-		flex-direction: column;
+		grid-template-columns: auto;
 		gap: 2rem;
 	}
 }
