@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import PropTypes from "prop-types";
 import "../../styles/nav/NavMenu.css";
 
@@ -9,6 +10,18 @@ export default function NavMenu({ navLinks }) {
 	const [showMenu, setShowMenu] = useState(false);
 
 	const toggleMenu = () => setShowMenu(!showMenu);
+
+	useEffect(() => {
+		if (showMenu) {
+			document.body.classList.add("no-scroll");
+		} else {
+			document.body.classList.remove("no-scroll");
+		}
+
+		return () => {
+			document.body.classList.remove("no-scroll");
+		};
+	}, [showMenu]);
 
 	return (
 		<>
