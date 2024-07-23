@@ -32,9 +32,10 @@
 }
 
 #nav > .menu-button {
-	filter: invert();
+	filter: invert(1);
 }
 
+#nav-menu .menu-button img,
 #nav.floating-nav .menu-button {
 	filter: none;
 }
@@ -70,5 +71,19 @@
 @media (max-width: 900px) {
 	.menu-button {
 		display: flex;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	#nav > .menu-button {
+		filter: none;
+	}
+
+	#nav > .menu-button img {
+		filter: invert();
+	}
+
+	#nav-menu > .menu-button img {
+		filter: invert();
 	}
 }
