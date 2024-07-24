@@ -7,6 +7,8 @@ import Location from "../sections/Location.jsx";
 import LocalAreaMap from "../sections/LocalAreaMap.jsx";
 import NavBar from "../nav/NavBar.jsx";
 import Testimonials from "../sections/Testimonials.jsx";
+import Footer from "../sections/Footer.jsx";
+
 import "../../styles/pages/Home.css";
 
 function Home() {
@@ -21,6 +23,7 @@ function Home() {
 			<Testimonials />
 			<Faq />
 			<Booking />
+			<Footer />
 		</>
 	);
 }

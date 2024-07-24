@@ -1,6 +1,7 @@
 import ImgThumb from "../shared/ImgThumb";
 import NavBar from "../nav/NavBar.jsx";
 import Button from "../shared/Button.jsx";
+import Footer from "../sections/Footer.jsx";
 import { Link } from "react-router-dom";
 
 import Section from "../shared/Section";
@@ -113,6 +114,7 @@ export default function Tour() {
 			<Section sectionId="exterior" heading="Exterior">
 				<div className="photos">{exteriorPhotos}</div>
 			</Section>
+			<Footer />
 		</>
 	);
 }
