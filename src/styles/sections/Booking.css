@@ -1,7 +1,7 @@
 #booking {
 	background: var(--cl-contrast-shade);
-	background: url(../../assets/images/urquhart-castle.jpg);
-	background-position: bottom left;
+	background: url(../../assets/images/owl-cottage-panorama-4.jpeg);
+	background-position: bottom right;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
@@ -17,4 +17,9 @@ form {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+}
+
+#message {
+	min-width: auto;
+	resize: none;
 }

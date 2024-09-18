@@ -36,6 +36,14 @@ export default function Booking() {
 				<FormSection heading="Make a booking enquiry">
 					<Fields sectionFields={fields.dates} handleInput={handleInput} />
 					<Fields sectionFields={fields.guestDetails} handleInput={handleInput} />
+					<ul className="section-fields">
+						<li className="field">
+							<label htmlFor="message" className="field-label">
+								Message:
+							</label>
+							<textarea name="message" id="message" className="field-input"></textarea>
+						</li>
+					</ul>
 					<Link to="/terms-and-conditions">
 						<Button style="normal">Terms and conditions</Button>
 					</Link>
