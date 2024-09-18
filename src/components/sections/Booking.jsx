@@ -44,7 +44,7 @@ export default function Booking() {
 					</Button>
 					<hr />
 					<p>
-						For all other enquiries, please email <span>jane@owlcottages.com</span>.
+						For all other enquiries, please email <span>jane@owlcottages.co.uk</span>.
 					</p>
 				</FormSection>
 			</form>
