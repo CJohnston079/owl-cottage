@@ -10,21 +10,21 @@ import blanketIcon from "../../assets/icons/blanket.png";
 import fenceIcon from "../../assets/icons/fence.png";
 import floorIcon from "../../assets/icons/floor.png";
 
-import bella from "../../assets/images/dogs/bella.jpg";
-import tilly from "../../assets/images/dogs/tilly.jpg";
-import finn from "../../assets/images/dogs/finn.jpg";
-import dogsInHallway from "../../assets/images/dogs/dogs-in-hallway.jpg";
-import dogsOnBed from "../../assets/images/dogs/dogs-on-bed.jpg";
-import dogsOnSofa from "../../assets/images/dogs/dogs-on-sofa.jpg";
+import a1 from "../../assets/images/dogs/bella.jpg";
+import a2 from "../../assets/images/dogs/dogs-on-sofa.jpg";
+import b1 from "../../assets/images/dogs/finn.jpg";
+import b2 from "../../assets/images/dogs/dogs-in-hallway.jpg";
+import c1 from "../../assets/images/dogs/dogs-on-bed.jpg";
+import c2 from "../../assets/images/dogs/tilly.jpg";
 
 export default function DogFriendly() {
 	const images = [
-		{ src: bella, alt: "Bella" },
-		{ src: tilly, alt: "Tilly" },
-		{ src: finn, alt: "Finn" },
-		{ src: dogsInHallway, alt: "Dogs in hallway" },
-		{ src: dogsOnBed, alt: "Dogs on bed" },
-		{ src: dogsOnSofa, alt: "Dogs on sofa" },
+		{ src: a1, alt: "Bella" },
+		{ src: a2, alt: "Tilly" },
+		{ src: b1, alt: "Finn" },
+		{ src: b2, alt: "Dogs in hallway" },
+		{ src: c1, alt: "Dogs on bed" },
+		{ src: c2, alt: "Dogs on sofa" },
 	];
 
 	const ftAmeneityData = [
