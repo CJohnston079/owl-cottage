@@ -11,7 +11,7 @@ export default function Hero() {
 					Loch Ness, the Great Glen Way and the picturesque tourist destination of Fort Augustus.
 				</p>
 				<Button style={"hero"}>
-					<a href="#booking">Book your stay</a>
+					<a href="#booking">Get in touch</a>
 				</Button>
 			</div>
 		</section>
