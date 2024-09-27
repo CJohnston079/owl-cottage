@@ -7,21 +7,21 @@ import Section from "../shared/Section";
 import "../../styles/sections/About.css";
 import "../../styles/sections/Amenities.css";
 
-import owlKitchen from "../../assets/images/cottage/owl-kitchen.webp";
-import owlBedroom from "../../assets/images/cottage/owl-bedroom.webp";
-import owlSignpost from "../../assets/images/cottage/owl-signpost.webp";
-import owlFurniture from "../../assets/images/cottage/owl-furniture.webp";
-import owlGarden from "../../assets/images/cottage/owl-garden.webp";
-import owlCoffee from "../../assets/images/cottage/owl-coffee.webp";
+import livingRoom from "../../assets/images/cottage/living-dogs-on-sofa.webp";
+import kitchen from "../../assets/images/cottage/kitchen.jpg";
+import kitchenCoffee from "../../assets/images/cottage/kitchen-coffee.jpg";
+import bedroomOne from "../../assets/images/cottage/bedroom-one.jpg";
+import exteriorSign from "../../assets/images/cottage/exterior-sign.jpg";
+import exteriorDogInGarden from "../../assets/images/cottage/exterior-dog-in-garden.webp";
 
 export default function About() {
 	const images = [
-		{ src: owlKitchen, alt: "Kitchen" },
-		{ src: owlBedroom, alt: "Bedroom" },
-		{ src: owlSignpost, alt: "Signpost" },
-		{ src: owlFurniture, alt: "Furniture" },
-		{ src: owlGarden, alt: "Garden" },
-		{ src: owlCoffee, alt: "Coffee" },
+		{ src: kitchen, alt: "Kitchen" },
+		{ src: bedroomOne, alt: "Bedroom" },
+		{ src: exteriorSign, alt: "Signpost" },
+		{ src: livingRoom, alt: "Furniture" },
+		{ src: exteriorDogInGarden, alt: "Garden" },
+		{ src: kitchenCoffee, alt: "Coffee" },
 	];
 
 	return (
