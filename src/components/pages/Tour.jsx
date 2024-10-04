@@ -7,80 +7,39 @@ import { Link } from "react-router-dom";
 import Section from "../shared/Section";
 import "../../styles/pages/Tour.css";
 
-import livingRoomFireplace from "../../assets/images/cottage/living-fireplace.jpg";
-import livingRoomLookingAtKitchen from "../../assets/images/cottage/living-room-looking-at-kitchen.jpg";
-import livingRoomTelevision from "../../assets/images/cottage/living-room-television.jpg";
-import livingRoom from "../../assets/images/cottage/living-room.jpg";
-import kitchen from "../../assets/images/cottage/kitchen.jpg";
-import kitchenCabinets from "../../assets/images/cottage/kitchen-cabinets.jpg";
-import kitchenCookingArea from "../../assets/images/cottage/kitchen-cooking-area.jpg";
-import kitchenDiningArea from "../../assets/images/cottage/kitchen-dining-area.jpg";
-import diningKitchen from "../../assets/images/cottage/dining-kitchen.jpg";
-import diningLivingArea from "../../assets/images/cottage/dining-living-area.jpg";
-import diningTable from "../../assets/images/cottage/dining-table.jpg";
-import kitchenPots from "../../assets/images/cottage/kitchen-pots.jpg";
-import kitchenCoffee from "../../assets/images/cottage/kitchen-coffee.jpg";
-import kitchenDogBowls from "../../assets/images/cottage/kitchen-dog-bowls.jpg";
-import bedroomOne from "../../assets/images/cottage/bedroom-one.jpg";
-import bedroomOneBed from "../../assets/images/cottage/bedroom-one-bed.jpg";
-import bedroomOneTowelsOnBed from "../../assets/images/cottage/bedroom-one-towels-on-bed.jpg";
-import bedroomOnePillows from "../../assets/images/cottage/bedroom-one-pillows.jpg";
-import bedroomOnePillowCushions from "../../assets/images/cottage/bedroom-one-pillow-cushions.jpg";
-import bedroomOneDrawers from "../../assets/images/cottage/bedroom-one-drawers.jpg";
-import bedroomOneDrawersAndMirror from "../../assets/images/cottage/bedroom-one-drawers-and-mirror.jpg";
-import bedroomTwo from "../../assets/images/cottage/bedroom-two.jpg";
-import bedroomTwoShelves from "../../assets/images/cottage/bedroom-two-shelves.jpg";
-import bedroomTwoBunkBed from "../../assets/images/cottage/bedroom-two-bunk-bed.jpg";
-import bedroomTwoBedWarningSign from "../../assets/images/cottage/bedroom-two-bed-warning-sign.jpg";
-import bedroomWindow from "../../assets/images/cottage/bedroom-window.jpg";
-import bathroom from "../../assets/images/cottage/bathroom.jpg";
-import bathroomShower from "../../assets/images/cottage/bathroom-shower.jpg";
-import exteriorSign from "../../assets/images/cottage/exterior-sign.jpg";
-import exteriorFront from "../../assets/images/cottage/exterior-front.jpg";
-import exteriorFrontView from "../../assets/images/cottage/exterior-front-view.jpg";
-import exteriorDrivewayView from "../../assets/images/cottage/exterior-driveway-view.jpg";
-import exteriorDogInGarden from "../../assets/images/cottage/exterior-dog-in-garden.webp";
+import livingRoom1 from "../../assets/images/tour/living-room-1.jpg";
+import livingRoom2 from "../../assets/images/tour/living-room-2.jpg";
+import livingRoom3 from "../../assets/images/tour/living-room-3.jpg";
+import livingRoom4 from "../../assets/images/tour/living-room-4.jpg";
+import kitchen1 from "../../assets/images/tour/kitchen-1.jpg";
+import kitchen2 from "../../assets/images/tour/kitchen-2.jpg";
+import kitchen3 from "../../assets/images/tour/kitchen-3.jpg";
+import kitchen4 from "../../assets/images/tour/kitchen-4.jpg";
+import kitchen5 from "../../assets/images/tour/kitchen-5.jpg";
+import kitchen6 from "../../assets/images/tour/kitchen-6.jpg";
+import bedroomOne1 from "../../assets/images/tour/bedroom-one-1.jpg";
+import bedroomOne2 from "../../assets/images/tour/bedroom-one-2.jpg";
+import bedroomOne3 from "../../assets/images/tour/bedroom-one-3.jpg";
+import bedroomOne4 from "../../assets/images/tour/bedroom-one-4.jpg";
+import bedroomTwo1 from "../../assets/images/tour/bedroom-two-1.jpg";
+import bedroomTwo2 from "../../assets/images/tour/bedroom-two-2.jpg";
+import bedroomTwo3 from "../../assets/images/tour/bedroom-two-3.jpg";
+import bedroomTwo4 from "../../assets/images/tour/bedroom-two-4.jpg";
+import garden1 from "../../assets/images/tour/garden-1.jpg";
+import garden2 from "../../assets/images/tour/garden-2.jpg";
+import garden3 from "../../assets/images/tour/garden-3.jpg";
+import garden4 from "../../assets/images/tour/garden-4.jpg";
+import showerRoom1 from "../../assets/images/tour/shower-room-1.jpg";
+import showerRoom2 from "../../assets/images/tour/shower-room-2.jpg";
+import floorPlan from "../../assets/images/tour/floor-plan.jpg";
 
-const livingRoomImages = [
-	livingRoomFireplace,
-	livingRoomTelevision,
-	livingRoomLookingAtKitchen,
-	livingRoom,
-];
-const kitchenImages = [
-	kitchenDiningArea,
-	kitchen,
-	kitchenCookingArea,
-	kitchenCabinets,
-	diningKitchen,
-	diningLivingArea,
-	kitchenPots,
-	kitchenCoffee,
-	diningTable,
-	kitchenDogBowls,
-];
-const bedroomImages = [
-	bedroomOneBed,
-	bedroomOneDrawers,
-	bedroomOnePillowCushions,
-	bedroomOnePillows,
-	bedroomTwoBunkBed,
-	bedroomTwoBedWarningSign,
-	bedroomOne,
-	bedroomTwo,
-	bedroomWindow,
-	bedroomTwoShelves,
-	bedroomOneTowelsOnBed,
-	bedroomOneDrawersAndMirror,
-];
-const bathroomImages = [bathroom, bathroomShower];
-const exteriorImages = [
-	exteriorSign,
-	exteriorFront,
-	exteriorFrontView,
-	exteriorDrivewayView,
-	exteriorDogInGarden,
-];
+const livingRoomImages = [livingRoom1, livingRoom2, livingRoom3, livingRoom4];
+const kitchenImages = [kitchen1, kitchen2, kitchen3, kitchen4, kitchen5, kitchen6];
+const bedroomOneImages = [bedroomOne1, bedroomOne2, bedroomOne3, bedroomOne4];
+const bedroomTwoImages = [bedroomTwo1, bedroomTwo2, bedroomTwo3, bedroomTwo4];
+const bathroomImages = [showerRoom1, showerRoom2];
+const exteriorImages = [garden1, garden2, garden3, garden4];
+const floorPlanImages = [floorPlan];
 
 export default function Tour() {
 	const livingRoomPhotos = livingRoomImages.map((image, i) => (
@@ -89,13 +48,19 @@ export default function Tour() {
 	const kitchenPhotos = kitchenImages.map((image, i) => (
 		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
 	));
-	const BedroomPhotos = bedroomImages.map((image, i) => (
+	const bedroomOnePhotos = bedroomOneImages.map((image, i) => (
+		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
+	));
+	const bedroomTwoPhotos = bedroomTwoImages.map((image, i) => (
 		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
 	));
 	const BathroomPhotos = bathroomImages.map((image, i) => (
 		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
 	));
 	const exteriorPhotos = exteriorImages.map((image, i) => (
+		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
+	));
+	const floorPlanPhotos = floorPlanImages.map((image, i) => (
 		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
 	));
 
@@ -114,14 +79,20 @@ export default function Tour() {
 			<Section sectionId="kitchen" heading="Kitchen and dining area">
 				<div className="photos">{kitchenPhotos}</div>
 			</Section>
-			<Section sectionId="bedrooms" heading="Bedrooms">
-				<div className="photos">{BedroomPhotos}</div>
+			<Section sectionId="bedrooms" heading="Bedroom One">
+				<div className="photos">{bedroomOnePhotos}</div>
 			</Section>
-			<Section sectionId="bathrooms" heading="Bathrooms">
+			<Section sectionId="bedrooms" heading="Bedroom Two">
+				<div className="photos">{bedroomTwoPhotos}</div>
+			</Section>
+			<Section sectionId="bathrooms" heading="Shower room">
 				<div className="photos">{BathroomPhotos}</div>
 			</Section>
-			<Section sectionId="exterior" heading="Exterior">
+			<Section sectionId="exterior" heading="External">
 				<div className="photos">{exteriorPhotos}</div>
+			</Section>
+			<Section sectionId="floor-plan" heading="Floor plan">
+				<div className="photos">{floorPlanPhotos}</div>
 			</Section>
 			<Footer />
 		</>
