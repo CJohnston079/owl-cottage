@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Button from "../shared/Button";
 import FlexContainer from "../shared/FlexContainer";
-import Modal from "../shared/Modal";
-import ModalForm from "../shared/ModalForm";
+// import Modal from "../shared/Modal";
+// import ModalForm from "../shared/ModalForm";
 import Section from "../shared/Section";
 import Testimonial from "../shared/Testimonial";
-import formFields from "../../data/formFields.json";
+// import formFields from "../../data/formFields.json";
 import reviews from "../../data/reviews.json";
 import "../../styles/sections/Testimonials.css";
 
@@ -40,13 +40,13 @@ export default function Testimonials() {
 	return (
 		<Section sectionId="testimonials">
 			<FlexContainer>{testimonials}</FlexContainer>
-			<div className="t-buttons">
+			<div className="t-buttons" style={{ justifyContent: "center" }}>
 				<Button onClick={handleShowMoreTestimonials}>Show more testimonials</Button>
-				<Modal buttonText="Leave a testimonial">
+				{/* <Modal buttonText="Leave a testimonial">
 					{({ closeModal }) => (
 						<ModalForm fieldsData={formFields.testimonials} handleClose={closeModal} />
 					)}
-				</Modal>
+				</Modal> */}
 			</div>
 		</Section>
 	);
