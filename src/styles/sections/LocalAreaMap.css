@@ -22,6 +22,16 @@
 	box-shadow: var(--box-shadow);
 }
 
+.button-list {
+	display: grid;
+	gap: 1rem;
+}
+
+.button-list button {
+	text-align: left;
+	width: 100%;
+}
+
 .map {
 	background-color: var(--cl-emphasis-shade);
 	min-height: 42rem;
