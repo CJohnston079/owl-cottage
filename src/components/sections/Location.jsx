@@ -1,4 +1,4 @@
-import ContentWithBento from "../shared/ContentWithBento";
+import CopyWithBento from "../shared/CopyWithBento";
 import Section from "../shared/Section";
 import "../../styles/sections/Location.css";
 
@@ -21,7 +21,7 @@ export default function Location() {
 
 	return (
 		<Section sectionId="location">
-			<ContentWithBento bentoImages={images}>
+			<CopyWithBento bentoImages={images}>
 				<p>
 					<b>
 						Set in the heart of the Great Glen, Owl Cottage is your perfect base to explore the
@@ -43,7 +43,7 @@ export default function Location() {
 					Many wonderful walks are within easy reach - at all levels from short, flat paths to
 					challenging Munros. And the ultimate challenge of Ben Nevis is just 40 minutes away.
 				</p>
-			</ContentWithBento>
+			</CopyWithBento>
 		</Section>
 	);
 }

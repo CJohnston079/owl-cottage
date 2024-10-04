@@ -1,17 +1,17 @@
 import PropTypes from "prop-types";
 import Bento from "./Bento";
-import "../../styles/shared/ContentWithBento.css";
+import "../../styles/shared/CopyWithBento.css";
 
-export default function ContentWithBento({ children, bentoImages }) {
+export default function CopyWithBento({ children, bentoImages }) {
 	return (
-		<div className="col-bento-container">
-			<div className="content">{children}</div>
+		<div className="col-content-container">
+			<div className="copy">{children}</div>
 			<Bento images={bentoImages} />
 		</div>
 	);
 }
 
-ContentWithBento.propTypes = {
+CopyWithBento.propTypes = {
 	children: PropTypes.node,
 	bentoImages: PropTypes.arrayOf(
 		PropTypes.shape({

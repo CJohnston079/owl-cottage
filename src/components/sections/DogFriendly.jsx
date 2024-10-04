@@ -1,4 +1,4 @@
-import ContentWithBento from "../shared/ContentWithBento";
+import CopyWithBento from "../shared/CopyWithBento";
 import IconCard from "./amenities/IconCard";
 import Section from "../shared/Section";
 import "../../styles/sections/Amenities.css";
@@ -42,7 +42,7 @@ export default function DogFriendly() {
 
 	return (
 		<Section sectionId="dogs-welcome">
-			<ContentWithBento bentoImages={images}>
+			<CopyWithBento bentoImages={images}>
 				<p>
 					<b>Doggy heaven for your furry best friends</b>
 				</p>
@@ -59,7 +59,7 @@ export default function DogFriendly() {
 					the number of four-footed friends you can bring along. Extra charges? Not at Owl Cottage -{" "}
 					<b>your pups stay for free</b>.
 				</p>
-			</ContentWithBento>
+			</CopyWithBento>
 			<div className="icard-container">{cardComponents}</div>
 		</Section>
 	);

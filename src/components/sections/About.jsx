@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "../shared/Button";
 import AmenitiesList from "./amenities/AmenitiesList";
 import Modal from "../shared/Modal";
-import ContentWithBento from "../shared/ContentWithBento";
+import CopyWithBento from "../shared/CopyWithBento";
 import Section from "../shared/Section";
 import "../../styles/sections/About.css";
 import "../../styles/sections/Amenities.css";
@@ -26,7 +26,7 @@ export default function About() {
 
 	return (
 		<Section sectionId="about">
-			<ContentWithBento bentoImages={images}>
+			<CopyWithBento bentoImages={images}>
 				<h3>The Cottage</h3>
 				<p className="intro-text">
 					A cozy and inviting traditional stone cottage built in 1868, Owl Cottage is an ideal base
@@ -55,7 +55,7 @@ export default function About() {
 				<Modal buttonText="Full list of amenities ➞" heading="Amenities" showCloseButton={true}>
 					{() => <AmenitiesList />}
 				</Modal>
-			</ContentWithBento>
+			</CopyWithBento>
 		</Section>
 	);
 }
