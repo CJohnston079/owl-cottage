@@ -10,7 +10,7 @@ import "../../styles/sections/Amenities.css";
 import livingRoom from "../../assets/images/cottage/living-dogs-on-sofa.webp";
 import kitchen from "../../assets/images/cottage/kitchen.jpg";
 import kitchenCoffee from "../../assets/images/cottage/kitchen-coffee.jpg";
-import bedroomOne from "../../assets/images/cottage/bedroom-one.jpg";
+import bedroomOne from "../../assets/images/tour/bedroom-one-1.jpg";
 import exteriorSign from "../../assets/images/cottage/exterior-sign.jpg";
 import exteriorDogInGarden from "../../assets/images/cottage/exterior-dog-in-garden.webp";
 
@@ -27,7 +27,6 @@ export default function About() {
 	return (
 		<Section sectionId="about">
 			<CopyWithBento bentoImages={images}>
-				<h3>The Cottage</h3>
 				<p className="intro-text">
 					A cozy and inviting traditional stone cottage built in 1868, Owl Cottage is an ideal base
 					for your Highlands adventures. We have lovingly furnished it to feel like a real home from
