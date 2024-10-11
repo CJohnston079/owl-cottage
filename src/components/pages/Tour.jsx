@@ -71,7 +71,17 @@ export default function Tour() {
 
 	return (
 		<>
-			<NavBar links={["living", "kitchen", "bedrooms", "bathrooms", "exterior"]}>
+			<NavBar
+				links={[
+					"living",
+					"kitchen",
+					"bedroom-one",
+					"bedroom-two",
+					"shower-room",
+					"exterior",
+					"floor-plan",
+				]}
+			>
 				<Link to="/">
 					<Button style="emphasis">
 						<span style={{ display: "inline-block", rotate: "180deg" }}>➞</span> Back
@@ -84,13 +94,13 @@ export default function Tour() {
 			<Section sectionId="kitchen" heading="Kitchen and dining area">
 				<div className="photos">{kitchenPhotos}</div>
 			</Section>
-			<Section sectionId="bedrooms" heading="Bedroom One">
+			<Section sectionId="bedroom-one" heading="Bedroom One">
 				<div className="photos">{bedroomOnePhotos}</div>
 			</Section>
-			<Section sectionId="bedrooms" heading="Bedroom Two">
+			<Section sectionId="bedroom-two" heading="Bedroom Two">
 				<div className="photos">{bedroomTwoPhotos}</div>
 			</Section>
-			<Section sectionId="bathrooms" heading="Shower room">
+			<Section sectionId="shower-room" heading="Shower room">
 				<div className="photos">{BathroomPhotos}</div>
 			</Section>
 			<Section sectionId="exterior" heading="External">
