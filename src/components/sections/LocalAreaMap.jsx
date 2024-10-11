@@ -9,7 +9,7 @@ import lochOich from "../../assets/images/points-of-interest/loch-oich.jpg";
 
 export default function LocalAreaMap() {
 	return (
-		<Section sectionId="points-of-interest">
+		<Section sectionId="points-of-interest" heading="">
 			<Card>
 				<h3>Local Area Map</h3>
 				<iframe
