@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "../../styles/nav/NavLink.css";
 
 export default function NavLink({ href, linkTitle = href, isActive = false }) {
-	const cleanedLink = linkTitle.replace("#", "");
+	const cleanedLink = linkTitle.replace("#", "").replace("-", " ");
 	const linkContent = cleanedLink.charAt(0).toUpperCase() + cleanedLink.slice(1);
 	const linkTarget = href.charAt(0) !== "#" ? `/${href}` : href;
 
