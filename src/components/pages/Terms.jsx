@@ -1,12 +1,17 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Button from "../shared/Button.jsx";
 import NavBar from "../nav/NavBar.jsx";
-import { Link } from "react-router-dom";
 import Section from "../shared/Section.jsx";
 import Footer from "../sections/Footer.jsx";
 
 import "../../styles/pages/Terms.css";
 
 export default function Terms() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<NavBar links={[]}>

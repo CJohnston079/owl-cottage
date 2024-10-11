@@ -1,8 +1,9 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import ImgThumb from "../shared/ImgThumb";
 import NavBar from "../nav/NavBar.jsx";
 import Button from "../shared/Button.jsx";
 import Footer from "../sections/Footer.jsx";
-import { Link } from "react-router-dom";
 
 import Section from "../shared/Section";
 import "../../styles/pages/Tour.css";
@@ -42,6 +43,10 @@ const exteriorImages = [garden1, garden2, garden3, garden4];
 const floorPlanImages = [floorPlan];
 
 export default function Tour() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const livingRoomPhotos = livingRoomImages.map((image, i) => (
 		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
 	));
