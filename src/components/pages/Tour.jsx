@@ -40,7 +40,6 @@ const bedroomOneImages = [bedroomOne1, bedroomOne2, bedroomOne3, bedroomOne4];
 const bedroomTwoImages = [bedroomTwo1, bedroomTwo2, bedroomTwo3, bedroomTwo4];
 const bathroomImages = [showerRoom1, showerRoom2];
 const exteriorImages = [garden1, garden2, garden3, garden4];
-const floorPlanImages = [floorPlan];
 
 export default function Tour() {
 	useEffect(() => {
@@ -63,9 +62,6 @@ export default function Tour() {
 		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
 	));
 	const exteriorPhotos = exteriorImages.map((image, i) => (
-		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
-	));
-	const floorPlanPhotos = floorPlanImages.map((image, i) => (
 		<ImgThumb key={i} imgSrc={image} alt={"Image"} />
 	));
 
@@ -107,7 +103,7 @@ export default function Tour() {
 				<div className="photos">{exteriorPhotos}</div>
 			</Section>
 			<Section sectionId="floor-plan" heading="Floor plan">
-				<div className="photos">{floorPlanPhotos}</div>
+				<img src={floorPlan} alt="Floor plan" />
 			</Section>
 			<Footer />
 		</>
