@@ -4,7 +4,7 @@ import CopyWithImg from "../shared/CopyWithImg";
 import Section from "../shared/Section";
 import "../../styles/sections/LocalAreaMap.css";
 
-import doggies from "../../assets/images/points-of-interest/dog-friendly-restaurants.jpg";
+import doggies from "../../assets/images/points-of-interest/cafe-dog.jpg";
 import lochOich from "../../assets/images/points-of-interest/loch-oich.jpg";
 
 export default function LocalAreaMap() {
