@@ -41,7 +41,7 @@
 	},
 	{
 		"q": "What is included in the price?",
-		"a": "We have no hidden costs in addition to the prices quoted here. Prices are for the cottage and include up to four guests and all pets. All of our prices include heating and hot water, 1st basket of firewood, bed linen, towels & taxes. Please note that we are not able to offer electric car charging. A refundable £250 security deposit is payable with your final payment. This will be returned to you at the end of your stay subject to inspection. Any proposed deduction will be discussed with you prior to repayment. See our terms & conditions [Link] for full details."
+		"a": "We have no hidden costs in addition to the prices quoted here. Prices are for the cottage and include up to four guests and all pets. All of our prices include heating and hot water, 1st basket of firewood, bed linen, towels & taxes. Please note that we are not able to offer electric car charging. A refundable £250 security deposit is payable with your final payment. This will be returned to you at the end of your stay subject to inspection. Any proposed deduction will be discussed with you prior to repayment. See our <a href='/terms-and-conditions'>terms & conditions</a> for full details."
 	},
 	{
 		"q": "How much deposit is required to confirm a booking?",
