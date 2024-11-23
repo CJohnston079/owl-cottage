@@ -1,0 +1,33 @@
+#top-banner {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+
+	display: flex;
+	justify-content: space-between;
+
+	padding: 1rem var(--site-padding-x);
+
+	background-color: var(--cl-emphasis-shade);
+	background: linear-gradient(315deg, var(--cl-emphasis-shade), var(--cl-background-shade-2));
+	box-shadow: 0 2px 4px hsl(0, 0%, 0%, 0.4);
+}
+
+#top-banner .btn {
+	background-color: var(--cl-background);
+}
+
+#top-banner .btn:hover {
+	background-color: var(--cl-emphasis);
+}
+
+@media (max-width: 900px) {
+	#top-banner {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	#top-banner .btn {
+		width: fit-content;
+	}
+}
