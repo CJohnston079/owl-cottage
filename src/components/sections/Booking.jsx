@@ -17,7 +17,11 @@ export default function Booking() {
 						<Button style="normal">Terms and conditions</Button>
 					</Link>
 					<p>
-						For all other enquiries, please email <span>jane@owlcottages.co.uk</span>.
+						For all booking enquiries, please email{" "}
+						<a className="email-link" href="mailto:jane@owlcottages.co.uk">
+							jane@owlcottages.co.uk
+						</a>
+						.
 					</p>
 				</Card>
 			</div>

@@ -27,3 +27,12 @@
 #booking p {
 	margin-top: 1.5rem;
 }
+
+.email-link {
+	font-weight: bold;
+	color: var(--cl-emphasis);
+}
+
+.email-link:hover {
+	text-decoration: underline;
+}
