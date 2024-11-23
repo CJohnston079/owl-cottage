@@ -7,6 +7,7 @@ import Location from "../sections/Location.jsx";
 import LocalAreaMap from "../sections/LocalAreaMap.jsx";
 import NavBar from "../nav/NavBar.jsx";
 import Testimonials from "../sections/Testimonials.jsx";
+import TopBanner from "../shared/TopBanner.jsx";
 import Footer from "../sections/Footer.jsx";
 
 import "../../styles/pages/Home.css";
@@ -14,6 +15,7 @@ import "../../styles/pages/Home.css";
 function Home() {
 	return (
 		<>
+			<TopBanner />
 			<NavBar links={["home", "about", "location", "faq", "testimonials", "booking"]} />
 			<Hero />
 			<About />
