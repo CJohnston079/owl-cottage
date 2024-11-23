@@ -4,57 +4,6 @@ export default function Tariff() {
 	return (
 		<>
 			<table>
-				<caption>2024</caption>
-				<thead>
-					<tr>
-						<th>Season</th>
-						<th>
-							Price per night <span className="th-subheading">up to 6 nights</span>
-						</th>
-						<th>
-							Price per night <span className="th-subheading">7+ nights</span>
-						</th>
-						<th>Dates</th>
-					</tr>
-				</thead>
-				<tr>
-					<th>High Season</th>
-					<td>£200</td>
-					<td>£160</td>
-					<td>1 Jul to 31 Aug</td>
-				</tr>
-				<tr>
-					<th>Mid Season</th>
-					<td>£170</td>
-					<td>£136</td>
-					<td>1 May to 30 Jun; 1 to 30 Sep</td>
-				</tr>
-				<tr>
-					<th>Low Season</th>
-					<td>£140</td>
-					<td>£112</td>
-					<td>15 to 30 Apr; 1 to 31 Oct</td>
-				</tr>
-				<tr>
-					<th>Winter Season</th>
-					<td>£100</td>
-					<td>£80</td>
-					<td>2 Jan to 28 Mar; 1 Nov to 22 Dec</td>
-				</tr>
-				<tr>
-					<th>Easter</th>
-					<td>£185</td>
-					<td>£148</td>
-					<td>29 Mar to 14 Apr</td>
-				</tr>
-				<tr>
-					<th>Christmas</th>
-					<td>£185</td>
-					<td>£148</td>
-					<td>23 Dec to 5 Jan</td>
-				</tr>
-			</table>
-			<table>
 				<caption>2025</caption>
 				<thead>
 					<tr>
