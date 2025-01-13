@@ -12,6 +12,7 @@ export default function Booking() {
 			<div className="booking-main">
 				<Card>
 					<h3>Tariffs</h3>
+					<p>Minimum stay 3 nights in Winter Season; 4 nights at all other times.</p>
 					<Tariff />
 					<Link to="/terms-and-conditions">
 						<Button style="normal">Terms and conditions</Button>
