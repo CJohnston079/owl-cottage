@@ -14,9 +14,11 @@
 
 .booking-main {
 	max-width: max(40%, 48rem);
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
+}
+
+#booking .card {
+  display: flex;
+  gap: 1rem;
 }
 
 #message {
@@ -36,3 +38,39 @@
 .email-link:hover {
 	text-decoration: underline;
 }
+
+.booking-terms {
+  display: block;
+
+  margin-block-start: 2rem;
+  padding: 0.5rem 1rem;
+  max-width: fit-content;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--cl-background-shade);
+  border-radius: var(--br-light);
+
+  font-weight: 500;
+
+  background-color: var(--cl-background-shade);
+
+  transition-property: border-color, background-color;
+  transition-duration: 800ms;
+}
+.booking-terms:hover {
+  background-color: var(--cl-background-shade-2);
+  border-color: var(--cl-foreground-shade);
+  transition-duration: 400ms;
+}
+
+.airbnb-embed-frame * {
+   box-shadow: none;
+}
+
+@media screen and ( max-width: 767.98px ) {
+  #booking .card {
+    flex-direction: column;
+  }
+}
+

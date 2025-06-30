@@ -1,0 +1,6 @@
+https://owlcottages.com/*       https://owlcottages.org.uk/:splat 301!
+https://www.owlcottages.com/*   https://owlcottages.org.uk/:splat 301!
+https://owlcottages.co.uk/*     https://owlcottages.org.uk/:splat 301!
+https://www.owlcottages.co.uk/* https://owlcottages.org.uk/:splat 301!
+
+/* /index.html 200
